@@ -14,7 +14,6 @@ Lots of settings for your computer to mess around with.
 Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and download the latest version. 
 
 
-
 ## Supported Versions
 If you would like a detailed description of what versions and Operating Systems are supported, check [Security](https://github.com/byronbytes/PC-Toolbox/blob/master/SECURITY.md).
 
@@ -44,10 +43,6 @@ Ask yourself these questions if you want to contribute.
 - [x] Is my version well thought out and secure?
 - [x] Does my version have any errors with compatibillity?
 - [x] Did I put effort into my version?
-
-
-### Contributation Ranks
-Coming soon, there will be a Discord Server and on how well know you are through the community you get a higher rank.
 
 
 
