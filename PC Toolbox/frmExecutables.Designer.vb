@@ -27,17 +27,21 @@ Partial Class frmExecutables
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.BasicToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CommandPromptToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PowershellToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TaskManagerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ControlPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegeditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PowershellToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.GroupPolicyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SnippingToolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GroupPolicyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
+        Me.MostImportantToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CommandPromptToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RegistryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.TaskManagerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
         Me.SuspendLayout()
@@ -54,82 +58,70 @@ Partial Class frmExecutables
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(30, 70)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(139, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(140, 29)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'BasicToolStripMenuItem
         '
-        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.SnippingToolToolStripMenuItem})
+        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.SnippingToolToolStripMenuItem, Me.GroupPolicyEditorToolStripMenuItem, Me.ToolStripSeparator2})
         Me.BasicToolStripMenuItem.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
-        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(131, 25)
-        Me.BasicToolStripMenuItem.Text = "Most Common"
+        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(132, 25)
+        Me.BasicToolStripMenuItem.Text = "All Executables"
         '
         'CommandPromptToolStripMenuItem
         '
         Me.CommandPromptToolStripMenuItem.Name = "CommandPromptToolStripMenuItem"
-        Me.CommandPromptToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.CommandPromptToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.CommandPromptToolStripMenuItem.Text = "Command Prompt"
-        '
-        'PowershellToolStripMenuItem
-        '
-        Me.PowershellToolStripMenuItem.Name = "PowershellToolStripMenuItem"
-        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.PowershellToolStripMenuItem.Text = "Powershell"
         '
         'TaskManagerToolStripMenuItem
         '
         Me.TaskManagerToolStripMenuItem.Name = "TaskManagerToolStripMenuItem"
-        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.TaskManagerToolStripMenuItem.Text = "Task Manager"
         '
         'ControlPanelToolStripMenuItem
         '
         Me.ControlPanelToolStripMenuItem.Name = "ControlPanelToolStripMenuItem"
-        Me.ControlPanelToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ControlPanelToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ControlPanelToolStripMenuItem.Text = "Control Panel"
+        '
+        'RegeditToolStripMenuItem
+        '
+        Me.RegeditToolStripMenuItem.Name = "RegeditToolStripMenuItem"
+        Me.RegeditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RegeditToolStripMenuItem.Text = "Regedit"
+        '
+        'PowershellToolStripMenuItem
+        '
+        Me.PowershellToolStripMenuItem.Name = "PowershellToolStripMenuItem"
+        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PowershellToolStripMenuItem.Text = "Powershell"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(213, 6)
-        '
-        'WinverToolStripMenuItem
-        '
-        Me.WinverToolStripMenuItem.Name = "WinverToolStripMenuItem"
-        Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.WinverToolStripMenuItem.Text = "Winver"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(221, 6)
         '
         'ExplorerToolStripMenuItem
         '
         Me.ExplorerToolStripMenuItem.Name = "ExplorerToolStripMenuItem"
-        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.ExplorerToolStripMenuItem.Text = "Explorer"
         '
-        'MenuStrip2
+        'WinverToolStripMenuItem
         '
-        Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
-        Me.MenuStrip2.Location = New System.Drawing.Point(267, 70)
-        Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(115, 29)
-        Me.MenuStrip2.TabIndex = 2
-        Me.MenuStrip2.Text = "MenuStrip2"
+        Me.WinverToolStripMenuItem.Name = "WinverToolStripMenuItem"
+        Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.WinverToolStripMenuItem.Text = "Winver"
         '
-        'ToolStripMenuItem1
+        'SnippingToolToolStripMenuItem
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator2, Me.GroupPolicyEditorToolStripMenuItem})
-        Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(107, 25)
-        Me.ToolStripMenuItem1.Text = "Uncommon"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(221, 6)
+        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
+        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
         '
         'GroupPolicyEditorToolStripMenuItem
         '
@@ -137,11 +129,46 @@ Partial Class frmExecutables
         Me.GroupPolicyEditorToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.GroupPolicyEditorToolStripMenuItem.Text = "Group Policy Editor"
         '
-        'SnippingToolToolStripMenuItem
+        'ToolStripSeparator2
         '
-        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
-        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(221, 6)
+        '
+        'MenuStrip2
+        '
+        Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MostImportantToolStripMenuItem})
+        Me.MenuStrip2.Location = New System.Drawing.Point(246, 70)
+        Me.MenuStrip2.Name = "MenuStrip2"
+        Me.MenuStrip2.Size = New System.Drawing.Size(137, 28)
+        Me.MenuStrip2.TabIndex = 2
+        Me.MenuStrip2.Text = "MenuStrip2"
+        '
+        'MostImportantToolStripMenuItem
+        '
+        Me.MostImportantToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem1, Me.RegistryToolStripMenuItem, Me.TaskManagerToolStripMenuItem1})
+        Me.MostImportantToolStripMenuItem.Name = "MostImportantToolStripMenuItem"
+        Me.MostImportantToolStripMenuItem.Size = New System.Drawing.Size(129, 24)
+        Me.MostImportantToolStripMenuItem.Text = "Most Important "
+        '
+        'CommandPromptToolStripMenuItem1
+        '
+        Me.CommandPromptToolStripMenuItem1.Name = "CommandPromptToolStripMenuItem1"
+        Me.CommandPromptToolStripMenuItem1.Size = New System.Drawing.Size(203, 24)
+        Me.CommandPromptToolStripMenuItem1.Text = "Command Prompt"
+        '
+        'RegistryToolStripMenuItem
+        '
+        Me.RegistryToolStripMenuItem.Name = "RegistryToolStripMenuItem"
+        Me.RegistryToolStripMenuItem.Size = New System.Drawing.Size(203, 24)
+        Me.RegistryToolStripMenuItem.Text = "Registry"
+        '
+        'TaskManagerToolStripMenuItem1
+        '
+        Me.TaskManagerToolStripMenuItem1.Name = "TaskManagerToolStripMenuItem1"
+        Me.TaskManagerToolStripMenuItem1.Size = New System.Drawing.Size(203, 24)
+        Me.TaskManagerToolStripMenuItem1.Text = "Task Manager"
         '
         'frmExecutables
         '
@@ -176,7 +203,11 @@ Partial Class frmExecutables
     Friend WithEvents WinverToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SnippingToolToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MenuStrip2 As MenuStrip
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents RegeditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GroupPolicyEditorToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents MostImportantToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CommandPromptToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents RegistryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents TaskManagerToolStripMenuItem1 As ToolStripMenuItem
 End Class

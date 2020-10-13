@@ -28,13 +28,14 @@ Partial Class frmMain
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.devPanel = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.winver = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -80,14 +81,6 @@ Partial Class frmMain
         Me.Panel1.Size = New System.Drawing.Size(916, 53)
         Me.Panel1.TabIndex = 4
         '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(870, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -121,23 +114,12 @@ Partial Class frmMain
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(352, 120)
+        Me.Button6.Location = New System.Drawing.Point(352, 243)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(158, 31)
         Me.Button6.TabIndex = 8
         Me.Button6.Text = "Scripts"
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'devPanel
-        '
-        Me.devPanel.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.devPanel.Location = New System.Drawing.Point(826, 633)
-        Me.devPanel.Name = "devPanel"
-        Me.devPanel.Size = New System.Drawing.Size(80, 30)
-        Me.devPanel.TabIndex = 9
-        Me.devPanel.Text = "DevPanel"
-        Me.devPanel.UseVisualStyleBackColor = True
-        Me.devPanel.Visible = False
         '
         'NotifyIcon1
         '
@@ -148,13 +130,42 @@ Partial Class frmMain
         Me.NotifyIcon1.Text = "PC Toolbox"
         Me.NotifyIcon1.Visible = True
         '
+        'Button7
+        '
+        Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button7.Location = New System.Drawing.Point(352, 120)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(158, 31)
+        Me.Button7.TabIndex = 10
+        Me.Button7.Text = "Administration"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'winver
+        '
+        Me.winver.AutoSize = True
+        Me.winver.Location = New System.Drawing.Point(804, 649)
+        Me.winver.Name = "winver"
+        Me.winver.Size = New System.Drawing.Size(102, 13)
+        Me.winver.TabIndex = 11
+        Me.winver.Text = "%WindowsVersion%"
+        Me.winver.Visible = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(870, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
-        Me.Controls.Add(Me.devPanel)
+        Me.Controls.Add(Me.winver)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -169,6 +180,7 @@ Partial Class frmMain
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -180,7 +192,8 @@ Partial Class frmMain
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents devPanel As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents Button7 As Button
+    Friend WithEvents winver As Label
 End Class

@@ -13,14 +13,15 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-"UserCreatedTestKey", "Yes")
-
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox\Debugging",
-"RegistryTestKey", "This is a test key.")
+  "TestKey", "This key was automatically created.")
 
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
 
     End Sub
 End Class

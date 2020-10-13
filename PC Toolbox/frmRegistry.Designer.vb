@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmRegistry
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class frmRegistry
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -30,8 +30,6 @@ Partial Class frmRegistry
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -123,34 +121,12 @@ Partial Class frmRegistry
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Testing"
         '
-        'Button5
-        '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(33, 316)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(208, 37)
-        Me.Button5.TabIndex = 9
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Red
-        Me.Label3.Location = New System.Drawing.Point(30, 221)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(235, 16)
-        Me.Label3.TabIndex = 10
-        Me.Label3.Text = "ONCE I LEARN HOW TO DOWNLOAD FILES"
-        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(765, 549)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Label2)
@@ -175,6 +151,4 @@ Partial Class frmRegistry
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Label3 As Label
 End Class
