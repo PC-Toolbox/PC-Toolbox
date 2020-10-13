@@ -6,8 +6,9 @@ Lots of settings for your computer to mess around with.
 - Able to check for a connection and how well the connection is
 - Quickly run shortcuts
 - Rich Presence Integration with Discord
-- Supports Auto Updating
-- Built in Troubleshooter in .py 
+- Application updates automatically
+- Built in Troubleshooter in Python
+- Built in Windows 10 debloater
 
 ## Installation
 Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and download the latest version. 
