@@ -91,6 +91,9 @@
     <AssemblyOriginatorKeyFile>PC Toolbox_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -143,10 +146,10 @@
     <Compile Include="frmRegistry.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmScripts.Designer.vb">
+    <Compile Include="Script Market\frmScripts.Designer.vb">
       <DependentUpon>frmScripts.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmScripts.vb">
+    <Compile Include="Script Market\frmScripts.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmShutdown.Designer.vb">
@@ -203,7 +206,7 @@
     <EmbeddedResource Include="frmRegistry.resx">
       <DependentUpon>frmRegistry.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmScripts.resx">
+    <EmbeddedResource Include="Script Market\frmScripts.resx">
       <DependentUpon>frmScripts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShutdown.resx">
@@ -226,6 +229,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -237,6 +243,7 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="PC Toolbox_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

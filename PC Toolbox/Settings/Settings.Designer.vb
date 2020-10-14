@@ -32,8 +32,8 @@ Partial Class Settings
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
@@ -56,7 +56,7 @@ Partial Class Settings
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 618)
+        Me.Button1.Location = New System.Drawing.Point(857, 618)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(146, 29)
         Me.Button1.TabIndex = 1
@@ -65,7 +65,7 @@ Partial Class Settings
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(164, 618)
+        Me.Button2.Location = New System.Drawing.Point(13, 618)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(146, 29)
         Me.Button2.TabIndex = 2
@@ -134,17 +134,17 @@ Partial Class Settings
         Me.ContextMenuStrip1.Name = "TroubleshooterRightClick"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(130, 32)
         '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(126, 6)
+        '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Enabled = False
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
-        Me.ToolStripMenuItem1.Text = "v0.8-alpha"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(126, 6)
+        Me.ToolStripMenuItem1.Text = "v0.9-alpha"
         '
         'PictureBox1
         '
@@ -159,23 +159,21 @@ Partial Class Settings
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(9, 225)
+        Me.Label4.Location = New System.Drawing.Point(8, 313)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Show Rich Presence"
-        Me.Label4.Visible = False
         '
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Yes ", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(189, 225)
+        Me.ComboBox3.Location = New System.Drawing.Point(188, 313)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Text = "Yes"
-        Me.ComboBox3.Visible = False
         '
         'Panel1
         '

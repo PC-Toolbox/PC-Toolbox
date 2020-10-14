@@ -1,5 +1,5 @@
 ﻿Public Class frmRegistry
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
     End Sub
 
@@ -28,5 +28,33 @@
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Me.Close()
+    End Sub
+
+    Private Sub GoToTheDebloaterRepositoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GoToTheDebloaterRepositoryToolStripMenuItem.Click
+        Dim debloaterrepos As String = "https://github.com/Sycnex/Windows10Debloater"
+
+        Process.Start(debloaterrepos)
+    End Sub
+
+    Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+ "AppLoadedOnce", "Yes")
+
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+  "Version", My.Settings.Version)
+
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+  "Language", My.Settings.Language)
+
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+  "Theme", My.Settings.Theme)
+
+
+        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+  "WindowsVersion", frmMain.winver.Text)
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Process.Start("regedit.exe")
     End Sub
 End Class

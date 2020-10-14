@@ -27,7 +27,7 @@
         Process.Start("winver.exe")
     End Sub
 
-    Private Sub ServicesmscToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServicesmscToolStripMenuItem.Click
+    Private Sub ServicesmscToolStripMenuItem_Click(sender As Object, e As EventArgs)
         Process.Start("services.msc")
     End Sub
 

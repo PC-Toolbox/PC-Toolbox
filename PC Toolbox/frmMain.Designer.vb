@@ -41,9 +41,14 @@ Partial Class frmMain
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ScriptsInstalledvalueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TrayClick1.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,9 +58,9 @@ Partial Class frmMain
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(95, 21)
+        Me.Label1.Size = New System.Drawing.Size(92, 21)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "PC Toolbox"
+        Me.Label1.Text = "Main Menu"
         '
         'Button1
         '
@@ -120,6 +125,7 @@ Partial Class frmMain
         '
         'Button6
         '
+        Me.Button6.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(344, 120)
         Me.Button6.Name = "Button6"
@@ -185,6 +191,32 @@ Partial Class frmMain
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
         Me.ToolStripMenuItem1.Text = "Script Market"
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripSeparator2, Me.ScriptsInstalledvalueToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "TrayClick1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 54)
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(207, 6)
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.MediumPurple
+        Me.ToolStripMenuItem4.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(210, 22)
+        Me.ToolStripMenuItem4.Text = "Script Market"
+        '
+        'ScriptsInstalledvalueToolStripMenuItem
+        '
+        Me.ScriptsInstalledvalueToolStripMenuItem.Enabled = False
+        Me.ScriptsInstalledvalueToolStripMenuItem.Name = "ScriptsInstalledvalueToolStripMenuItem"
+        Me.ScriptsInstalledvalueToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
+        Me.ScriptsInstalledvalueToolStripMenuItem.Text = "Scripts Installed: %value%"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -201,11 +233,13 @@ Partial Class frmMain
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PC Toolbox"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TrayClick1.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -228,4 +262,8 @@ Partial Class frmMain
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ScriptsInstalledvalueToolStripMenuItem As ToolStripMenuItem
 End Class

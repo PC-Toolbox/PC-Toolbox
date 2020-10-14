@@ -29,6 +29,7 @@ Partial Class frmUpdates
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -64,7 +65,7 @@ Partial Class frmUpdates
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(272, 425)
+        Me.Button1.Location = New System.Drawing.Point(242, 425)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(115, 28)
         Me.Button1.TabIndex = 4
@@ -73,11 +74,11 @@ Partial Class frmUpdates
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(414, 425)
+        Me.Button2.Location = New System.Drawing.Point(535, 425)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 28)
         Me.Button2.TabIndex = 5
-        Me.Button2.Text = "Skip"
+        Me.Button2.Text = "Skip Update"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Label2
@@ -87,9 +88,18 @@ Partial Class frmUpdates
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.Label2.Location = New System.Drawing.Point(308, 9)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(221, 19)
+        Me.Label2.Size = New System.Drawing.Size(256, 19)
         Me.Label2.TabIndex = 6
-        Me.Label2.Text = "The newest version is %undefined%" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "The newest version is %version_number%"
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(393, 425)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(115, 28)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Remind Later"
+        Me.Button3.UseVisualStyleBackColor = True
         '
         'frmUpdates
         '
@@ -97,6 +107,7 @@ Partial Class frmUpdates
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(806, 536)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -118,4 +129,5 @@ Partial Class frmUpdates
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
+    Friend WithEvents Button3 As Button
 End Class

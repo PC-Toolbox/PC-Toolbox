@@ -1,0 +1,4 @@
+﻿[*.vb]
+
+# BC41997: Referenced assembly 'DiscordRPC, Version=1.0.150.0, Culture=neutral, PublicKeyToken=null' does not have a strong name.
+dotnet_diagnostic.BC41997.severity = silent

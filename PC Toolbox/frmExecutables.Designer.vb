@@ -34,25 +34,22 @@ Partial Class frmExecutables
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SnippingToolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupPolicyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.AddExecutableAsFavoriteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemoveAsFavoriteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ServicesmscToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WordpadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DirectoryShortcutsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.PCToolboxShortcutsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ScriptMarketToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.TroubleshooterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.ResetFavoritesListToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.Favorites.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -78,7 +75,7 @@ Partial Class frmExecutables
         '
         'BasicToolStripMenuItem
         '
-        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.SnippingToolToolStripMenuItem, Me.GroupPolicyEditorToolStripMenuItem, Me.ToolStripSeparator2, Me.ServicesmscToolStripMenuItem, Me.WordpadToolStripMenuItem})
+        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.GroupPolicyEditorToolStripMenuItem, Me.WordpadToolStripMenuItem})
         Me.BasicToolStripMenuItem.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
         Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(132, 25)
@@ -136,22 +133,11 @@ Partial Class frmExecutables
         Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.WinverToolStripMenuItem.Text = "Winver"
         '
-        'SnippingToolToolStripMenuItem
-        '
-        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
-        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
-        '
         'GroupPolicyEditorToolStripMenuItem
         '
         Me.GroupPolicyEditorToolStripMenuItem.Name = "GroupPolicyEditorToolStripMenuItem"
         Me.GroupPolicyEditorToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.GroupPolicyEditorToolStripMenuItem.Text = "Group Policy Editor"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(221, 6)
         '
         'AddExecutableAsFavoriteToolStripMenuItem
         '
@@ -168,6 +154,7 @@ Partial Class frmExecutables
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(3, 2)
         Me.Panel1.Name = "Panel1"
@@ -181,12 +168,6 @@ Partial Class frmExecutables
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
-        '
-        'ServicesmscToolStripMenuItem
-        '
-        Me.ServicesmscToolStripMenuItem.Name = "ServicesmscToolStripMenuItem"
-        Me.ServicesmscToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.ServicesmscToolStripMenuItem.Text = "Services.msc"
         '
         'WordpadToolStripMenuItem
         '
@@ -213,19 +194,9 @@ Partial Class frmExecutables
         Me.DToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
         Me.DToolStripMenuItem.Text = "D:\"
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(170, 89)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(28, 13)
-        Me.Label1.TabIndex = 6
-        Me.Label1.Text = "WIP"
-        '
         'PCToolboxShortcutsToolStripMenuItem
         '
-        Me.PCToolboxShortcutsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScriptMarketToolStripMenuItem, Me.TroubleshooterToolStripMenuItem})
+        Me.PCToolboxShortcutsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ScriptMarketToolStripMenuItem, Me.ToolStripSeparator2})
         Me.PCToolboxShortcutsToolStripMenuItem.Name = "PCToolboxShortcutsToolStripMenuItem"
         Me.PCToolboxShortcutsToolStripMenuItem.Size = New System.Drawing.Size(165, 25)
         Me.PCToolboxShortcutsToolStripMenuItem.Text = "PC Toolbox Shortcuts"
@@ -237,12 +208,6 @@ Partial Class frmExecutables
         Me.ScriptMarketToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
         Me.ScriptMarketToolStripMenuItem.Text = "Script Market"
         Me.ScriptMarketToolStripMenuItem.ToolTipText = "Script Market"
-        '
-        'TroubleshooterToolStripMenuItem
-        '
-        Me.TroubleshooterToolStripMenuItem.Name = "TroubleshooterToolStripMenuItem"
-        Me.TroubleshooterToolStripMenuItem.Size = New System.Drawing.Size(180, 24)
-        Me.TroubleshooterToolStripMenuItem.Text = "Troubleshooter"
         '
         'ToolStripSeparator3
         '
@@ -259,11 +224,27 @@ Partial Class frmExecutables
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(301, 89)
+        Me.Label2.Location = New System.Drawing.Point(152, 89)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(28, 13)
         Me.Label2.TabIndex = 7
         Me.Label2.Text = "WIP"
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(9, 7)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(96, 21)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Executables"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(177, 6)
         '
         'frmExecutables
         '
@@ -272,7 +253,6 @@ Partial Class frmExecutables
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(705, 550)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -283,6 +263,7 @@ Partial Class frmExecutables
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -299,24 +280,21 @@ Partial Class frmExecutables
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents ExplorerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WinverToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SnippingToolToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegeditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GroupPolicyEditorToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents AddExecutableAsFavoriteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RemoveAsFavoriteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ServicesmscToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WordpadToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DirectoryShortcutsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents DToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PCToolboxShortcutsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ScriptMarketToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents Label1 As Label
     Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
     Friend WithEvents ResetFavoritesListToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TroubleshooterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class

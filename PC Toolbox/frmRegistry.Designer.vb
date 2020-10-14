@@ -26,16 +26,17 @@ Partial Class frmRegistry
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.GoToTheDebloaterRepositoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -45,7 +46,7 @@ Partial Class frmRegistry
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(33, 73)
+        Me.Button1.Location = New System.Drawing.Point(33, 86)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(208, 37)
         Me.Button1.TabIndex = 1
@@ -57,7 +58,7 @@ Partial Class frmRegistry
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(30, 57)
+        Me.Label1.Location = New System.Drawing.Point(30, 67)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(216, 16)
         Me.Label1.TabIndex = 2
@@ -65,6 +66,7 @@ Partial Class frmRegistry
         '
         'Button2
         '
+        Me.Button2.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(33, 201)
         Me.Button2.Name = "Button2"
@@ -72,18 +74,6 @@ Partial Class frmRegistry
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Remove Bloatware"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.LinkLabel1.LinkColor = System.Drawing.Color.Silver
-        Me.LinkLabel1.Location = New System.Drawing.Point(30, 185)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(242, 13)
-        Me.LinkLabel1.TabIndex = 5
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "https://github.com/Sycnex/Windows10Debloater" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Button3
         '
@@ -117,39 +107,33 @@ Partial Class frmRegistry
         Me.GroupBox1.Size = New System.Drawing.Size(256, 176)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Testing"
+        Me.GroupBox1.Text = "Real-Time Testing"
         '
         'ContextMenuStrip1
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoToTheDebloaterRepositoryToolStripMenuItem, Me.ToolStripSeparator1, Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoToTheDebloaterRepositoryToolStripMenuItem, Me.ToolStripSeparator1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(296, 54)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(186, 32)
         '
         'GoToTheDebloaterRepositoryToolStripMenuItem
         '
         Me.GoToTheDebloaterRepositoryToolStripMenuItem.Name = "GoToTheDebloaterRepositoryToolStripMenuItem"
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Text = "Go to the debloater repository"
+        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Size = New System.Drawing.Size(185, 22)
+        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Text = "Visit Debloater Repos"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(292, 6)
         '
-        'DebloaterMadeBySycnexCreditToHimToolStripMenuItem
-        '
-        Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem.Enabled = False
-        Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem.Name = "DebloaterMadeBySycnexCreditToHimToolStripMenuItem"
-        Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem.Size = New System.Drawing.Size(295, 22)
-        Me.DebloaterMadeBySycnexCreditToHimToolStripMenuItem.Text = "Debloater made by Sycnex (Credit to him)"
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Location = New System.Drawing.Point(3, -3)
+        Me.Panel1.Location = New System.Drawing.Point(-3, -3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(768, 57)
+        Me.Panel1.Size = New System.Drawing.Size(774, 57)
         Me.Panel1.TabIndex = 10
         '
         'PictureBox1
@@ -160,15 +144,49 @@ Partial Class frmRegistry
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(9, 12)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(69, 21)
+        Me.Label2.TabIndex = 11
+        Me.Label2.Text = "Registry"
+        '
+        'Button5
+        '
+        Me.Button5.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.Location = New System.Drawing.Point(12, 500)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(261, 37)
+        Me.Button5.TabIndex = 11
+        Me.Button5.Text = "Reset all PC Toolbox Keys to default"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.ContextMenuStrip = Me.ContextMenuStrip1
+        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button6.Location = New System.Drawing.Point(272, 86)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(140, 37)
+        Me.Button6.TabIndex = 12
+        Me.Button6.Text = "Open Registry"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(766, 549)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
@@ -179,6 +197,7 @@ Partial Class frmRegistry
         Me.GroupBox1.ResumeLayout(False)
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -188,14 +207,15 @@ Partial Class frmRegistry
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents GoToTheDebloaterRepositoryToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents DebloaterMadeBySycnexCreditToHimToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

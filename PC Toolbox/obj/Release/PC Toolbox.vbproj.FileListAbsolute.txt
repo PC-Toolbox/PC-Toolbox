@@ -23,3 +23,9 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.applica
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.TrustInfo.xml
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe.manifest
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.application
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.pdb
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CopyComplete
