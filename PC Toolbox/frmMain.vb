@@ -78,20 +78,24 @@
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        If Settings.RunInTray.CheckState = True Then
+
+
+        If My.Settings.CloseOnClick = "No" Then
+            Me.Close()
+        End If
+
+        If My.Settings.CloseOnClick = "Yes" Then
             NotifyIcon1.ShowBalloonTip(1000)
             Me.Hide()
-        Else
-            Me.Close()
-
         End If
+        My.Settings.Save()
     End Sub
 
     Private Sub NotifyIcon1_Click(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
         Me.Show()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+    Private Sub Button7_Click(sender As Object, e As EventArgs)
         frmAdministration.Show()
     End Sub
 

@@ -33,11 +33,17 @@ Partial Class frmMain
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.Button7 = New System.Windows.Forms.Button()
         Me.winver = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -73,7 +79,7 @@ Partial Class frmMain
         '
         'Panel1
         '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
@@ -104,6 +110,7 @@ Partial Class frmMain
         'Button5
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
         Me.Button5.Location = New System.Drawing.Point(12, 633)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(145, 29)
@@ -114,7 +121,7 @@ Partial Class frmMain
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(352, 243)
+        Me.Button6.Location = New System.Drawing.Point(344, 120)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(158, 31)
         Me.Button6.TabIndex = 8
@@ -126,19 +133,10 @@ Partial Class frmMain
         Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
         Me.NotifyIcon1.BalloonTipText = "PC Toolbox"
         Me.NotifyIcon1.BalloonTipTitle = "PC Toolbox is running in the background when closed."
+        Me.NotifyIcon1.ContextMenuStrip = Me.TrayClick1
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "PC Toolbox"
         Me.NotifyIcon1.Visible = True
-        '
-        'Button7
-        '
-        Me.Button7.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button7.Location = New System.Drawing.Point(352, 120)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(158, 31)
-        Me.Button7.TabIndex = 10
-        Me.Button7.Text = "Administration"
-        Me.Button7.UseVisualStyleBackColor = True
         '
         'winver
         '
@@ -158,6 +156,37 @@ Partial Class frmMain
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
+        'TrayClick1
+        '
+        Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripMenuItem1})
+        Me.TrayClick1.Name = "TrayClick1"
+        Me.TrayClick1.Size = New System.Drawing.Size(145, 76)
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
+        Me.CloseToolStripMenuItem.Text = "Close"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(141, 6)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.MediumPurple
+        Me.ToolStripMenuItem1.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
+        Me.ToolStripMenuItem1.Text = "Script Market"
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -165,7 +194,6 @@ Partial Class frmMain
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
         Me.Controls.Add(Me.winver)
-        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -179,6 +207,7 @@ Partial Class frmMain
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -194,6 +223,11 @@ Partial Class frmMain
     Friend WithEvents Button6 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents Button7 As Button
     Friend WithEvents winver As Label
+    Friend WithEvents TrayClick1 As ContextMenuStrip
+    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents ToolTip1 As ToolTip
 End Class

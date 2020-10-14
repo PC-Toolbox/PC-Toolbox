@@ -22,15 +22,26 @@ Partial Class Settings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.RunInTray = New System.Windows.Forms.CheckBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.TroubleshooterRightClick = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.CheckUpdatesForTroubleshooterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.TroubleshooterV11ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TroubleshooterRightClick.SuspendLayout()
+        Me.ContextMenuStrip1.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -62,15 +73,6 @@ Partial Class Settings
         Me.Button2.Text = "Check for Updates"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(316, 618)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(146, 29)
-        Me.Button3.TabIndex = 3
-        Me.Button3.Text = "DirectReport (BETA)"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'RunInTray
         '
         Me.RunInTray.AutoSize = True
@@ -91,6 +93,7 @@ Partial Class Settings
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox1.TabIndex = 5
+        Me.ComboBox1.Text = "English"
         '
         'Label2
         '
@@ -122,6 +125,57 @@ Partial Class Settings
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox2.TabIndex = 7
+        Me.ComboBox2.Text = "Dark"
+        '
+        'TroubleshooterRightClick
+        '
+        Me.TroubleshooterRightClick.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CheckUpdatesForTroubleshooterToolStripMenuItem, Me.ToolStripSeparator1, Me.TroubleshooterV11ToolStripMenuItem})
+        Me.TroubleshooterRightClick.Name = "TroubleshooterRightClick"
+        Me.TroubleshooterRightClick.Size = New System.Drawing.Size(254, 54)
+        '
+        'CheckUpdatesForTroubleshooterToolStripMenuItem
+        '
+        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Name = "CheckUpdatesForTroubleshooterToolStripMenuItem"
+        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
+        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Text = "Check Updates for Troubleshooter"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(250, 6)
+        '
+        'TroubleshooterV11ToolStripMenuItem
+        '
+        Me.TroubleshooterV11ToolStripMenuItem.Enabled = False
+        Me.TroubleshooterV11ToolStripMenuItem.Name = "TroubleshooterV11ToolStripMenuItem"
+        Me.TroubleshooterV11ToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
+        Me.TroubleshooterV11ToolStripMenuItem.Text = "Troubleshooter: v1.1"
+        '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator2, Me.ToolStripMenuItem1})
+        Me.ContextMenuStrip1.Name = "TroubleshooterRightClick"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(130, 32)
+        '
+        'ToolStripMenuItem1
+        '
+        Me.ToolStripMenuItem1.Enabled = False
+        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
+        Me.ToolStripMenuItem1.Text = "v0.8-alpha"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(126, 6)
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(977, 4)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
         '
         'Settings
         '
@@ -129,18 +183,21 @@ Partial Class Settings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1015, 659)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.RunInTray)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Settings"
         Me.Text = "Settings"
+        Me.TroubleshooterRightClick.ResumeLayout(False)
+        Me.ContextMenuStrip1.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -149,10 +206,17 @@ Partial Class Settings
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents RunInTray As CheckBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents TroubleshooterRightClick As ContextMenuStrip
+    Friend WithEvents CheckUpdatesForTroubleshooterToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents TroubleshooterV11ToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents PictureBox1 As PictureBox
 End Class
