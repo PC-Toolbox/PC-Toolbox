@@ -17,7 +17,8 @@ Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and 
 ## Supported Versions
 If you would like a detailed description of what versions and Operating Systems are supported, check [Security](https://github.com/byronbytes/PC-Toolbox/blob/master/SECURITY.md).
 
-
+## Scripts
+There are scripts that users can add and run within the app. These scripts can be downloaded by anyone via the Script Market. All scripts are moderated by our staff team, any malicious scripts will be removed and the user will be terminated from making new ones.
 
 
 ## Screenshots 
@@ -41,13 +42,11 @@ Ask yourself these questions if you want to contribute.
 
 - [x] Is my version stable for the public?
 - [x] Is my version well thought out and secure?
-- [x] Does my version have any errors with compatibillity?
 - [x] Did I put effort into my version?
 
 
 
-## Scripts
-There are scripts that users can add and run within the app.
+
 
 
 
