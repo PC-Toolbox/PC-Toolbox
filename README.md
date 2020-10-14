@@ -1,5 +1,5 @@
 # PC Toolbox
-Lots of settings for your computer to mess around with.
+An application made to modify your computer to your liking all inside one application. Created in vb.net and python.
 
 ## Features
 - Able to manage and cancel shutdowns
