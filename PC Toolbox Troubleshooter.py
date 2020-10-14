@@ -15,6 +15,7 @@ os.system('pause')
 print(' ')
 print(' ')
 print (Fore.LIGHTBLACK_EX + 'Please type the selected number that designates the current problem.')
+print('')
 print(Fore.LIGHTMAGENTA_EX + ' ')
 print('[1] Repair Installation')
 print ('')
@@ -60,9 +61,9 @@ if choice == 2 :
 
 if choice == 3:
  print(Fore.LIGHTRED_EX + ' ')
- print ('Please fill out an issue form on GitHub, if you do not have an account please create one.')
+ print ('Please fill out an issue form on our repository, if you do not have an account on GitHub,  please create one.')
  print('')
- print('Or use our beta software, DirectReport, which is currently avalible in later builds of PC Toolbox.')
+ print('Or use our beta server, DirectReport, which is currently avalible in later builds of PC Toolbox.')
  webbrowser.open('https://github.com/byronbytes/PC-Toolbox/issues/new', new=2)
  print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
  os.system('pause')
@@ -79,13 +80,13 @@ if choice == 4 :
  print(Fore.RED + 'localtechnerd (Side#6776)')
  print('')
  print('')
- print('')
- print(Fore.LIGHTWHITE_EX + 'PC Tolbox Troubleshooter is currently on v1.2')
-
+ print(Fore.LIGHTWHITE_EX + 'Troubleshooter is running on v1.2')
  print(Fore.LIGHTYELLOW_EX + ' ')
  print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
  os.system('pause')
  sys.exit()
+ 
+
 
 if choice == 5 :
  print(Fore.LIGHTYELLOW_EX + 'The troubleshooter  will now close upon user request.')
