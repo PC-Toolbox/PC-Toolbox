@@ -130,9 +130,7 @@ Partial Class frmMain
         '
         'NotifyIcon1
         '
-        Me.NotifyIcon1.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info
-        Me.NotifyIcon1.BalloonTipText = "PC Toolbox"
-        Me.NotifyIcon1.BalloonTipTitle = "PC Toolbox is running in the background when closed."
+        Me.NotifyIcon1.BalloonTipText = "Hidden to tray."
         Me.NotifyIcon1.ContextMenuStrip = Me.TrayClick1
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "PC Toolbox"

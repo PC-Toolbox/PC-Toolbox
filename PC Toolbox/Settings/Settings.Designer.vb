@@ -37,8 +37,10 @@ Partial Class Settings
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -46,7 +48,7 @@ Partial Class Settings
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(13, 5)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(79, 25)
         Me.Label1.TabIndex = 0
@@ -73,9 +75,11 @@ Partial Class Settings
         'RunInTray
         '
         Me.RunInTray.AutoSize = True
+        Me.RunInTray.Checked = True
+        Me.RunInTray.CheckState = System.Windows.Forms.CheckState.Checked
         Me.RunInTray.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RunInTray.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RunInTray.Location = New System.Drawing.Point(12, 84)
+        Me.RunInTray.Location = New System.Drawing.Point(607, 80)
         Me.RunInTray.Name = "RunInTray"
         Me.RunInTray.Size = New System.Drawing.Size(312, 23)
         Me.RunInTray.TabIndex = 4
@@ -86,7 +90,7 @@ Partial Class Settings
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"English"})
-        Me.ComboBox1.Location = New System.Drawing.Point(97, 156)
+        Me.ComboBox1.Location = New System.Drawing.Point(98, 79)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox1.TabIndex = 5
@@ -97,7 +101,7 @@ Partial Class Settings
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label2.Location = New System.Drawing.Point(8, 156)
+        Me.Label2.Location = New System.Drawing.Point(9, 79)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 21)
         Me.Label2.TabIndex = 6
@@ -108,7 +112,7 @@ Partial Class Settings
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label3.Location = New System.Drawing.Point(8, 228)
+        Me.Label3.Location = New System.Drawing.Point(9, 151)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(60, 21)
         Me.Label3.TabIndex = 8
@@ -118,7 +122,7 @@ Partial Class Settings
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Dark", "Light"})
-        Me.ComboBox2.Location = New System.Drawing.Point(97, 228)
+        Me.ComboBox2.Location = New System.Drawing.Point(98, 151)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox2.TabIndex = 7
@@ -144,7 +148,7 @@ Partial Class Settings
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(977, 4)
+        Me.PictureBox1.Location = New System.Drawing.Point(982, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 11
@@ -155,7 +159,7 @@ Partial Class Settings
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(8, 302)
+        Me.Label4.Location = New System.Drawing.Point(9, 225)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 13
@@ -166,12 +170,22 @@ Partial Class Settings
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Yes ", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(188, 302)
+        Me.ComboBox3.Location = New System.Drawing.Point(189, 225)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Text = "Yes"
         Me.ComboBox3.Visible = False
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Location = New System.Drawing.Point(-5, -1)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1064, 58)
+        Me.Panel1.TabIndex = 14
         '
         'Settings
         '
@@ -179,9 +193,9 @@ Partial Class Settings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1015, 659)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ComboBox3)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label2)
@@ -189,12 +203,13 @@ Partial Class Settings
         Me.Controls.Add(Me.RunInTray)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -214,4 +229,5 @@ Partial Class Settings
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Panel1 As Panel
 End Class

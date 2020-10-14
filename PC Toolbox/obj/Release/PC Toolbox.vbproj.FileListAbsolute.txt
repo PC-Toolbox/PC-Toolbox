@@ -1,6 +1,4 @@
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.config
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.manifest
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.application
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.pdb
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.xml
@@ -12,13 +10,9 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmShut
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Resources.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.GenerateResource.cache
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CoreCompileInputs.cache
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.TrustInfo.xml
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe.manifest
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.application
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.xml
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.pdb
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmAdministration.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmExecutables.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmScripts.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmUpdates.resources

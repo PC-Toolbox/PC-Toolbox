@@ -87,6 +87,12 @@
         If My.Settings.CloseOnClick = "Yes" Then
             NotifyIcon1.ShowBalloonTip(1000)
             Me.Hide()
+            Settings.Hide()
+            frmRegistry.Hide()
+            frmExecutables.Hide()
+            frmScriptMarket.Hide()
+            frmScripts.Hide()
+            frmShutdown.Hide()
         End If
         My.Settings.Save()
     End Sub
@@ -95,11 +101,25 @@
         Me.Show()
     End Sub
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs)
-        frmAdministration.Show()
-    End Sub
-
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Settings.Show()
+    End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Me.Show()
+    End Sub
+
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+        Me.Close()
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        frmScriptMarket.Show()
+        Me.Hide()
+        Settings.Hide()
+        frmRegistry.Hide()
+        frmExecutables.Hide()
+        frmScripts.Hide()
+        frmShutdown.Hide()
     End Sub
 End Class
