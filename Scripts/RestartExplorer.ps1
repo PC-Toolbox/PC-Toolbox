@@ -2,16 +2,12 @@ $Host.UI.RawUI.ForegroundColor = 'Green'
 $Host.UI.RawUI.BackgroundColor = ($bckgrnd = 'Black')
 
 
-Write-Host "This script currently works on Windows 10."
-
-Write-Host "This script restarts explorer.exe, which means your taskbar will not show up for a few seconds judging on computer speed."
+Write-Host "This script restarts explorer.exe, which means your taskbar will not show up for a few seconds."
 
 Write-Host "If you ran this by mistake you can close the script and it will not do anything."
 
-Write-Host "This script does not fix every single problem. "
 
-
-Write-Host -NoNewLine 'Press any key to refresh.';
+Write-Host -NoNewLine 'Press any key to restart explorer.';
 $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
 
 Stop-Process -Name explorer -Force
