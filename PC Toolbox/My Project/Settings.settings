@@ -20,11 +20,5 @@
     <Setting Name="CloseOnClick" Type="System.String" Scope="User">
       <Value Profile="(Default)">Yes</Value>
     </Setting>
-    <Setting Name="HidePresense" Type="System.String" Scope="User">
-      <Value Profile="(Default)">No</Value>
-    </Setting>
-    <Setting Name="TroubleshooterVersion" Type="System.String" Scope="User">
-      <Value Profile="(Default)">v1.2</Value>
-    </Setting>
   </Settings>
 </SettingsFile>

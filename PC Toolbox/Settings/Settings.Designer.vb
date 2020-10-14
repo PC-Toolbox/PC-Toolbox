@@ -31,15 +31,12 @@ Partial Class Settings
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.TroubleshooterRightClick = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.CheckUpdatesForTroubleshooterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.TroubleshooterV11ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TroubleshooterRightClick.SuspendLayout()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.ContextMenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -127,30 +124,6 @@ Partial Class Settings
         Me.ComboBox2.TabIndex = 7
         Me.ComboBox2.Text = "Dark"
         '
-        'TroubleshooterRightClick
-        '
-        Me.TroubleshooterRightClick.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CheckUpdatesForTroubleshooterToolStripMenuItem, Me.ToolStripSeparator1, Me.TroubleshooterV11ToolStripMenuItem})
-        Me.TroubleshooterRightClick.Name = "TroubleshooterRightClick"
-        Me.TroubleshooterRightClick.Size = New System.Drawing.Size(254, 54)
-        '
-        'CheckUpdatesForTroubleshooterToolStripMenuItem
-        '
-        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Name = "CheckUpdatesForTroubleshooterToolStripMenuItem"
-        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
-        Me.CheckUpdatesForTroubleshooterToolStripMenuItem.Text = "Check Updates for Troubleshooter"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(250, 6)
-        '
-        'TroubleshooterV11ToolStripMenuItem
-        '
-        Me.TroubleshooterV11ToolStripMenuItem.Enabled = False
-        Me.TroubleshooterV11ToolStripMenuItem.Name = "TroubleshooterV11ToolStripMenuItem"
-        Me.TroubleshooterV11ToolStripMenuItem.Size = New System.Drawing.Size(253, 22)
-        Me.TroubleshooterV11ToolStripMenuItem.Text = "Troubleshooter: v1.1"
-        '
         'ContextMenuStrip1
         '
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator2, Me.ToolStripMenuItem1})
@@ -177,12 +150,37 @@ Partial Class Settings
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label4.Location = New System.Drawing.Point(8, 302)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(157, 21)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Show Rich Presence"
+        Me.Label4.Visible = False
+        '
+        'ComboBox3
+        '
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Yes ", "No"})
+        Me.ComboBox3.Location = New System.Drawing.Point(188, 302)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
+        Me.ComboBox3.TabIndex = 12
+        Me.ComboBox3.Text = "Yes"
+        Me.ComboBox3.Visible = False
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1015, 659)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.ComboBox2)
@@ -195,7 +193,6 @@ Partial Class Settings
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Settings"
         Me.Text = "Settings"
-        Me.TroubleshooterRightClick.ResumeLayout(False)
         Me.ContextMenuStrip1.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -211,12 +208,10 @@ Partial Class Settings
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents TroubleshooterRightClick As ContextMenuStrip
-    Friend WithEvents CheckUpdatesForTroubleshooterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents TroubleshooterV11ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents ComboBox3 As ComboBox
 End Class

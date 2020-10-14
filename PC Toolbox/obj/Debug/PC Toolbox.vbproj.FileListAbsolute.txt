@@ -1,0 +1,25 @@
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.exe.config
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.exe
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.pdb
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbprojAssemblyReference.cache
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmConnectivity.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmMain.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmRegistry.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmShutdown.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.Resources.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbproj.GenerateResource.cache
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbproj.CoreCompileInputs.cache
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.exe
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.pdb
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.exe.manifest
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\PC Toolbox.application
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.TrustInfo.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.exe.manifest
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.application
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmExecutables.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScripts.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmUpdates.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.Settings.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmAdministration.resources

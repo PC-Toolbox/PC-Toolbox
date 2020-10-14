@@ -26,9 +26,9 @@ Partial Class frmUpdates
         Me.updateBar = New System.Windows.Forms.ProgressBar()
         Me.updateLabel = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -44,9 +44,9 @@ Partial Class frmUpdates
         '
         'updateBar
         '
-        Me.updateBar.Location = New System.Drawing.Point(16, 459)
+        Me.updateBar.Location = New System.Drawing.Point(58, 482)
         Me.updateBar.Name = "updateBar"
-        Me.updateBar.Size = New System.Drawing.Size(562, 23)
+        Me.updateBar.Size = New System.Drawing.Size(699, 23)
         Me.updateBar.TabIndex = 1
         Me.updateBar.Visible = False
         '
@@ -55,27 +55,16 @@ Partial Class frmUpdates
         Me.updateLabel.AutoSize = True
         Me.updateLabel.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updateLabel.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.updateLabel.Location = New System.Drawing.Point(12, 485)
+        Me.updateLabel.Location = New System.Drawing.Point(54, 508)
         Me.updateLabel.Name = "updateLabel"
         Me.updateLabel.Size = New System.Drawing.Size(134, 20)
         Me.updateLabel.TabIndex = 2
         Me.updateLabel.Text = "Installing Update..."
         Me.updateLabel.Visible = False
         '
-        'TextBox1
-        '
-        Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(16, 33)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(777, 407)
-        Me.TextBox1.TabIndex = 3
-        Me.TextBox1.Text = "Additions:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Removals:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Fixes:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Known Issues:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(544, 496)
+        Me.Button1.Location = New System.Drawing.Point(272, 425)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(115, 28)
         Me.Button1.TabIndex = 4
@@ -84,12 +73,23 @@ Partial Class frmUpdates
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(678, 496)
+        Me.Button2.Location = New System.Drawing.Point(414, 425)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 28)
         Me.Button2.TabIndex = 5
         Me.Button2.Text = "Skip"
         Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.Label2.Location = New System.Drawing.Point(308, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(221, 19)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "The newest version is %undefined%" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'frmUpdates
         '
@@ -97,9 +97,9 @@ Partial Class frmUpdates
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(806, 536)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.updateLabel)
         Me.Controls.Add(Me.updateBar)
         Me.Controls.Add(Me.Label1)
@@ -115,7 +115,7 @@ Partial Class frmUpdates
     Friend WithEvents updateBar As ProgressBar
     Friend WithEvents updateLabel As Label
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents Label2 As Label
 End Class

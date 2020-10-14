@@ -64,7 +64,7 @@ Partial Class frmMain
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(158, 31)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Shutdown Settings"
+        Me.Button1.Text = "Shutdown"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2

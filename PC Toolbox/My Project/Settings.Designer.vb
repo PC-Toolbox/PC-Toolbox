@@ -125,30 +125,6 @@ Namespace My
                 Me("CloseOnClick") = value
             End Set
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("No")>  _
-        Public Property HidePresense() As String
-            Get
-                Return CType(Me("HidePresense"),String)
-            End Get
-            Set
-                Me("HidePresense") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("v1.2")>  _
-        Public Property TroubleshooterVersion() As String
-            Get
-                Return CType(Me("TroubleshooterVersion"),String)
-            End Get
-            Set
-                Me("TroubleshooterVersion") = value
-            End Set
-        End Property
     End Class
 End Namespace
 
