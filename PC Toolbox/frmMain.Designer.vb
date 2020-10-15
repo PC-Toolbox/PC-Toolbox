@@ -141,7 +141,7 @@ Partial Class frmMain
         '
         Me.Button6.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(344, 120)
+        Me.Button6.Location = New System.Drawing.Point(351, 120)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(158, 31)
         Me.Button6.TabIndex = 8
