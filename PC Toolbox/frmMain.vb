@@ -126,6 +126,11 @@ Public Class frmMain
 
     Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
         Me.Close()
+        Me.Close()
+        Me.Close()
+        Me.Close()
+        Me.Close()
+        Me.Close()
     End Sub
 
     Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click

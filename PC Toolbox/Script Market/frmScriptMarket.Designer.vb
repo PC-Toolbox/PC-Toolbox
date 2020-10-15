@@ -43,7 +43,7 @@ Partial Class frmScriptMarket
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(12, 49)
+        Me.Panel1.Location = New System.Drawing.Point(12, 110)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(288, 178)
         Me.Panel1.TabIndex = 0
@@ -97,7 +97,7 @@ Partial Class frmScriptMarket
         Me.ComboBox1.Items.AddRange(New Object() {"All", ".ps1", ".cmd", ".bat"})
         Me.ComboBox1.Location = New System.Drawing.Point(84, 19)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(153, 28)
+        Me.ComboBox1.Size = New System.Drawing.Size(85, 28)
         Me.ComboBox1.TabIndex = 3
         Me.ComboBox1.Text = "All"
         '
@@ -118,9 +118,9 @@ Partial Class frmScriptMarket
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox1.Location = New System.Drawing.Point(915, 533)
+        Me.GroupBox1.Location = New System.Drawing.Point(1004, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(267, 186)
+        Me.GroupBox1.Size = New System.Drawing.Size(178, 79)
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filter"
@@ -130,7 +130,7 @@ Partial Class frmScriptMarket
         Me.includePremiumScript.AutoSize = True
         Me.includePremiumScript.Checked = True
         Me.includePremiumScript.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.includePremiumScript.Location = New System.Drawing.Point(6, 163)
+        Me.includePremiumScript.Location = New System.Drawing.Point(10, 53)
         Me.includePremiumScript.Name = "includePremiumScript"
         Me.includePremiumScript.Size = New System.Drawing.Size(139, 17)
         Me.includePremiumScript.TabIndex = 6

@@ -23,6 +23,6 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScript
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmUpdates.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.Settings.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScriptMarket.resources
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Newtonsoft.Json.xml
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbproj.CopyComplete
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Microsoft.Win32.SystemEvents.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Microsoft.Win32.SystemEvents.xml

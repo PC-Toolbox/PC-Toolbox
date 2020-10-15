@@ -79,12 +79,14 @@ Partial Class frmRegistry
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem, Me.ToolStripSeparator2, Me.GoToTheDebloaterRepositoryToolStripMenuItem, Me.ToolStripSeparator1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(301, 60)
         '
         'GoToTheDebloaterRepositoryToolStripMenuItem
         '
+        Me.GoToTheDebloaterRepositoryToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.GoToTheDebloaterRepositoryToolStripMenuItem.Name = "GoToTheDebloaterRepositoryToolStripMenuItem"
         Me.GoToTheDebloaterRepositoryToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
         Me.GoToTheDebloaterRepositoryToolStripMenuItem.Text = "Visit Windows 10 Debloater Repository"
@@ -182,6 +184,7 @@ Partial Class frmRegistry
         '
         'RemoveWindowsIsNotActivatedSplashToolStripMenuItem
         '
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Name = "RemoveWindowsIsNotActivatedSplashToolStripMenuItem"
         Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
         Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Text = "Remove ""Windows is not Activated"" splash"

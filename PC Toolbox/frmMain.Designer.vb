@@ -70,6 +70,7 @@ Partial Class frmMain
         Me.Button1.Size = New System.Drawing.Size(158, 31)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Shutdown"
+        Me.ToolTip1.SetToolTip(Me.Button1, "Shutdown")
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -80,6 +81,7 @@ Partial Class frmMain
         Me.Button2.Size = New System.Drawing.Size(158, 31)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Registry"
+        Me.ToolTip1.SetToolTip(Me.Button2, "Registry")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Panel1
@@ -94,11 +96,12 @@ Partial Class frmMain
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(870, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(870, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
+        Me.ToolTip1.SetToolTip(Me.PictureBox1, "Close")
         '
         'Button3
         '
@@ -108,6 +111,7 @@ Partial Class frmMain
         Me.Button3.Size = New System.Drawing.Size(158, 31)
         Me.Button3.TabIndex = 5
         Me.Button3.Text = "Connectivity"
+        Me.ToolTip1.SetToolTip(Me.Button3, "Connectivity")
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
@@ -118,6 +122,7 @@ Partial Class frmMain
         Me.Button4.Size = New System.Drawing.Size(158, 31)
         Me.Button4.TabIndex = 6
         Me.Button4.Text = "Executables"
+        Me.ToolTip1.SetToolTip(Me.Button4, "Executables")
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -129,6 +134,7 @@ Partial Class frmMain
         Me.Button5.Size = New System.Drawing.Size(145, 29)
         Me.Button5.TabIndex = 7
         Me.Button5.Text = "Settings"
+        Me.ToolTip1.SetToolTip(Me.Button5, "Settings")
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
@@ -140,18 +146,20 @@ Partial Class frmMain
         Me.Button6.Size = New System.Drawing.Size(158, 31)
         Me.Button6.TabIndex = 8
         Me.Button6.Text = "Scripts"
+        Me.ToolTip1.SetToolTip(Me.Button6, "Scripts")
         Me.Button6.UseVisualStyleBackColor = True
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripSeparator2, Me.ScriptsInstalledvalueToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "TrayClick1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 54)
         '
         'ToolStripMenuItem4
         '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.MediumPurple
-        Me.ToolStripMenuItem4.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.ToolStripMenuItem4.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
         Me.ToolStripMenuItem4.Size = New System.Drawing.Size(210, 22)
         Me.ToolStripMenuItem4.Text = "Script Market"
@@ -164,13 +172,14 @@ Partial Class frmMain
         'ScriptsInstalledvalueToolStripMenuItem
         '
         Me.ScriptsInstalledvalueToolStripMenuItem.Enabled = False
+        Me.ScriptsInstalledvalueToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ScriptsInstalledvalueToolStripMenuItem.Name = "ScriptsInstalledvalueToolStripMenuItem"
         Me.ScriptsInstalledvalueToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
         Me.ScriptsInstalledvalueToolStripMenuItem.Text = "Scripts Installed: %value%"
         '
         'NotifyIcon1
         '
-        Me.NotifyIcon1.BalloonTipText = "Hidden to tray."
+        Me.NotifyIcon1.BalloonTipText = "Hidden to tray"
         Me.NotifyIcon1.ContextMenuStrip = Me.TrayClick1
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "PC Toolbox"
@@ -178,31 +187,38 @@ Partial Class frmMain
         '
         'TrayClick1
         '
+        Me.TrayClick1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripMenuItem1})
         Me.TrayClick1.Name = "TrayClick1"
         Me.TrayClick1.Size = New System.Drawing.Size(145, 76)
         '
         'OpenToolStripMenuItem
         '
+        Me.OpenToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.OpenToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.OpenToolStripMenuItem.Text = "Open"
         '
         'CloseToolStripMenuItem
         '
+        Me.CloseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.CloseToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
         Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'ToolStripSeparator1
         '
+        Me.ToolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
+        Me.ToolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(141, 6)
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.MediumPurple
-        Me.ToolStripMenuItem1.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
+        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
         Me.ToolStripMenuItem1.Text = "Script Market"
@@ -215,6 +231,7 @@ Partial Class frmMain
         Me.winver.Size = New System.Drawing.Size(102, 13)
         Me.winver.TabIndex = 11
         Me.winver.Text = "%WindowsVersion%"
+        Me.ToolTip1.SetToolTip(Me.winver, "Winver")
         Me.winver.Visible = False
         '
         'frmMain
