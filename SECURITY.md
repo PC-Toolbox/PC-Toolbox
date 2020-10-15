@@ -5,8 +5,13 @@
 Whenever a new version gets released it gets support, being on an old version will lose security patches and lose features.
 Check here to stay up to date.
 
+Version 0.7 - Supported until 11/30/20
 
-Version 0.9 - Currently supported.
+Version 0.8 - Currently Supported
+
+Version 0.8.1 - Currently Supported
+
+Version 0.9 - Currently supported
 
 
 
@@ -14,8 +19,18 @@ Version 0.9 - Currently supported.
 
 ### Windows and Application Support
 
-Version 0.9
+Version 0.7
 - Supported on all Operating Systems
+
+Version 0.8
+- Unsupported on Windows XP
+
+Version 0.8.1
+- Unsupported on Windows XP
+
+Version 0.9
+- Unsupported on Windows XP
+- Unsupported on Windows Vista
 
 
 
@@ -24,9 +39,6 @@ Version 0.9
 If there are any vulnerabillities please report them in Issues. Make sure to give a clear descripton on what the problem is. If your issue is accepted it
 is put on top of our priority list, and will roll an immediate update.
 
-If it is declined we realize this isn't a security exploit or is able to be exploited.
 
 
 
-### Script Support
-Scripts are currently a work in progress. Check here when we finalize Scripts
