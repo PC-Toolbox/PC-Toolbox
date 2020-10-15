@@ -28,27 +28,27 @@ Partial Class frmMain
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ScriptsInstalledvalueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
-        Me.winver = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ScriptsInstalledvalueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.winver = New System.Windows.Forms.Label()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TrayClick1.SuspendLayout()
         Me.ContextMenuStrip1.SuspendLayout()
+        Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -92,6 +92,14 @@ Partial Class frmMain
         Me.Panel1.Size = New System.Drawing.Size(916, 53)
         Me.Panel1.TabIndex = 4
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(870, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -134,6 +142,32 @@ Partial Class frmMain
         Me.Button6.Text = "Scripts"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripSeparator2, Me.ScriptsInstalledvalueToolStripMenuItem})
+        Me.ContextMenuStrip1.Name = "TrayClick1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 54)
+        '
+        'ToolStripMenuItem4
+        '
+        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.MediumPurple
+        Me.ToolStripMenuItem4.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
+        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
+        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(210, 22)
+        Me.ToolStripMenuItem4.Text = "Script Market"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(207, 6)
+        '
+        'ScriptsInstalledvalueToolStripMenuItem
+        '
+        Me.ScriptsInstalledvalueToolStripMenuItem.Enabled = False
+        Me.ScriptsInstalledvalueToolStripMenuItem.Name = "ScriptsInstalledvalueToolStripMenuItem"
+        Me.ScriptsInstalledvalueToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
+        Me.ScriptsInstalledvalueToolStripMenuItem.Text = "Scripts Installed: %value%"
+        '
         'NotifyIcon1
         '
         Me.NotifyIcon1.BalloonTipText = "Hidden to tray."
@@ -141,24 +175,6 @@ Partial Class frmMain
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "PC Toolbox"
         Me.NotifyIcon1.Visible = True
-        '
-        'winver
-        '
-        Me.winver.AutoSize = True
-        Me.winver.Location = New System.Drawing.Point(804, 649)
-        Me.winver.Name = "winver"
-        Me.winver.Size = New System.Drawing.Size(102, 13)
-        Me.winver.TabIndex = 11
-        Me.winver.Text = "%WindowsVersion%"
-        Me.winver.Visible = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(870, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'TrayClick1
         '
@@ -191,31 +207,15 @@ Partial Class frmMain
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
         Me.ToolStripMenuItem1.Text = "Script Market"
         '
-        'ContextMenuStrip1
+        'winver
         '
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripSeparator2, Me.ScriptsInstalledvalueToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "TrayClick1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 54)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(207, 6)
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.MediumPurple
-        Me.ToolStripMenuItem4.Image = Global.PC_Toolbox.My.Resources.Resources.ScriptMarket_v1
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(210, 22)
-        Me.ToolStripMenuItem4.Text = "Script Market"
-        '
-        'ScriptsInstalledvalueToolStripMenuItem
-        '
-        Me.ScriptsInstalledvalueToolStripMenuItem.Enabled = False
-        Me.ScriptsInstalledvalueToolStripMenuItem.Name = "ScriptsInstalledvalueToolStripMenuItem"
-        Me.ScriptsInstalledvalueToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
-        Me.ScriptsInstalledvalueToolStripMenuItem.Text = "Scripts Installed: %value%"
+        Me.winver.AutoSize = True
+        Me.winver.Location = New System.Drawing.Point(804, 649)
+        Me.winver.Name = "winver"
+        Me.winver.Size = New System.Drawing.Size(102, 13)
+        Me.winver.TabIndex = 11
+        Me.winver.Text = "%WindowsVersion%"
+        Me.winver.Visible = False
         '
         'frmMain
         '
@@ -238,8 +238,8 @@ Partial Class frmMain
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TrayClick1.ResumeLayout(False)
         Me.ContextMenuStrip1.ResumeLayout(False)
+        Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

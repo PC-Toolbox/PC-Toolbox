@@ -31,7 +31,7 @@ Partial Class frmScriptMarket
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.includePremiumScript = New System.Windows.Forms.CheckBox()
         Me.Panel1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,7 +53,7 @@ Partial Class frmScriptMarket
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.OliveDrab
-        Me.Label3.Location = New System.Drawing.Point(124, 155)
+        Me.Label3.Location = New System.Drawing.Point(146, 155)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(139, 20)
         Me.Label3.TabIndex = 6
@@ -114,7 +114,7 @@ Partial Class frmScriptMarket
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.CheckBox1)
+        Me.GroupBox1.Controls.Add(Me.includePremiumScript)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
@@ -125,18 +125,18 @@ Partial Class frmScriptMarket
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Filter"
         '
-        'CheckBox1
+        'includePremiumScript
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Checked = True
-        Me.CheckBox1.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.CheckBox1.Location = New System.Drawing.Point(6, 163)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(139, 17)
-        Me.CheckBox1.TabIndex = 6
-        Me.CheckBox1.Text = "Include Premium Scripts"
-        Me.CheckBox1.UseVisualStyleBackColor = True
-        Me.CheckBox1.Visible = False
+        Me.includePremiumScript.AutoSize = True
+        Me.includePremiumScript.Checked = True
+        Me.includePremiumScript.CheckState = System.Windows.Forms.CheckState.Checked
+        Me.includePremiumScript.Location = New System.Drawing.Point(6, 163)
+        Me.includePremiumScript.Name = "includePremiumScript"
+        Me.includePremiumScript.Size = New System.Drawing.Size(139, 17)
+        Me.includePremiumScript.TabIndex = 6
+        Me.includePremiumScript.Text = "Include Premium Scripts"
+        Me.includePremiumScript.UseVisualStyleBackColor = True
+        Me.includePremiumScript.Visible = False
         '
         'frmScriptMarket
         '
@@ -165,6 +165,6 @@ Partial Class frmScriptMarket
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label5 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents includePremiumScript As CheckBox
     Friend WithEvents Label3 As Label
 End Class

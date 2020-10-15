@@ -32,6 +32,7 @@ Partial Class frmConnectivity
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -81,7 +82,6 @@ Partial Class frmConnectivity
         '
         'TextBox2
         '
-        Me.TextBox2.Enabled = False
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
         Me.TextBox2.Location = New System.Drawing.Point(16, 300)
@@ -140,12 +140,23 @@ Partial Class frmConnectivity
         Me.Label4.TabIndex = 9
         Me.Label4.Text = "IP: %my.settings.PingedIP%"
         '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(12, 466)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(223, 36)
+        Me.Button2.TabIndex = 10
+        Me.Button2.Text = "Online Speed Test"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'frmConnectivity
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(932, 514)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label3)
@@ -175,4 +186,5 @@ Partial Class frmConnectivity
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Button2 As Button
 End Class

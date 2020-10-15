@@ -31,4 +31,10 @@
     Private Sub frmConnectivity_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label4.Text = "IP:" + My.Settings.PingedIP
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim speedtest As String = "https://www.speedtest.net/"
+
+        Process.Start(speedtest)
+    End Sub
 End Class

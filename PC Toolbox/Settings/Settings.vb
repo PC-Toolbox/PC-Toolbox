@@ -1,4 +1,8 @@
 ﻿Public Class Settings
+    Public drag As Boolean
+    Public mousex As Integer
+    Public mousey As Integer
+
     Private Sub RunInTray_CheckedChanged(sender As Object, e As EventArgs) Handles RunInTray.CheckedChanged
         If RunInTray.CheckState = True Then
             My.Settings.CloseOnClick = "Yes"
@@ -43,5 +47,24 @@
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ToolStripMenuItem1.Text = "Version: " + My.Settings.Version
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
+
+    Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseDown
+        drag = True
+        mousex = Cursor.Position.X - Me.Left
+        mousey = Cursor.Position.Y - Me.Top
+    End Sub
+    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseMove
+        If drag Then
+            Me.Top = Cursor.Position.Y - mousey
+            Me.Left = Cursor.Position.X - mousex
+        End If
+    End Sub
+    Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseUp
+        drag = False
     End Sub
 End Class

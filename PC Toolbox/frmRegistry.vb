@@ -1,4 +1,7 @@
 ﻿Public Class frmRegistry
+    Public drag As Boolean
+    Public mousex As Integer
+    Public mousey As Integer
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
 
     End Sub
@@ -32,7 +35,6 @@
 
     Private Sub GoToTheDebloaterRepositoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GoToTheDebloaterRepositoryToolStripMenuItem.Click
         Dim debloaterrepos As String = "https://github.com/Sycnex/Windows10Debloater"
-
         Process.Start(debloaterrepos)
     End Sub
 
