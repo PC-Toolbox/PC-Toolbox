@@ -28,7 +28,7 @@ Public Class frmMain
         End If
 
         If winver.Text = "51" Then
-            MsgBox("Windows XP is no longer supported for PC Toolbox. Legacy versions wil be released soon!")
+            MsgBox("Windows XP is no longer supported for PC Toolbox.")
             Me.Close()
         End If
 
@@ -147,9 +147,7 @@ Public Class frmMain
         frmScriptMarket.Show()
     End Sub
 
-    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
 
-    End Sub
 
     Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseDown
         drag = True

@@ -89,6 +89,7 @@ Partial Class frmMain
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.PictureBox1)
+        Me.Panel1.Controls.Add(Me.winver)
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(916, 53)
@@ -226,12 +227,12 @@ Partial Class frmMain
         'winver
         '
         Me.winver.AutoSize = True
-        Me.winver.Location = New System.Drawing.Point(804, 649)
+        Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.winver.Location = New System.Drawing.Point(762, 3)
         Me.winver.Name = "winver"
         Me.winver.Size = New System.Drawing.Size(102, 13)
         Me.winver.TabIndex = 11
         Me.winver.Text = "%WindowsVersion%"
-        Me.ToolTip1.SetToolTip(Me.winver, "Winver")
         Me.winver.Visible = False
         '
         'frmMain
@@ -240,7 +241,6 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
-        Me.Controls.Add(Me.winver)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -258,7 +258,6 @@ Partial Class frmMain
         Me.ContextMenuStrip1.ResumeLayout(False)
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 

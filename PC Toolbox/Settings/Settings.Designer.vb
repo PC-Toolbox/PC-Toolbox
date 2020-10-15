@@ -69,7 +69,7 @@ Partial Class Settings
         Me.RunInTray.CheckState = System.Windows.Forms.CheckState.Checked
         Me.RunInTray.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RunInTray.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RunInTray.Location = New System.Drawing.Point(607, 80)
+        Me.RunInTray.Location = New System.Drawing.Point(665, 80)
         Me.RunInTray.Name = "RunInTray"
         Me.RunInTray.Size = New System.Drawing.Size(312, 23)
         Me.RunInTray.TabIndex = 4
@@ -120,6 +120,7 @@ Partial Class Settings
         '
         'ContextMenuStrip1
         '
+        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator2, Me.ToolStripMenuItem1})
         Me.ContextMenuStrip1.Name = "TroubleshooterRightClick"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(130, 32)
@@ -149,21 +150,23 @@ Partial Class Settings
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(9, 376)
+        Me.Label4.Location = New System.Drawing.Point(9, 280)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "Show Rich Presence"
+        Me.Label4.Visible = False
         '
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Yes ", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(189, 376)
+        Me.ComboBox3.Location = New System.Drawing.Point(172, 280)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Text = "Yes"
+        Me.ComboBox3.Visible = False
         '
         'Panel1
         '

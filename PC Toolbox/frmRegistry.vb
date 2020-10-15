@@ -57,6 +57,13 @@
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        Process.Start("regedit.exe")
+        Try
+            Process.Start("regedit.exe")
+
+
+        Catch ex As Exception
+            MsgBox("Unable to open registry.")
+
+        End Try
     End Sub
 End Class
