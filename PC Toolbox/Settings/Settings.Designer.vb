@@ -24,7 +24,6 @@ Partial Class Settings
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RunInTray = New System.Windows.Forms.CheckBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
@@ -53,15 +52,6 @@ Partial Class Settings
         Me.Label1.Size = New System.Drawing.Size(79, 25)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Settings"
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(857, 618)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(146, 29)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Run Troubleshooter"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -159,7 +149,7 @@ Partial Class Settings
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.Label4.Location = New System.Drawing.Point(8, 313)
+        Me.Label4.Location = New System.Drawing.Point(9, 376)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(157, 21)
         Me.Label4.TabIndex = 13
@@ -169,7 +159,7 @@ Partial Class Settings
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Yes ", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(188, 313)
+        Me.ComboBox3.Location = New System.Drawing.Point(189, 376)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox3.TabIndex = 12
@@ -182,7 +172,7 @@ Partial Class Settings
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(-5, -1)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1064, 58)
+        Me.Panel1.Size = New System.Drawing.Size(1028, 58)
         Me.Panel1.TabIndex = 14
         '
         'Settings
@@ -200,7 +190,6 @@ Partial Class Settings
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.RunInTray)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Settings"
         Me.Text = "Settings"
@@ -214,7 +203,6 @@ Partial Class Settings
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents RunInTray As CheckBox
     Friend WithEvents ComboBox1 As ComboBox
