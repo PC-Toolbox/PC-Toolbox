@@ -1,4 +1,5 @@
-﻿
+﻿Imports 
+
 Public Class frmMain
 
     ' Dont mind this stuff all of it is dims and rich presense

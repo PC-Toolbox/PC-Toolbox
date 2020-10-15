@@ -43,7 +43,7 @@ Partial Class frmScripts
         Me.Label1.Enabled = False
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 18.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.DarkMagenta
-        Me.Label1.Location = New System.Drawing.Point(308, 7)
+        Me.Label1.Location = New System.Drawing.Point(327, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(344, 31)
         Me.Label1.TabIndex = 0
@@ -135,7 +135,7 @@ Partial Class frmScripts
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(902, 9)
+        Me.PictureBox1.Location = New System.Drawing.Point(902, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10

@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="512992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="511968">
       <assemblyIdentity name="PC Toolbox" version="0.9.0.0" publicKeyToken="A74DC508F53F5E3B" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yZNYX7cWVjz5/DDFBam1t+02FkwelbPeqg+idhutr30=</dsig:DigestValue>
+        <dsig:DigestValue>PKOdFr2VGaBBr7nkOLTe+8gLBBXk98oAoyEisaTjXp8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
