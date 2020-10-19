@@ -11,11 +11,11 @@ Version 0.8 - Currently Supported
 
 Version 0.8.1 - Currently Supported
 
-Version 0.9 - Currently supported
+Version 0.9 Pre Release - Currently supported
 
+Version 0.9 Full Release - Currently supported
 
-
-
+Version 0.10 - Currently supported
 
 ### Windows and Application Support
 
@@ -28,9 +28,16 @@ Version 0.8
 Version 0.8.1
 - Unsupported on Windows XP
 
-Version 0.9
+Version 0.9 Pre Release
+- Unsupported on Windows XP
+
+Version 0.9 Full Release
+- Unsupported on Windows XP
+
+Version 0.10
 - Unsupported on Windows XP
 - Unsupported on Windows Vista
+
 
 
 
