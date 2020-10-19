@@ -15,7 +15,7 @@
       <Value Profile="(Default)">Dark</Value>
     </Setting>
     <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">v0.9</Value>
+      <Value Profile="(Default)">v0.10</Value>
     </Setting>
     <Setting Name="CloseOnClick" Type="System.String" Scope="User">
       <Value Profile="(Default)">Yes</Value>

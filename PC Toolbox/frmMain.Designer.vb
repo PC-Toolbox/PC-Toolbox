@@ -29,6 +29,7 @@ Partial Class frmMain
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.winver = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -43,7 +44,6 @@ Partial Class frmMain
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.winver = New System.Windows.Forms.Label()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,11 +56,11 @@ Partial Class frmMain
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(92, 21)
+        Me.Label1.Size = New System.Drawing.Size(56, 21)
         Me.Label1.TabIndex = 1
-        Me.Label1.Text = "Main Menu"
+        Me.Label1.Text = " Menu"
         '
         'Button1
         '
@@ -104,6 +104,17 @@ Partial Class frmMain
         Me.PictureBox1.TabStop = False
         Me.ToolTip1.SetToolTip(Me.PictureBox1, "Close")
         '
+        'winver
+        '
+        Me.winver.AutoSize = True
+        Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.winver.Location = New System.Drawing.Point(762, 3)
+        Me.winver.Name = "winver"
+        Me.winver.Size = New System.Drawing.Size(102, 13)
+        Me.winver.TabIndex = 11
+        Me.winver.Text = "%WindowsVersion%"
+        Me.winver.Visible = False
+        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -130,7 +141,7 @@ Partial Class frmMain
         '
         Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.Location = New System.Drawing.Point(12, 633)
+        Me.Button5.Location = New System.Drawing.Point(12, 634)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(145, 29)
         Me.Button5.TabIndex = 7
@@ -223,17 +234,6 @@ Partial Class frmMain
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
         Me.ToolStripMenuItem1.Text = "Script Market"
-        '
-        'winver
-        '
-        Me.winver.AutoSize = True
-        Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.winver.Location = New System.Drawing.Point(762, 3)
-        Me.winver.Name = "winver"
-        Me.winver.Size = New System.Drawing.Size(102, 13)
-        Me.winver.TabIndex = 11
-        Me.winver.Text = "%WindowsVersion%"
-        Me.winver.Visible = False
         '
         'frmMain
         '

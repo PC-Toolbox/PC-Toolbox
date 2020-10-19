@@ -27,6 +27,8 @@ Partial Class frmRegistry
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.GoToTheDebloaterRepositoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -37,8 +39,6 @@ Partial Class frmRegistry
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -83,6 +83,18 @@ Partial Class frmRegistry
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem, Me.ToolStripSeparator2, Me.GoToTheDebloaterRepositoryToolStripMenuItem, Me.ToolStripSeparator1})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(301, 60)
+        '
+        'RemoveWindowsIsNotActivatedSplashToolStripMenuItem
+        '
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Name = "RemoveWindowsIsNotActivatedSplashToolStripMenuItem"
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
+        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Text = "Remove ""Windows is not Activated"" splash"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(297, 6)
         '
         'GoToTheDebloaterRepositoryToolStripMenuItem
         '
@@ -154,7 +166,7 @@ Partial Class frmRegistry
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(825, 3)
+        Me.PictureBox1.Location = New System.Drawing.Point(834, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10
@@ -181,18 +193,6 @@ Partial Class frmRegistry
         Me.Button6.TabIndex = 12
         Me.Button6.Text = "Open Registry"
         Me.Button6.UseVisualStyleBackColor = True
-        '
-        'RemoveWindowsIsNotActivatedSplashToolStripMenuItem
-        '
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Name = "RemoveWindowsIsNotActivatedSplashToolStripMenuItem"
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Text = "Remove ""Windows is not Activated"" splash"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(297, 6)
         '
         'frmRegistry
         '
