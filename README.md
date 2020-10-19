@@ -1,5 +1,5 @@
 # PC Toolbox
-An application made to modify your computer to your liking all inside one application. Created in vb.net and python.
+An application made to modify your computer to your liking all inside one application. Created in vb.net.
 
 ## Features
 - Able to manage and cancel shutdowns
@@ -26,7 +26,7 @@ There are scripts that users can add and run within the app. These scripts can b
 
 
 ## Wanting to Contribute?
-The 3 sections below are for users who want to help and contribute to the PC Toolbox Project.
+The few sections below are for users who want to help and contribute to the PC Toolbox Project.
 
 
 ### Prerequisites
@@ -34,15 +34,8 @@ Requirements to contribute to PC Toolbox.
 
 - [Visual Studio 2019](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=16)
 - .NET Desktop Development Workload downloaded by the Visual Studio Installer.
-- Intermediate knowledge of coding, most specifically VB.net and some python.
+- Intermediate knowledge of coding, most specifically VB.net.
 
-
-### You should ask yourself...
-Ask yourself these questions if you want to contribute.
-
-- [x] Is my version stable for the public?
-- [x] Is my version well thought out and secure?
-- [x] Did I put effort into my version?
 
 
 
