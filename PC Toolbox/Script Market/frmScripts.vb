@@ -13,7 +13,7 @@ Public Class frmScripts
 
     End Sub
 
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs)
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
         frmScriptMarket.Show()
     End Sub
 End Class

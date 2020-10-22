@@ -23,6 +23,7 @@ Partial Class frmScripts
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.SuspendLayout()
         '
         'MaterialFlatButton1
@@ -40,12 +41,26 @@ Partial Class frmScripts
         Me.MaterialFlatButton1.Text = "Visit Script Market"
         Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
+        'MaterialLabel1
+        '
+        Me.MaterialLabel1.AutoSize = True
+        Me.MaterialLabel1.Depth = 0
+        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaterialLabel1.Location = New System.Drawing.Point(227, 72)
+        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel1.Name = "MaterialLabel1"
+        Me.MaterialLabel1.Size = New System.Drawing.Size(534, 19)
+        Me.MaterialLabel1.TabIndex = 3
+        Me.MaterialLabel1.Text = "Scripts and Script Market are currently in the working. Please check back later."
+        '
         'frmScripts
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(962, 690)
+        Me.Controls.Add(Me.MaterialLabel1)
         Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Name = "frmScripts"
         Me.Text = "Scripts"
@@ -55,4 +70,5 @@ Partial Class frmScripts
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
 End Class
