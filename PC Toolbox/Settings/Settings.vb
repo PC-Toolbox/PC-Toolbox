@@ -22,7 +22,7 @@ Public Class Settings
     End Sub
 
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-        If ComboBox1.SelectedItem = "Dark" Then
+        If ComboBox2.SelectedItem = "Dark" Then
             My.Settings.Theme = "Dark"
             Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
             SkinManager.Theme = MaterialSkinManager.Themes.DARK
@@ -30,7 +30,7 @@ Public Class Settings
             My.Settings.Save()
         End If
 
-        If ComboBox1.SelectedItem = "Light" Then
+        If ComboBox2.SelectedItem = "Light" Then
             My.Settings.Theme = "Light"
             Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
             SkinManager.AddFormToManage(Me)
@@ -53,6 +53,25 @@ Public Class Settings
         SkinManager.AddFormToManage(Me)
         SkinManager.Theme = MaterialSkinManager.Themes.DARK
     End Sub
+
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        If ComboBox3.SelectedItem = "Yes" Then
+            My.Settings.RPCShow = "True"
+            frmMain.StartClientMain()
+
+
+            My.Settings.Save()
+        End If
+
+        If ComboBox3.SelectedItem = "No" Then
+            My.Settings.RPCShow = "False"
+            frmMain.RpcClient.Dispose()
+            frmScriptMarket.RpcClient.Dispose()
+
+            My.Settings.Save()
+        End If
+    End Sub
+
 
     ' RIP Hide to Tray
 End Class

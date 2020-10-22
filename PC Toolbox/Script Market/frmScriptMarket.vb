@@ -6,7 +6,7 @@ Public Class frmScriptMarket
     Public RpcClient As DiscordRpcClient
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
-    .Details = "PC Toolbox Script Market",
+    .Details = "Looking for Scripts",
     .State = "v0.11-beta",
     .Assets = New Assets With {.LargeImageKey = "scriptmarket"}
     }
