@@ -19,6 +19,8 @@ Version 0.10 - Currently Supported
 
 Version 0.11 - Currently Supported
 
+Version 0.11.1 - Currently Supported
+
 Version 0.12 - Currently Supported
 
 ## I have the latest version of Windows, why can't it run?
@@ -47,6 +49,10 @@ Version 0.10
 - Unsupported on Windows Vista
 
 Version 0.11
+- Unsupported on Windows XP
+- Unsupported on Windows Vista
+
+Version 0.11.1
 - Unsupported on Windows XP
 - Unsupported on Windows Vista
 
