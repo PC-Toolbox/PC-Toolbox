@@ -38,7 +38,6 @@ Partial Class frmExecutables
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GroupPolicyEditorToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WordpadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
@@ -50,13 +49,10 @@ Partial Class frmExecutables
         Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Favorites.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
-        Me.MenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Favorites
@@ -95,17 +91,17 @@ Partial Class frmExecutables
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(16, 104)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(136, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(128, 29)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'BasicToolStripMenuItem
         '
-        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.GroupPolicyEditorToolStripMenuItem, Me.WordpadToolStripMenuItem})
+        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.WordpadToolStripMenuItem, Me.NotepadToolStripMenuItem})
         Me.BasicToolStripMenuItem.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
-        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(128, 25)
-        Me.BasicToolStripMenuItem.Text = "Reccomended"
+        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(120, 25)
+        Me.BasicToolStripMenuItem.Text = "Recomended"
         '
         'CommandPromptToolStripMenuItem
         '
@@ -132,7 +128,7 @@ Partial Class frmExecutables
         '
         Me.RegeditToolStripMenuItem.Name = "RegeditToolStripMenuItem"
         Me.RegeditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.RegeditToolStripMenuItem.Text = "Regedit"
+        Me.RegeditToolStripMenuItem.Text = "Registry Editor"
         Me.RegeditToolStripMenuItem.ToolTipText = "regedit"
         '
         'PowershellToolStripMenuItem
@@ -159,12 +155,6 @@ Partial Class frmExecutables
         Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.WinverToolStripMenuItem.Text = "Winver"
         '
-        'GroupPolicyEditorToolStripMenuItem
-        '
-        Me.GroupPolicyEditorToolStripMenuItem.Name = "GroupPolicyEditorToolStripMenuItem"
-        Me.GroupPolicyEditorToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.GroupPolicyEditorToolStripMenuItem.Text = "Group Policy Editor"
-        '
         'WordpadToolStripMenuItem
         '
         Me.WordpadToolStripMenuItem.Name = "WordpadToolStripMenuItem"
@@ -178,7 +168,7 @@ Partial Class frmExecutables
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStrip2.Location = New System.Drawing.Point(199, 104)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(214, 29)
+        Me.MenuStrip2.Size = New System.Drawing.Size(334, 29)
         Me.MenuStrip2.TabIndex = 6
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -238,37 +228,11 @@ Partial Class frmExecutables
         Me.ToolStripMenuItem8.Size = New System.Drawing.Size(242, 26)
         Me.ToolStripMenuItem8.Text = "C:\Windows\system32"
         '
-        'MenuStrip3
+        'NotepadToolStripMenuItem
         '
-        Me.MenuStrip3.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4})
-        Me.MenuStrip3.Location = New System.Drawing.Point(463, 104)
-        Me.MenuStrip3.Name = "MenuStrip3"
-        Me.MenuStrip3.Size = New System.Drawing.Size(123, 29)
-        Me.MenuStrip3.TabIndex = 7
-        Me.MenuStrip3.Text = "MenuStrip3"
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(115, 25)
-        Me.ToolStripMenuItem4.Text = "My Favorites"
-        '
-        'MaterialLabel1
-        '
-        Me.MaterialLabel1.AutoSize = True
-        Me.MaterialLabel1.Depth = 0
-        Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(12, 503)
-        Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(463, 38)
-        Me.MaterialLabel1.TabIndex = 8
-        Me.MaterialLabel1.Text = "Some of these will not work because of permission levels." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The app will close if " &
-    "there is a permission error. Fix is coming soon."
+        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
+        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.NotepadToolStripMenuItem.Text = "Notepad"
         '
         'frmExecutables
         '
@@ -276,8 +240,6 @@ Partial Class frmExecutables
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(765, 550)
-        Me.Controls.Add(Me.MaterialLabel1)
-        Me.Controls.Add(Me.MenuStrip3)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -288,8 +250,6 @@ Partial Class frmExecutables
         Me.MenuStrip1.PerformLayout()
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
-        Me.MenuStrip3.ResumeLayout(False)
-        Me.MenuStrip3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -306,7 +266,6 @@ Partial Class frmExecutables
     Friend WithEvents ExplorerToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WinverToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RegeditToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents GroupPolicyEditorToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AddExecutableAsFavoriteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents RemoveAsFavoriteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents WordpadToolStripMenuItem As ToolStripMenuItem
@@ -322,7 +281,5 @@ Partial Class frmExecutables
     Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
-    Friend WithEvents MenuStrip3 As MenuStrip
-    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents NotepadToolStripMenuItem As ToolStripMenuItem
 End Class

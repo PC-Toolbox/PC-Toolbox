@@ -37,6 +37,8 @@ Partial Class frmMain
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.MaterialRaisedButton6 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton7 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -44,7 +46,7 @@ Partial Class frmMain
         '
         Me.winver.AutoSize = True
         Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.winver.Location = New System.Drawing.Point(843, 650)
+        Me.winver.Location = New System.Drawing.Point(852, 650)
         Me.winver.Name = "winver"
         Me.winver.Size = New System.Drawing.Size(54, 13)
         Me.winver.TabIndex = 11
@@ -123,7 +125,7 @@ Partial Class frmMain
         '
         Me.MaterialRaisedButton5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton5.Depth = 0
-        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(77, 314)
+        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(77, 302)
         Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
         Me.MaterialRaisedButton5.Primary = True
@@ -137,7 +139,7 @@ Partial Class frmMain
         '
         Me.MaterialRaisedButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(77, 409)
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(77, 392)
         Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
         Me.MaterialRaisedButton2.Primary = True
@@ -151,7 +153,7 @@ Partial Class frmMain
         '
         Me.MaterialRaisedButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(288, 120)
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(264, 120)
         Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
         Me.MaterialRaisedButton3.Primary = True
@@ -172,10 +174,39 @@ Partial Class frmMain
         Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
         Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(111, 36)
+        Me.MaterialFlatButton1.Size = New System.Drawing.Size(128, 36)
         Me.MaterialFlatButton1.TabIndex = 19
         Me.MaterialFlatButton1.Text = "Settings"
         Me.MaterialFlatButton1.UseVisualStyleBackColor = False
+        '
+        'MaterialRaisedButton6
+        '
+        Me.MaterialRaisedButton6.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MaterialRaisedButton6.Depth = 0
+        Me.MaterialRaisedButton6.Location = New System.Drawing.Point(264, 212)
+        Me.MaterialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton6.Name = "MaterialRaisedButton6"
+        Me.MaterialRaisedButton6.Primary = True
+        Me.MaterialRaisedButton6.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton6.TabIndex = 20
+        Me.MaterialRaisedButton6.Text = "Files"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton6, "Scripts")
+        Me.MaterialRaisedButton6.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton7
+        '
+        Me.MaterialRaisedButton7.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MaterialRaisedButton7.Depth = 0
+        Me.MaterialRaisedButton7.Location = New System.Drawing.Point(264, 302)
+        Me.MaterialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton7.Name = "MaterialRaisedButton7"
+        Me.MaterialRaisedButton7.Primary = True
+        Me.MaterialRaisedButton7.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton7.TabIndex = 21
+        Me.MaterialRaisedButton7.Text = "Printing"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton7, "Scripts")
+        Me.MaterialRaisedButton7.UseVisualStyleBackColor = True
+        Me.MaterialRaisedButton7.Visible = False
         '
         'frmMain
         '
@@ -183,6 +214,8 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
+        Me.Controls.Add(Me.MaterialRaisedButton7)
+        Me.Controls.Add(Me.MaterialRaisedButton6)
         Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.MaterialRaisedButton3)
         Me.Controls.Add(Me.MaterialRaisedButton2)
@@ -215,4 +248,6 @@ Partial Class frmMain
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MaterialRaisedButton6 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton7 As MaterialSkin.Controls.MaterialRaisedButton
 End Class

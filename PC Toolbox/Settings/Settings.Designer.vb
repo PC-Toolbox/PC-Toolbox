@@ -22,6 +22,7 @@ Partial Class Settings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
@@ -31,6 +32,8 @@ Partial Class Settings
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -89,6 +92,7 @@ Partial Class Settings
         Me.MaterialRaisedButton1.Size = New System.Drawing.Size(170, 40)
         Me.MaterialRaisedButton1.TabIndex = 18
         Me.MaterialRaisedButton1.Text = "Check For Updates"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton1, "Check For Updates")
         Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
         '
         'MaterialLabel3
@@ -139,12 +143,28 @@ Partial Class Settings
         Me.ComboBox4.Text = "100%"
         Me.ComboBox4.Visible = False
         '
+        'MaterialLabel5
+        '
+        Me.MaterialLabel5.AutoSize = True
+        Me.MaterialLabel5.Depth = 0
+        Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 11.0!)
+        Me.MaterialLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.MaterialLabel5.Location = New System.Drawing.Point(8, 262)
+        Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialLabel5.Name = "MaterialLabel5"
+        Me.MaterialLabel5.Size = New System.Drawing.Size(314, 19)
+        Me.MaterialLabel5.TabIndex = 23
+        Me.MaterialLabel5.Text = "Discord is Required to use the Rich Presense."
+        Me.ToolTip1.SetToolTip(Me.MaterialLabel5, "Well... no duh")
+        Me.MaterialLabel5.Visible = False
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(883, 659)
+        Me.Controls.Add(Me.MaterialLabel5)
         Me.Controls.Add(Me.MaterialLabel4)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.MaterialLabel3)
@@ -169,4 +189,6 @@ Partial Class Settings
     Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents ComboBox4 As ComboBox
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
 End Class

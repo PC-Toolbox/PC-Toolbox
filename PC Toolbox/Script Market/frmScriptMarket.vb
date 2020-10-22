@@ -7,9 +7,10 @@ Public Class frmScriptMarket
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = "Looking for Scripts",
-    .State = "v0.12-beta",
-    .Assets = New Assets With {.LargeImageKey = "scriptmarket"}
-    }
+    .State = "Running Version 0.11.2",
+    .Assets = New Assets With {.LargeImageKey = "scriptmarket", .LargeImageText = "PC Toolbox"}}
+
+
 
 
 

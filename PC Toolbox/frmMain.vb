@@ -13,9 +13,9 @@ Public Class frmMain
     Public RpcClient As DiscordRpcClient
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
-    .Details = "On Menu",
-    .State = "v0.12-beta",
-    .Assets = New Assets With {.LargeImageKey = "placeholder_1"}
+    .Details = "On The Menu",
+    .State = "Running Version 0.11.2",
+    .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "PC Toolbox"}
     }
 
 
