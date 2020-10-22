@@ -12,7 +12,7 @@
       <Value Profile="(Default)">Dark</Value>
     </Setting>
     <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">v0.11</Value>
+      <Value Profile="(Default)">v0.12</Value>
     </Setting>
     <Setting Name="RPCShow" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>

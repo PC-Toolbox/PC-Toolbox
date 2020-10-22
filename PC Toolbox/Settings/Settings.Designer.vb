@@ -22,12 +22,8 @@ Partial Class Settings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
@@ -35,7 +31,6 @@ Partial Class Settings
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
-        Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'ComboBox1
@@ -57,25 +52,6 @@ Partial Class Settings
         Me.ComboBox2.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox2.TabIndex = 7
         Me.ComboBox2.Text = "Dark"
-        '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator2, Me.ToolStripMenuItem1})
-        Me.ContextMenuStrip1.Name = "TroubleshooterRightClick"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(130, 32)
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(126, 6)
-        '
-        'ToolStripMenuItem1
-        '
-        Me.ToolStripMenuItem1.Enabled = False
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(129, 22)
-        Me.ToolStripMenuItem1.Text = "v0.9-alpha"
         '
         'MaterialLabel1
         '
@@ -132,7 +108,7 @@ Partial Class Settings
         '
         Me.ComboBox3.FormattingEnabled = True
         Me.ComboBox3.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(187, 296)
+        Me.ComboBox3.Location = New System.Drawing.Point(182, 296)
         Me.ComboBox3.Name = "ComboBox3"
         Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
         Me.ComboBox3.TabIndex = 19
@@ -180,16 +156,12 @@ Partial Class Settings
         Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Settings"
         Me.Text = "Settings"
-        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton

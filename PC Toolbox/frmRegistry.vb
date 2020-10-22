@@ -4,7 +4,7 @@ Public Class frmRegistry
 
 
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) 
         Process.Start("powershell", "-File C:\")
     End Sub
 
@@ -25,13 +25,13 @@ Public Class frmRegistry
 
 
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
         Try
             Process.Start("regedit.exe")
 
 
         Catch ex As Exception
-            MsgBox("Unable to open registry.")
+            MsgBox("Unable to open registry. Could be a permission error?")
 
         End Try
     End Sub
@@ -58,6 +58,17 @@ Public Class frmRegistry
    "HKEY_CURRENT_USER\PC Toolbox\TestKey")
         Catch ex As Exception
             MsgBox("Failed to delete key. Did you create the test key? Do you have permission?")
+        End Try
+    End Sub
+
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+        Try
+            Process.Start("regedit.exe")
+
+
+        Catch ex As Exception
+            MsgBox("Unable to open registry. Is there a permission error?")
+
         End Try
     End Sub
 End Class

@@ -7,7 +7,7 @@ Public Class frmScriptMarket
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = "Looking for Scripts",
-    .State = "v0.11-beta",
+    .State = "v0.12-beta",
     .Assets = New Assets With {.LargeImageKey = "scriptmarket"}
     }
 
@@ -41,5 +41,9 @@ Public Class frmScriptMarket
     Private Sub frmScriptMarket_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         RpcClient.Dispose()
         frmMain.StartClientMain()
+    End Sub
+
+    Private Sub FlagAsMaliciousToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FlagAsMaliciousToolStripMenuItem.Click
+        MsgBox("Scripts cannot be reported at this time.")
     End Sub
 End Class

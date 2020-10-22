@@ -22,42 +22,12 @@ Partial Class frmRegistry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialFlatButton2 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.SuspendLayout()
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 86)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(208, 37)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Save Current Registry State"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 174)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(208, 37)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Remove Bloatware"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(243, 86)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(140, 37)
-        Me.Button6.TabIndex = 12
-        Me.Button6.Text = "Open Registry"
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'MaterialFlatButton1
         '
@@ -89,17 +59,53 @@ Partial Class frmRegistry
         Me.MaterialFlatButton2.Text = "Delete Test Key"
         Me.MaterialFlatButton2.UseVisualStyleBackColor = True
         '
+        'MaterialRaisedButton1
+        '
+        Me.MaterialRaisedButton1.Depth = 0
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(298, 86)
+        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
+        Me.MaterialRaisedButton1.Primary = True
+        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(186, 43)
+        Me.MaterialRaisedButton1.TabIndex = 17
+        Me.MaterialRaisedButton1.Text = "Open Registry"
+        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton2
+        '
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 86)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(186, 43)
+        Me.MaterialRaisedButton2.TabIndex = 18
+        Me.MaterialRaisedButton2.Text = "Save Registry State"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton3
+        '
+        Me.MaterialRaisedButton3.Depth = 0
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(12, 159)
+        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
+        Me.MaterialRaisedButton3.Primary = True
+        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(186, 43)
+        Me.MaterialRaisedButton3.TabIndex = 19
+        Me.MaterialRaisedButton3.Text = "Remove Bloatware"
+        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
+        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(671, 549)
+        Me.Controls.Add(Me.MaterialRaisedButton3)
+        Me.Controls.Add(Me.MaterialRaisedButton2)
+        Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialFlatButton2)
         Me.Controls.Add(Me.MaterialFlatButton1)
-        Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Name = "frmRegistry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Registry"
@@ -107,10 +113,9 @@ Partial Class frmRegistry
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialFlatButton2 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
 End Class

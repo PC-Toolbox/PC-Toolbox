@@ -24,7 +24,6 @@ Partial Class frmMain
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.winver = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -37,6 +36,7 @@ Partial Class frmMain
         Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -50,18 +50,6 @@ Partial Class frmMain
         Me.winver.TabIndex = 11
         Me.winver.Text = "%winver%"
         Me.winver.Visible = False
-        '
-        'Button5
-        '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.Button5.Location = New System.Drawing.Point(12, 634)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(145, 29)
-        Me.Button5.TabIndex = 7
-        Me.Button5.Text = "Settings"
-        Me.ToolTip1.SetToolTip(Me.Button5, "Settings")
-        Me.Button5.UseVisualStyleBackColor = True
         '
         'NotifyIcon1
         '
@@ -105,6 +93,7 @@ Partial Class frmMain
         '
         'MaterialRaisedButton1
         '
+        Me.MaterialRaisedButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton1.Depth = 0
         Me.MaterialRaisedButton1.Location = New System.Drawing.Point(77, 120)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
@@ -118,6 +107,7 @@ Partial Class frmMain
         '
         'MaterialRaisedButton4
         '
+        Me.MaterialRaisedButton4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton4.Depth = 0
         Me.MaterialRaisedButton4.Location = New System.Drawing.Point(77, 212)
         Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
@@ -131,6 +121,7 @@ Partial Class frmMain
         '
         'MaterialRaisedButton5
         '
+        Me.MaterialRaisedButton5.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton5.Depth = 0
         Me.MaterialRaisedButton5.Location = New System.Drawing.Point(77, 314)
         Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
@@ -144,6 +135,7 @@ Partial Class frmMain
         '
         'MaterialRaisedButton2
         '
+        Me.MaterialRaisedButton2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton2.Depth = 0
         Me.MaterialRaisedButton2.Location = New System.Drawing.Point(77, 409)
         Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
@@ -157,6 +149,7 @@ Partial Class frmMain
         '
         'MaterialRaisedButton3
         '
+        Me.MaterialRaisedButton3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialRaisedButton3.Depth = 0
         Me.MaterialRaisedButton3.Location = New System.Drawing.Point(288, 120)
         Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
@@ -168,19 +161,36 @@ Partial Class frmMain
         Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton3, "Scripts")
         Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
         '
+        'MaterialFlatButton1
+        '
+        Me.MaterialFlatButton1.AutoSize = True
+        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.MaterialFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(20, Byte), Integer))
+        Me.MaterialFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.MaterialFlatButton1.Depth = 0
+        Me.MaterialFlatButton1.Location = New System.Drawing.Point(3, 627)
+        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
+        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
+        Me.MaterialFlatButton1.Primary = False
+        Me.MaterialFlatButton1.Size = New System.Drawing.Size(76, 36)
+        Me.MaterialFlatButton1.TabIndex = 19
+        Me.MaterialFlatButton1.Text = "Settings"
+        Me.MaterialFlatButton1.UseVisualStyleBackColor = False
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
+        Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Controls.Add(Me.MaterialRaisedButton3)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.MaterialRaisedButton5)
         Me.Controls.Add(Me.MaterialRaisedButton4)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.winver)
-        Me.Controls.Add(Me.Button5)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
@@ -191,7 +201,6 @@ Partial Class frmMain
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents winver As Label
@@ -206,4 +215,5 @@ Partial Class frmMain
     Friend WithEvents MaterialRaisedButton5 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
 End Class

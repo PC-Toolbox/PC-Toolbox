@@ -92,7 +92,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("v0.11")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("v0.12")>  _
         Public Property Version() As String
             Get
                 Return CType(Me("Version"),String)

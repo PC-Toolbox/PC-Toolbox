@@ -1,5 +1,8 @@
-﻿Public Class frmExecutables
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+﻿Imports MaterialSkin
+
+
+Public Class frmExecutables
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -36,14 +39,21 @@
     End Sub
 
     Private Sub frmExecutables_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        'MaterialSkin
+        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.DARK
     End Sub
 
     Private Sub PowershellToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PowershellToolStripMenuItem.Click
         Process.Start("powershell.exe")
     End Sub
 
-    Private Sub ScriptMarketToolStripMenuItem_Click(sender As Object, e As EventArgs) 
+    Private Sub ScriptMarketToolStripMenuItem_Click(sender As Object, e As EventArgs)
         frmScriptMarket.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
+        Process.Start("explorer.exe")
     End Sub
 End Class

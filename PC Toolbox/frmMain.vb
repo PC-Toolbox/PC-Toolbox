@@ -14,7 +14,7 @@ Public Class frmMain
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = "On Menu",
-    .State = "v0.11-beta",
+    .State = "v0.12-beta",
     .Assets = New Assets With {.LargeImageKey = "placeholder_1"}
     }
 
@@ -74,9 +74,6 @@ Public Class frmMain
 
 
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        Settings.Show()
-    End Sub
 
 
 
@@ -112,5 +109,9 @@ Public Class frmMain
     Private Sub frmMain_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
         frmScriptMarket.RpcClient.Dispose()
         StartClientMain()
+    End Sub
+
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+        Settings.Show()
     End Sub
 End Class

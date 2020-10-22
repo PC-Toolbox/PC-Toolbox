@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="PC Toolbox.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PC Toolbox" version="0.11.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PC Toolbox" version="0.12.0.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="PC Toolbox.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="502752">
-      <assemblyIdentity name="PC Toolbox" version="0.11.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="505312">
+      <assemblyIdentity name="PC Toolbox" version="0.12.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>nK8VUPDKsh4ZCTBcAizl/RNJ1EOMtRBU1WoFYbPjap0=</dsig:DigestValue>
+        <dsig:DigestValue>GbAkp97Ng8F9/7MSGq/NkhAz9tIMLTnOGK8knFimgkc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -95,7 +95,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Mo+YZOnFi85Mx8tavfoxLwhTa+PlAV+Folci83PRqzA=</dsig:DigestValue>
+      <dsig:DigestValue>EYJzkNXk284OVt/wDyiZMxQL2fiGzLJECk5cU0ZnrnI=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
