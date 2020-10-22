@@ -8,18 +8,18 @@ Public Class frmScriptMarket
     Public mousex As Integer
     Public mousey As Integer
 
-    Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseDown
+    Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
         drag = True
         mousex = Cursor.Position.X - Me.Left
         mousey = Cursor.Position.Y - Me.Top
     End Sub
-    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseMove
+    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
         If drag Then
             Me.Top = Cursor.Position.Y - mousey
             Me.Left = Cursor.Position.X - mousex
         End If
     End Sub
-    Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseUp
+    Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
         drag = False
     End Sub
 

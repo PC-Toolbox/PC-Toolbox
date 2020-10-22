@@ -34,20 +34,15 @@ Partial Class frmMain
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ScriptsInstalledvalueToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ContextMenuStrip1.SuspendLayout()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -151,7 +146,6 @@ Partial Class frmMain
         '
         'Button6
         '
-        Me.Button6.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.Location = New System.Drawing.Point(351, 120)
         Me.Button6.Name = "Button6"
@@ -161,37 +155,9 @@ Partial Class frmMain
         Me.ToolTip1.SetToolTip(Me.Button6, "Scripts")
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem4, Me.ToolStripSeparator2, Me.ScriptsInstalledvalueToolStripMenuItem})
-        Me.ContextMenuStrip1.Name = "TrayClick1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(211, 54)
-        '
-        'ToolStripMenuItem4
-        '
-        Me.ToolStripMenuItem4.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.ToolStripMenuItem4.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ToolStripMenuItem4.Name = "ToolStripMenuItem4"
-        Me.ToolStripMenuItem4.Size = New System.Drawing.Size(210, 22)
-        Me.ToolStripMenuItem4.Text = "Script Market"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(207, 6)
-        '
-        'ScriptsInstalledvalueToolStripMenuItem
-        '
-        Me.ScriptsInstalledvalueToolStripMenuItem.Enabled = False
-        Me.ScriptsInstalledvalueToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ScriptsInstalledvalueToolStripMenuItem.Name = "ScriptsInstalledvalueToolStripMenuItem"
-        Me.ScriptsInstalledvalueToolStripMenuItem.Size = New System.Drawing.Size(210, 22)
-        Me.ScriptsInstalledvalueToolStripMenuItem.Text = "Scripts Installed: %value%"
-        '
         'NotifyIcon1
         '
-        Me.NotifyIcon1.BalloonTipText = "Hidden to tray"
+        Me.NotifyIcon1.BalloonTipText = "PC Toolbox is now minimized to tray."
         Me.NotifyIcon1.ContextMenuStrip = Me.TrayClick1
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
         Me.NotifyIcon1.Text = "PC Toolbox"
@@ -199,41 +165,35 @@ Partial Class frmMain
         '
         'TrayClick1
         '
-        Me.TrayClick1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.ToolStripMenuItem1})
+        Me.TrayClick1.BackColor = System.Drawing.Color.White
+        Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForUpdatesToolStripMenuItem})
         Me.TrayClick1.Name = "TrayClick1"
-        Me.TrayClick1.Size = New System.Drawing.Size(145, 76)
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.OpenToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
-        '
-        'CloseToolStripMenuItem
-        '
-        Me.CloseToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.CloseToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(144, 22)
-        Me.CloseToolStripMenuItem.Text = "Close"
+        Me.TrayClick1.Size = New System.Drawing.Size(181, 98)
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ToolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(141, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
         '
-        'ToolStripMenuItem1
+        'OpenToolStripMenuItem
         '
-        Me.ToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ToolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(144, 22)
-        Me.ToolStripMenuItem1.Text = "Script Market"
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CloseToolStripMenuItem.Text = "Close"
+        '
+        'CheckForUpdatesToolStripMenuItem
+        '
+        Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CheckForUpdatesToolStripMenuItem.Text = "Check For Updates"
         '
         'frmMain
         '
@@ -251,11 +211,10 @@ Partial Class frmMain
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PC Toolbox"
+        Me.Text = "Menu"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -273,13 +232,9 @@ Partial Class frmMain
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents winver As Label
     Friend WithEvents TrayClick1 As ContextMenuStrip
+    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+    Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents ToolTip1 As ToolTip
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents ToolStripMenuItem4 As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ScriptsInstalledvalueToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
 End Class

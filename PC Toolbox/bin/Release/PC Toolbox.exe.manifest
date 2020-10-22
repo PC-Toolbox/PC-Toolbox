@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="PC Toolbox.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PC Toolbox" version="0.9.0.0" publicKeyToken="A74DC508F53F5E3B" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PC Toolbox" version="0.10.0.0" publicKeyToken="A74DC508F53F5E3B" language="neutral" processorArchitecture="msil" />
     <commandLine file="PC Toolbox.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -54,24 +54,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="512480">
-      <assemblyIdentity name="PC Toolbox" version="0.9.0.0" publicKeyToken="A74DC508F53F5E3B" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="511456">
+      <assemblyIdentity name="PC Toolbox" version="0.10.0.0" publicKeyToken="A74DC508F53F5E3B" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>iV86hTtD9tKN1ptXnCODbg15stCWl2ZunKL4Hp7Akkw=</dsig:DigestValue>
+        <dsig:DigestValue>ZFwbRgpXyDvLgpPxWjhkbK4OqFAOhclAYzktJ8Dwtsg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PC Toolbox.exe.config" size="1874">
+  <file name="PC Toolbox.exe.config" size="1875">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>YLsJTAUZmWx4XBOg1dhq/YOz7Rq9SZL6Wt6N63SNoRI=</dsig:DigestValue>
+      <dsig:DigestValue>urB4xZj/i73O+//mXWOqhkv1mW6NZQuA/8G4f28/51U=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

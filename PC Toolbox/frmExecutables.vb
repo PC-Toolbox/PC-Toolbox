@@ -43,7 +43,7 @@
         Process.Start("powershell.exe")
     End Sub
 
-    Private Sub ScriptMarketToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ScriptMarketToolStripMenuItem.Click
+    Private Sub ScriptMarketToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         frmScriptMarket.Show()
     End Sub
 End Class

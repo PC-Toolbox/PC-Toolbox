@@ -28,12 +28,12 @@ Partial Class frmConnectivity
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -79,7 +79,7 @@ Partial Class frmConnectivity
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(223, 20)
         Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Change the IP that gets pinged." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
+        Me.Label2.Text = "Change the IP that gets pinged."
         '
         'TextBox2
         '
@@ -102,17 +102,6 @@ Partial Class frmConnectivity
         Me.Button3.Text = "Change"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Yellow
-        Me.Label3.Location = New System.Drawing.Point(19, 331)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(243, 19)
-        Me.Label3.TabIndex = 7
-        Me.Label3.Text = "This must be a valid IP or it won't work!" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
@@ -120,12 +109,23 @@ Partial Class frmConnectivity
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(-5, 3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(937, 53)
+        Me.Panel1.Size = New System.Drawing.Size(868, 53)
         Me.Panel1.TabIndex = 8
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.White
+        Me.Label5.Location = New System.Drawing.Point(24, 9)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(100, 21)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Connectivity"
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(898, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(818, 0)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10
@@ -136,7 +136,7 @@ Partial Class frmConnectivity
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Label4.Location = New System.Drawing.Point(270, 275)
+        Me.Label4.Location = New System.Drawing.Point(19, 331)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(170, 19)
         Me.Label4.TabIndex = 9
@@ -152,27 +152,26 @@ Partial Class frmConnectivity
         Me.Button2.Text = "Online Speed Test"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Label5
+        'Button4
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(24, 9)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(100, 21)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Connectivity"
+        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(439, 297)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(159, 31)
+        Me.Button4.TabIndex = 11
+        Me.Button4.Text = "Reset"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'frmConnectivity
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(932, 514)
+        Me.ClientSize = New System.Drawing.Size(855, 514)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
@@ -196,10 +195,10 @@ Partial Class frmConnectivity
     Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button3 As Button
-    Friend WithEvents Label3 As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Label5 As Label
+    Friend WithEvents Button4 As Button
 End Class

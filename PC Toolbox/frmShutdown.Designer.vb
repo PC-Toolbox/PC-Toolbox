@@ -37,6 +37,7 @@ Partial Class frmShutdown
         '
         'Button5
         '
+        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button5.Location = New System.Drawing.Point(12, 256)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(118, 32)
@@ -46,8 +47,9 @@ Partial Class frmShutdown
         '
         'Button6
         '
+        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.Red
-        Me.Button6.Location = New System.Drawing.Point(636, 256)
+        Me.Button6.Location = New System.Drawing.Point(616, 256)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(134, 32)
         Me.Button6.TabIndex = 5
@@ -70,7 +72,7 @@ Partial Class frmShutdown
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(381, 141)
+        Me.Label2.Location = New System.Drawing.Point(364, 141)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 25)
         Me.Label2.TabIndex = 7
@@ -104,7 +106,7 @@ Partial Class frmShutdown
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureBox2.Image = Global.PC_Toolbox.My.Resources.Resources.reboot
-        Me.PictureBox2.Location = New System.Drawing.Point(356, 28)
+        Me.PictureBox2.Location = New System.Drawing.Point(334, 28)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(122, 110)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -128,7 +130,7 @@ Partial Class frmShutdown
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(774, 300)
+        Me.ClientSize = New System.Drawing.Size(756, 300)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)

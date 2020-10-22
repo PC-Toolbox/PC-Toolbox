@@ -2,7 +2,7 @@
 
 Public Class frmMain
 
-    ' Dont mind this stuff all of it is dims and rich presense
+    ' Dont mind this stuff all of it is dim
     Public drag As Boolean
     Public mousex As Integer
     Public mousey As Integer
@@ -18,6 +18,7 @@ Public Class frmMain
 
         Dim os As OperatingSystem = Environment.OSVersion
         winver.Text = os.Version.Major & os.Version.Minor
+
         If winver.Text = "62" Then
             'Version Supported
         End If
@@ -27,28 +28,23 @@ Public Class frmMain
             'Version Supported
         End If
 
+
+
         If winver.Text = "51" Then
-            MsgBox("Windows XP is no longer supported for PC Toolbox.")
+            MsgBox("Windows XP is no longer supported on Toolbox.")
+            Me.Close()
+        End If
+
+        If winver.Text = "60" Then
+            MsgBox("Windows Vista is no longer supported on PC Toolbox.")
             Me.Close()
         End If
 
 
+
+
+
         ' Registry Keys
-        My.Computer.Registry.CurrentUser.CreateSubKey("PC Toolbox")
-
-
-        ' Keys revert back when app closed.
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "AppLoadedOnce", "Yes")
-
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "Version", My.Settings.Version)
-
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "Language", My.Settings.Language)
-
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "Theme", My.Settings.Theme)
 
 
 
@@ -96,7 +92,7 @@ Public Class frmMain
 
 
         If My.Settings.CloseOnClick = "No" Then
-            Me.Close()
+            Application.Exit()
         End If
 
         If My.Settings.CloseOnClick = "Yes" Then
@@ -112,40 +108,13 @@ Public Class frmMain
         My.Settings.Save()
     End Sub
 
-    Private Sub NotifyIcon1_Click(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseClick
-        Me.Show()
-    End Sub
+
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Settings.Show()
     End Sub
 
-    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
-        Me.Show()
-    End Sub
 
-    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
-        Me.Close()
-        Me.Close()
-        Me.Close()
-        Me.Close()
-        Me.Close()
-        Me.Close()
-    End Sub
-
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
-        frmScriptMarket.Show()
-        Me.Hide()
-        Settings.Hide()
-        frmRegistry.Hide()
-        frmExecutables.Hide()
-        frmScripts.Hide()
-        frmShutdown.Hide()
-    End Sub
-
-    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
-        frmScriptMarket.Show()
-    End Sub
 
 
 
@@ -163,4 +132,14 @@ Public Class frmMain
     Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseUp
         drag = False
     End Sub
+
+    Private Sub OpenToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Me.Show()
+    End Sub
+
+    Private Sub CloseToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseToolStripMenuItem.Click
+        Application.Exit()
+    End Sub
+
+
 End Class

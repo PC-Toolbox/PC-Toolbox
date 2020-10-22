@@ -22,24 +22,15 @@ Partial Class frmRegistry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.ContextMenuStrip1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -55,20 +46,8 @@ Partial Class frmRegistry
         Me.Button1.Text = "Save Current Registry State"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Red
-        Me.Label1.Location = New System.Drawing.Point(30, 67)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(216, 16)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Reccomended before doing ANYTHING"
-        '
         'Button2
         '
-        Me.Button2.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(33, 188)
         Me.Button2.Name = "Button2"
@@ -77,43 +56,11 @@ Partial Class frmRegistry
         Me.Button2.Text = "Remove Bloatware"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ContextMenuStrip1
-        '
-        Me.ContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem, Me.ToolStripSeparator2, Me.GoToTheDebloaterRepositoryToolStripMenuItem, Me.ToolStripSeparator1})
-        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(301, 60)
-        '
-        'RemoveWindowsIsNotActivatedSplashToolStripMenuItem
-        '
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Name = "RemoveWindowsIsNotActivatedSplashToolStripMenuItem"
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
-        Me.RemoveWindowsIsNotActivatedSplashToolStripMenuItem.Text = "Remove ""Windows is not Activated"" splash"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(297, 6)
-        '
-        'GoToTheDebloaterRepositoryToolStripMenuItem
-        '
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Name = "GoToTheDebloaterRepositoryToolStripMenuItem"
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Size = New System.Drawing.Size(300, 22)
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.Text = "Visit Windows 10 Debloater Repository"
-        Me.GoToTheDebloaterRepositoryToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(297, 6)
-        '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button3.Location = New System.Drawing.Point(25, 19)
+        Me.Button3.Location = New System.Drawing.Point(24, 29)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(213, 37)
         Me.Button3.TabIndex = 6
@@ -124,7 +71,7 @@ Partial Class frmRegistry
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Button4.Location = New System.Drawing.Point(25, 117)
+        Me.Button4.Location = New System.Drawing.Point(24, 101)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(213, 37)
         Me.Button4.TabIndex = 7
@@ -136,9 +83,9 @@ Partial Class frmRegistry
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button4)
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.GroupBox1.Location = New System.Drawing.Point(602, 361)
+        Me.GroupBox1.Location = New System.Drawing.Point(529, 386)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(256, 176)
+        Me.GroupBox1.Size = New System.Drawing.Size(256, 151)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Real-Time Testing"
@@ -150,7 +97,7 @@ Partial Class frmRegistry
         Me.Panel1.Controls.Add(Me.PictureBox1)
         Me.Panel1.Location = New System.Drawing.Point(-3, -3)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(882, 57)
+        Me.Panel1.Size = New System.Drawing.Size(824, 57)
         Me.Panel1.TabIndex = 10
         '
         'Label2
@@ -166,28 +113,16 @@ Partial Class frmRegistry
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(834, 0)
+        Me.PictureBox1.Location = New System.Drawing.Point(752, 3)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
-        'Button5
-        '
-        Me.Button5.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(12, 500)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(261, 37)
-        Me.Button5.TabIndex = 11
-        Me.Button5.Text = "Reset all PC Toolbox Keys to default"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Button6
         '
-        Me.Button6.ContextMenuStrip = Me.ContextMenuStrip1
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(247, 86)
+        Me.Button6.Location = New System.Drawing.Point(258, 86)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(140, 37)
         Me.Button6.TabIndex = 12
@@ -199,42 +134,31 @@ Partial Class frmRegistry
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(870, 549)
+        Me.ClientSize = New System.Drawing.Size(794, 549)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmRegistry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "PC Toolbox (Registry)"
-        Me.ContextMenuStrip1.ResumeLayout(False)
         Me.GroupBox1.ResumeLayout(False)
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
-    Friend WithEvents GoToTheDebloaterRepositoryToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents Panel1 As Panel
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents RemoveWindowsIsNotActivatedSplashToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
 End Class

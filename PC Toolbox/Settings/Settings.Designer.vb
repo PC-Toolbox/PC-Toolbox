@@ -69,11 +69,11 @@ Partial Class Settings
         Me.RunInTray.CheckState = System.Windows.Forms.CheckState.Checked
         Me.RunInTray.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RunInTray.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.RunInTray.Location = New System.Drawing.Point(665, 80)
+        Me.RunInTray.Location = New System.Drawing.Point(724, 77)
         Me.RunInTray.Name = "RunInTray"
-        Me.RunInTray.Size = New System.Drawing.Size(312, 23)
+        Me.RunInTray.Size = New System.Drawing.Size(279, 23)
         Me.RunInTray.TabIndex = 4
-        Me.RunInTray.Text = "Run PC Toolbox in tray when the app is closed?"
+        Me.RunInTray.Text = "Hide PC Toolbox to tray when app closes?"
         Me.RunInTray.UseVisualStyleBackColor = True
         '
         'ComboBox1
