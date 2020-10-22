@@ -17,6 +17,10 @@ Version 0.9 Full Release - Currently supported
 
 Version 0.10 - Currently supported
 
+## I have the latest version of Windows, why can't it run?
+Instead of the OS Versions supporting the current OS, it supports the OS that was pre-installed on the device. So if you had Windows XP and upgraded to 10, it wouldn't run. 
+This is due to performance issues and reliabillity.
+
 ### Windows and Application Support
 
 Version 0.7
@@ -37,7 +41,6 @@ Version 0.9 Full Release
 Version 0.10
 - Unsupported on Windows XP
 - Unsupported on Windows Vista
-
 
 
 
