@@ -1,16 +1,33 @@
 ﻿
 
+Imports MaterialSkin
+Imports DiscordRPC
+Imports DiscordRPC.Logging
+
 Public Class frmMain
 
-    ' Dont mind this stuff all of it is dim
-    Public drag As Boolean
-    Public mousex As Integer
-    Public mousey As Integer
+
+
+
+
+    Public RpcClient As DiscordRpcClient
+    Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
+    Public ReadOnly Presence As RichPresence = New RichPresence With {
+    .Details = "On Menu",
+    .State = "v0.11-beta",
+    .Assets = New Assets With {.LargeImageKey = "placeholder_1"}
+    }
+
 
 
 
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        'MaterialSkin
+        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.DARK
 
 
 
@@ -40,73 +57,20 @@ Public Class frmMain
             Me.Close()
         End If
 
-
-
-
-
-        ' Registry Keys
-
-
-
-
-
-        My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "WindowsVersion", winver.Text)
-
-
-
-
-
+        StartClientMain()
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        frmShutdown.Show()
 
-    End Sub
-
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        frmRegistry.Show()
-
-
-
-    End Sub
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        frmConnectivity.Show()
-
-
-    End Sub
-
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
-        frmScripts.Show()
+    Public Sub StartClientMain()
+        RpcClient = New DiscordRpcClient("763902765545947157", pipe:=-1, logger:=Logger, autoEvents:=True)
+        Presence.Timestamps = New Timestamps(DateTime.UtcNow)
+        RpcClient.SetPresence(Presence)
+        RpcClient.Initialize()
     End Sub
 
 
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        frmExecutables.Show()
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-
-
-        If My.Settings.CloseOnClick = "No" Then
-            Application.Exit()
-        End If
-
-        If My.Settings.CloseOnClick = "Yes" Then
-            NotifyIcon1.ShowBalloonTip(1000)
-            Me.Hide()
-            Settings.Hide()
-            frmRegistry.Hide()
-            frmExecutables.Hide()
-            frmScriptMarket.Hide()
-            frmScripts.Hide()
-            frmShutdown.Hide()
-        End If
-        My.Settings.Save()
-    End Sub
 
 
 
@@ -117,22 +81,6 @@ Public Class frmMain
 
 
 
-
-    Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseDown
-        drag = True
-        mousex = Cursor.Position.X - Me.Left
-        mousey = Cursor.Position.Y - Me.Top
-    End Sub
-    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseMove
-        If drag Then
-            Me.Top = Cursor.Position.Y - mousey
-            Me.Left = Cursor.Position.X - mousex
-        End If
-    End Sub
-    Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel1.MouseUp
-        drag = False
-    End Sub
-
     Private Sub OpenToolStripMenuItem_Click_1(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
         Me.Show()
     End Sub
@@ -141,5 +89,28 @@ Public Class frmMain
         Application.Exit()
     End Sub
 
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+        frmShutdown.Show()
+    End Sub
 
+    Private Sub MaterialRaisedButton4_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton4.Click
+        frmRegistry.Show()
+    End Sub
+
+    Private Sub MaterialRaisedButton5_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton5.Click
+        frmConnectivity.Show()
+    End Sub
+
+    Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
+        frmExecutables.Show()
+    End Sub
+
+    Private Sub MaterialRaisedButton3_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton3.Click
+        frmScripts.Show()
+    End Sub
+
+    Private Sub frmMain_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
+        frmScriptMarket.RpcClient.Dispose()
+        StartClientMain()
+    End Sub
 End Class

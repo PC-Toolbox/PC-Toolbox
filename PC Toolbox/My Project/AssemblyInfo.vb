@@ -9,7 +9,7 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("PC Toolbox")>
-<Assembly: AssemblyDescription("Computer essentials.")>
+<Assembly: AssemblyDescription("Features that can enhance computer experience.")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("PC Toolbox")>
 <Assembly: AssemblyCopyright("Copyright ©  2020")>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("0.10.0.0")>
-<Assembly: AssemblyFileVersion("0.10.0.0")>
+<Assembly: AssemblyVersion("0.11.0.0")>
+<Assembly: AssemblyFileVersion("0.11.0.0")>

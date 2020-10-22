@@ -1,43 +1,20 @@
-﻿Public Class frmRegistry
-    Public drag As Boolean
-    Public mousex As Integer
-    Public mousey As Integer
+﻿Imports MaterialSkin
+
+Public Class frmRegistry
+
 
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Process.Start("powershell", "-File C:\")
     End Sub
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Try
-            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "TestKey", "This key was automatically created.")
-        Catch ex As Exception
-            MsgBox("Failed to create key. Do you have permissions?")
-        End Try
 
-
-
-    End Sub
-
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-
-        Try
-            My.Computer.Registry.CurrentUser.DeleteSubKey(
-   "HKEY_CURRENT_USER\PC Toolbox\TestKey")
-        Catch ex As Exception
-            MsgBox("Failed to delete key. Did you create the test key?")
-        End Try
-
-
-
-    End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
@@ -60,6 +37,27 @@
     End Sub
 
     Private Sub frmRegistry_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'MaterialSkin
+        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.DARK
+    End Sub
 
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+        Try
+            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
+  "TestKey", "This key was automatically created.")
+        Catch ex As Exception
+            MsgBox("Failed to create key. Do you have permissions?")
+        End Try
+    End Sub
+
+    Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton2.Click
+        Try
+            My.Computer.Registry.CurrentUser.DeleteSubKey(
+   "HKEY_CURRENT_USER\PC Toolbox\TestKey")
+        Catch ex As Exception
+            MsgBox("Failed to delete key. Did you create the test key? Do you have permission?")
+        End Try
     End Sub
 End Class

@@ -1,9 +1,19 @@
-﻿Public Class frmScripts
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        frmScriptMarket.Show()
+﻿Imports MaterialSkin
+
+Public Class frmScripts
+
+
+
+
+    Private Sub frmScripts_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'MaterialSkin
+        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.DARK
+
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
-        Me.Close()
+    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs)
+        frmScriptMarket.Show()
     End Sub
 End Class

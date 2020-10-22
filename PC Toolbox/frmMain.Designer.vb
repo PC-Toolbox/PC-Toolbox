@@ -1,7 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
-    Inherits System.Windows.Forms.Form
-
+    Inherits MaterialSkin.Controls.MaterialForm
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -24,113 +23,33 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.winver = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton4 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(12, 12)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(56, 21)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = " Menu"
-        '
-        'Button1
-        '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(76, 120)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(158, 31)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Shutdown"
-        Me.ToolTip1.SetToolTip(Me.Button1, "Shutdown")
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(76, 243)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(158, 31)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Registry"
-        Me.ToolTip1.SetToolTip(Me.Button2, "Registry")
-        Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Panel1
-        '
-        Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.PictureBox1)
-        Me.Panel1.Controls.Add(Me.winver)
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(916, 53)
-        Me.Panel1.TabIndex = 4
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(870, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(36, 30)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
-        Me.ToolTip1.SetToolTip(Me.PictureBox1, "Close")
         '
         'winver
         '
         Me.winver.AutoSize = True
         Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.winver.Location = New System.Drawing.Point(762, 3)
+        Me.winver.Location = New System.Drawing.Point(843, 650)
         Me.winver.Name = "winver"
-        Me.winver.Size = New System.Drawing.Size(102, 13)
+        Me.winver.Size = New System.Drawing.Size(54, 13)
         Me.winver.TabIndex = 11
-        Me.winver.Text = "%WindowsVersion%"
+        Me.winver.Text = "%winver%"
         Me.winver.Visible = False
-        '
-        'Button3
-        '
-        Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(76, 358)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(158, 31)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Connectivity"
-        Me.ToolTip1.SetToolTip(Me.Button3, "Connectivity")
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(76, 491)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(158, 31)
-        Me.Button4.TabIndex = 6
-        Me.Button4.Text = "Executables"
-        Me.ToolTip1.SetToolTip(Me.Button4, "Executables")
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
@@ -143,17 +62,6 @@ Partial Class frmMain
         Me.Button5.Text = "Settings"
         Me.ToolTip1.SetToolTip(Me.Button5, "Settings")
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button6.Location = New System.Drawing.Point(351, 120)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(158, 31)
-        Me.Button6.TabIndex = 8
-        Me.Button6.Text = "Scripts"
-        Me.ToolTip1.SetToolTip(Me.Button6, "Scripts")
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'NotifyIcon1
         '
@@ -168,32 +76,97 @@ Partial Class frmMain
         Me.TrayClick1.BackColor = System.Drawing.Color.White
         Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForUpdatesToolStripMenuItem})
         Me.TrayClick1.Name = "TrayClick1"
-        Me.TrayClick1.Size = New System.Drawing.Size(181, 98)
+        Me.TrayClick1.Size = New System.Drawing.Size(174, 76)
+        '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.OpenToolStripMenuItem.Text = "Open"
+        '
+        'CloseToolStripMenuItem
+        '
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.CloseToolStripMenuItem.Text = "Close"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ToolStripSeparator1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer), CType(CType(16, Byte), Integer))
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(177, 6)
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
-        '
-        'CloseToolStripMenuItem
-        '
-        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CloseToolStripMenuItem.Text = "Close"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(170, 6)
         '
         'CheckForUpdatesToolStripMenuItem
         '
         Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
-        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.CheckForUpdatesToolStripMenuItem.Text = "Check For Updates"
+        '
+        'MaterialRaisedButton1
+        '
+        Me.MaterialRaisedButton1.Depth = 0
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(77, 120)
+        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
+        Me.MaterialRaisedButton1.Primary = True
+        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton1.TabIndex = 12
+        Me.MaterialRaisedButton1.Text = "Shutdown"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton1, "Shutdown")
+        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton4
+        '
+        Me.MaterialRaisedButton4.Depth = 0
+        Me.MaterialRaisedButton4.Location = New System.Drawing.Point(77, 212)
+        Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton4.Name = "MaterialRaisedButton4"
+        Me.MaterialRaisedButton4.Primary = True
+        Me.MaterialRaisedButton4.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton4.TabIndex = 15
+        Me.MaterialRaisedButton4.Text = "Registry"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton4, "Registry")
+        Me.MaterialRaisedButton4.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton5
+        '
+        Me.MaterialRaisedButton5.Depth = 0
+        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(77, 314)
+        Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
+        Me.MaterialRaisedButton5.Primary = True
+        Me.MaterialRaisedButton5.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton5.TabIndex = 16
+        Me.MaterialRaisedButton5.Text = "Connectivity"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton5, "Connectivity")
+        Me.MaterialRaisedButton5.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton2
+        '
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(77, 409)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton2.TabIndex = 17
+        Me.MaterialRaisedButton2.Text = "Executables"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton2, "Executables")
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        '
+        'MaterialRaisedButton3
+        '
+        Me.MaterialRaisedButton3.Depth = 0
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(288, 120)
+        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
+        Me.MaterialRaisedButton3.Primary = True
+        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(157, 38)
+        Me.MaterialRaisedButton3.TabIndex = 18
+        Me.MaterialRaisedButton3.Text = "Scripts"
+        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton3, "Scripts")
+        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
         '
         'frmMain
         '
@@ -201,34 +174,25 @@ Partial Class frmMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(909, 665)
-        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.MaterialRaisedButton3)
+        Me.Controls.Add(Me.MaterialRaisedButton2)
+        Me.Controls.Add(Me.MaterialRaisedButton5)
+        Me.Controls.Add(Me.MaterialRaisedButton4)
+        Me.Controls.Add(Me.MaterialRaisedButton1)
+        Me.Controls.Add(Me.winver)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents winver As Label
     Friend WithEvents TrayClick1 As ContextMenuStrip
@@ -237,4 +201,9 @@ Partial Class frmMain
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton4 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton5 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
 End Class

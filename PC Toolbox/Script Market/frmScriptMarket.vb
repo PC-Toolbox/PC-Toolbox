@@ -1,33 +1,45 @@
-﻿
+﻿Imports DiscordRPC
+Imports DiscordRPC.Logging
+Imports MaterialSkin
 Public Class frmScriptMarket
 
+    Public RpcClient As DiscordRpcClient
+    Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
+    Public ReadOnly Presence As RichPresence = New RichPresence With {
+    .Details = "PC Toolbox Script Market",
+    .State = "v0.11-beta",
+    .Assets = New Assets With {.LargeImageKey = "scriptmarket"}
+    }
 
 
-    ' Dont mind this stuff all of it is dims and rich presense
-    Public drag As Boolean
-    Public mousex As Integer
-    Public mousey As Integer
 
-    Private Sub Panel1_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs)
-        drag = True
-        mousex = Cursor.Position.X - Me.Left
-        mousey = Cursor.Position.Y - Me.Top
-    End Sub
-    Private Sub Panel1_MouseMove(ByVal sender As Object, ByVal e As MouseEventArgs)
-        If drag Then
-            Me.Top = Cursor.Position.Y - mousey
-            Me.Left = Cursor.Position.X - mousex
-        End If
-    End Sub
-    Private Sub Panel1_MouseUp(ByVal sender As Object, ByVal e As MouseEventArgs)
-        drag = False
-    End Sub
 
     Private Sub frmScriptMarket_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'MaterialSkin
+        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+        SkinManager.AddFormToManage(Me)
+        SkinManager.Theme = MaterialSkinManager.Themes.DARK
 
     End Sub
 
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.Close()
+    End Sub
+
+    Public Sub StartClientScript()
+        RpcClient = New DiscordRpcClient("766072036534517770", pipe:=-1, logger:=Logger, autoEvents:=True)
+        Presence.Timestamps = New Timestamps(DateTime.UtcNow)
+        RpcClient.SetPresence(Presence)
+        RpcClient.Initialize()
+    End Sub
+
+    Private Sub frmScriptMarket_Shown(sender As Object, e As EventArgs) Handles MyBase.Shown
+        StartClientScript()
+        frmMain.RpcClient.Dispose()
+    End Sub
+
+    Private Sub frmScriptMarket_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        RpcClient.Dispose()
+        frmMain.StartClientMain()
     End Sub
 End Class

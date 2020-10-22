@@ -68,18 +68,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("No")>  _
-        Public Property PremiumScript() As String
-            Get
-                Return CType(Me("PremiumScript"),String)
-            End Get
-            Set
-                Me("PremiumScript") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("English")>  _
         Public Property Language() As String
             Get
@@ -104,25 +92,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("v0.10")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("v0.11")>  _
         Public Property Version() As String
             Get
                 Return CType(Me("Version"),String)
             End Get
             Set
                 Me("Version") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Yes")>  _
-        Public Property CloseOnClick() As String
-            Get
-                Return CType(Me("CloseOnClick"),String)
-            End Get
-            Set
-                Me("CloseOnClick") = value
             End Set
         End Property
     End Class

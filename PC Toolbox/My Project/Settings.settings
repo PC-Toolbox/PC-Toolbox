@@ -5,9 +5,6 @@
     <Setting Name="PingedIP" Type="System.String" Scope="User">
       <Value Profile="(Default)">8.8.8.8</Value>
     </Setting>
-    <Setting Name="PremiumScript" Type="System.String" Scope="User">
-      <Value Profile="(Default)">No</Value>
-    </Setting>
     <Setting Name="Language" Type="System.String" Scope="User">
       <Value Profile="(Default)">English</Value>
     </Setting>
@@ -15,10 +12,7 @@
       <Value Profile="(Default)">Dark</Value>
     </Setting>
     <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">v0.10</Value>
-    </Setting>
-    <Setting Name="CloseOnClick" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Yes</Value>
+      <Value Profile="(Default)">v0.11</Value>
     </Setting>
   </Settings>
 </SettingsFile>
