@@ -3,12 +3,12 @@ An application made to modify your computer to your liking all inside one applic
 
 ## Features
 - Able to manage and cancel shutdowns
+- Built with MaterialSkin 
 - Able to check for a connection and how well the connection is
 - Quickly run shortcuts
 - Rich Presence Integration with Discord
 - Application updates automatically
-- Built in Troubleshooter in Python
-- Built in Windows 10 debloater
+- Built in Windows 10 debloater (WIP)
 
 ## Installation
 Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and download the latest version. 
