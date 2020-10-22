@@ -43,9 +43,6 @@ Public Class Settings
 
 
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        ToolStripMenuItem1.Text = "Version: " + My.Settings.Version
-
-
 
         ' MaterialSkin
 
