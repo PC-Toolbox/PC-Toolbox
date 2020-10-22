@@ -164,7 +164,6 @@ Partial Class frmMain
         'MaterialFlatButton1
         '
         Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(20, Byte), Integer))
         Me.MaterialFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.MaterialFlatButton1.Depth = 0
@@ -173,7 +172,7 @@ Partial Class frmMain
         Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
         Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(76, 36)
+        Me.MaterialFlatButton1.Size = New System.Drawing.Size(111, 36)
         Me.MaterialFlatButton1.TabIndex = 19
         Me.MaterialFlatButton1.Text = "Settings"
         Me.MaterialFlatButton1.UseVisualStyleBackColor = False
