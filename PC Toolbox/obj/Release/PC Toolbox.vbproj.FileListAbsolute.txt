@@ -35,3 +35,4 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Des
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Fonts.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.CheckForUpdates.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmCoffee.resources

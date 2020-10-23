@@ -177,11 +177,16 @@ Partial Class frmMain
         '
         'MetroButton1
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(7, 629)
+        Me.MetroButton1.FontSize = MetroFramework.MetroButtonSize.Medium
+        Me.MetroButton1.FontWeight = MetroFramework.MetroButtonWeight.Light
+        Me.MetroButton1.Highlight = True
+        Me.MetroButton1.Location = New System.Drawing.Point(-2, 633)
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(211, 36)
         Me.MetroButton1.TabIndex = 28
         Me.MetroButton1.Text = "Settings"
+        Me.MetroButton1.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroToolTip1.SetToolTip(Me.MetroButton1, "Settings")
         Me.MetroButton1.UseSelectable = True
         '
         'MetroTile7
@@ -194,8 +199,8 @@ Partial Class frmMain
         Me.MetroTile7.TabIndex = 29
         Me.MetroTile7.Text = "Coffee" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Computer Cleaner)"
         Me.MetroTile7.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile7.TileCount = 100
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Files")
+        Me.MetroTile7.TileCount = 4
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Coffee")
         Me.MetroTile7.UseSelectable = True
         Me.MetroTile7.Visible = False
         '
@@ -209,8 +214,8 @@ Partial Class frmMain
         Me.MetroTile8.TabIndex = 30
         Me.MetroTile8.Text = "Printing"
         Me.MetroTile8.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile8.TileCount = 100
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Files")
+        Me.MetroTile8.TileCount = 8
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Printing Services")
         Me.MetroTile8.UseSelectable = True
         Me.MetroTile8.Visible = False
         '

@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="PC Toolbox.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PC Toolbox" version="0.11.4.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PC Toolbox" version="0.11.5.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="PC Toolbox.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="510432">
-      <assemblyIdentity name="PC Toolbox" version="0.11.4.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="511968">
+      <assemblyIdentity name="PC Toolbox" version="0.11.5.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Rj3P991AFkw63cLXhLpj1BpoQBtG55BVUKdgDx+UQmc=</dsig:DigestValue>
+        <dsig:DigestValue>N3+0gRvhD7XlwlWl6SMp3/u713NIWWPjaIJHN+/XBLA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

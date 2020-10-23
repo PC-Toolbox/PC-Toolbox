@@ -14,7 +14,7 @@ Public Class frmMain
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = "On The Menu",
-    .State = "Running Version 0.11.4",
+    .State = "Beta User",
     .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "PC Toolbox"}
     }
 
@@ -33,8 +33,8 @@ Public Class frmMain
 
         ''We have removed the limitation for Version Support. Probably coming back later when the app gets more complex.
 
-        'Dim os As OperatingSystem = Environment.OSVersion
-        'winver.Text = os.Version.Major & os.Version.Minor
+        Dim os As OperatingSystem = Environment.OSVersion
+        frmCoffee.winver.Text = os.Version.Major & os.Version.Minor
 
         'If winver.Text = "62" Then
         'Version Supported
