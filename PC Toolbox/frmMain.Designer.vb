@@ -206,6 +206,7 @@ Partial Class frmMain
         Me.MetroTile7.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
         Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Files")
         Me.MetroTile7.UseSelectable = True
+        Me.MetroTile7.Visible = False
         '
         'MetroTile8
         '
@@ -220,6 +221,7 @@ Partial Class frmMain
         Me.MetroTile8.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
         Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Files")
         Me.MetroTile8.UseSelectable = True
+        Me.MetroTile8.Visible = False
         '
         'frmMain
         '
