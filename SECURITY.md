@@ -13,7 +13,7 @@ Version 0.8.1 - Supported until 1/30/21
 
 Version 0.9 Pre Release - Supported until 3/1/21
 
-Version 0.9 Full Release - Currently Supported
+Version 0.9 Full Release - Supported until 5/1/21
 
 Version 0.10 - Currently Supported
 
@@ -26,6 +26,8 @@ Version 0.11.2 - Currently Supported
 Version 0.11.3 - Currently Supported
 
 Version 0.11.4 - Currently Supported
+
+Version 0.11.5 - Currently Supported
 
 ## I have the latest version of Windows, why can't it run?
 Instead of the OS Versions supporting the current OS, it supports the OS that was pre-installed on the device. So if you had Windows XP and upgraded to 10, it wouldn't run. 
