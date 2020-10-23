@@ -65,11 +65,14 @@ Version 0.11.2
 - Unsupported on Windows Vista
 
 Version 0.11.3
-- Supported on all Devices!
-
+- Supported on all Openrating Systems
 
 Version 0.11.4
-- Supported on all Devices!
+- Supported on all Operating Systems
+
+Version 0.11.5
+- Supported on all Operating Systems
+
 
 ## Reporting a Vulnerability
 If there are any vulnerabillities please report them in Issues. Make sure to give a clear descripton on what the problem is. If your issue is accepted it
