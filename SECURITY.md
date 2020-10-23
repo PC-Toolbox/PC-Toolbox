@@ -21,7 +21,11 @@ Version 0.11 - Currently Supported
 
 Version 0.11.1 - Currently Supported
 
-Version 0.12 - Currently Supported
+Version 0.11.2 - Currently Supported
+
+Version 0.11.3 - Currently Supported
+
+Version 0.11.4 - Currently Supported
 
 ## I have the latest version of Windows, why can't it run?
 Instead of the OS Versions supporting the current OS, it supports the OS that was pre-installed on the device. So if you had Windows XP and upgraded to 10, it wouldn't run. 
@@ -56,9 +60,16 @@ Version 0.11.1
 - Unsupported on Windows XP
 - Unsupported on Windows Vista
 
-Version 0.12
+Version 0.11.2
 - Unsupported on Windows XP
 - Unsupported on Windows Vista
+
+Version 0.11.3
+- Supported on all Devices!
+
+
+Version 0.11.4
+- Supported on all Devices!
 
 ## Reporting a Vulnerability
 If there are any vulnerabillities please report them in Issues. Make sure to give a clear descripton on what the problem is. If your issue is accepted it
