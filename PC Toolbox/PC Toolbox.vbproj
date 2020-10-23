@@ -99,8 +99,17 @@
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -139,6 +148,12 @@
       <DependentUpon>frmExecutables.vb</DependentUpon>
     </Compile>
     <Compile Include="frmExecutables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFiles.Designer.vb">
+      <DependentUpon>frmFiles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFiles.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.vb">
@@ -188,6 +203,12 @@
     <Compile Include="Script Market\frmScriptMarket.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Settings\CheckForUpdates.Designer.vb">
+      <DependentUpon>CheckForUpdates.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\CheckForUpdates.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Settings\frmUpdates.Designer.vb">
       <DependentUpon>frmUpdates.vb</DependentUpon>
     </Compile>
@@ -207,6 +228,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmExecutables.resx">
       <DependentUpon>frmExecutables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFiles.resx">
+      <DependentUpon>frmFiles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
@@ -228,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Script Market\frmScriptMarket.resx">
       <DependentUpon>frmScriptMarket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\CheckForUpdates.resx">
+      <DependentUpon>CheckForUpdates.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\frmUpdates.resx">
       <DependentUpon>frmUpdates.vb</DependentUpon>

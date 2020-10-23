@@ -30,15 +30,16 @@ Partial Class frmMain
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
-        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton4 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton5 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
-        Me.MaterialRaisedButton6 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton7 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
+        Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.MetroTile7 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile8 = New MetroFramework.Controls.MetroTile()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -46,7 +47,7 @@ Partial Class frmMain
         '
         Me.winver.AutoSize = True
         Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.winver.Location = New System.Drawing.Point(852, 650)
+        Me.winver.Location = New System.Drawing.Point(993, 650)
         Me.winver.Name = "winver"
         Me.winver.Size = New System.Drawing.Size(54, 13)
         Me.winver.TabIndex = 11
@@ -93,135 +94,148 @@ Partial Class frmMain
         Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
         Me.CheckForUpdatesToolStripMenuItem.Text = "Check For Updates"
         '
-        'MaterialRaisedButton1
+        'MetroToolTip1
         '
-        Me.MaterialRaisedButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(77, 120)
-        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
-        Me.MaterialRaisedButton1.Primary = True
-        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton1.TabIndex = 12
-        Me.MaterialRaisedButton1.Text = "Shutdown"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton1, "Shutdown")
-        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
+        Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroToolTip1.StyleManager = Nothing
+        Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
         '
-        'MaterialRaisedButton4
+        'MetroTile1
         '
-        Me.MaterialRaisedButton4.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton4.Depth = 0
-        Me.MaterialRaisedButton4.Location = New System.Drawing.Point(77, 212)
-        Me.MaterialRaisedButton4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton4.Name = "MaterialRaisedButton4"
-        Me.MaterialRaisedButton4.Primary = True
-        Me.MaterialRaisedButton4.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton4.TabIndex = 15
-        Me.MaterialRaisedButton4.Text = "Registry"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton4, "Registry")
-        Me.MaterialRaisedButton4.UseVisualStyleBackColor = True
+        Me.MetroTile1.ActiveControl = Nothing
+        Me.MetroTile1.Location = New System.Drawing.Point(33, 75)
+        Me.MetroTile1.Name = "MetroTile1"
+        Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
+        Me.MetroTile1.TabIndex = 22
+        Me.MetroTile1.Text = "Shutdown"
+        Me.MetroTile1.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile1.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown")
+        Me.MetroTile1.UseSelectable = True
         '
-        'MaterialRaisedButton5
+        'MetroTile2
         '
-        Me.MaterialRaisedButton5.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton5.Depth = 0
-        Me.MaterialRaisedButton5.Location = New System.Drawing.Point(77, 302)
-        Me.MaterialRaisedButton5.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton5.Name = "MaterialRaisedButton5"
-        Me.MaterialRaisedButton5.Primary = True
-        Me.MaterialRaisedButton5.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton5.TabIndex = 16
-        Me.MaterialRaisedButton5.Text = "Connectivity"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton5, "Connectivity")
-        Me.MaterialRaisedButton5.UseVisualStyleBackColor = True
+        Me.MetroTile2.ActiveControl = Nothing
+        Me.MetroTile2.Location = New System.Drawing.Point(273, 75)
+        Me.MetroTile2.Name = "MetroTile2"
+        Me.MetroTile2.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile2.Style = MetroFramework.MetroColorStyle.Silver
+        Me.MetroTile2.TabIndex = 23
+        Me.MetroTile2.Text = "Registry"
+        Me.MetroTile2.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile2.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile2, "Registry")
+        Me.MetroTile2.UseSelectable = True
         '
-        'MaterialRaisedButton2
+        'MetroTile3
         '
-        Me.MaterialRaisedButton2.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(77, 392)
-        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
-        Me.MaterialRaisedButton2.Primary = True
-        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton2.TabIndex = 17
-        Me.MaterialRaisedButton2.Text = "Executables"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton2, "Executables")
-        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        Me.MetroTile3.ActiveControl = Nothing
+        Me.MetroTile3.Location = New System.Drawing.Point(535, 75)
+        Me.MetroTile3.Name = "MetroTile3"
+        Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
+        Me.MetroTile3.TabIndex = 24
+        Me.MetroTile3.Text = "Connectivity"
+        Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile3.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile3, "Connectivity")
+        Me.MetroTile3.UseSelectable = True
         '
-        'MaterialRaisedButton3
+        'MetroTile4
         '
-        Me.MaterialRaisedButton3.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(264, 120)
-        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
-        Me.MaterialRaisedButton3.Primary = True
-        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton3.TabIndex = 18
-        Me.MaterialRaisedButton3.Text = "Scripts"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton3, "Scripts")
-        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
+        Me.MetroTile4.ActiveControl = Nothing
+        Me.MetroTile4.Location = New System.Drawing.Point(33, 298)
+        Me.MetroTile4.Name = "MetroTile4"
+        Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
+        Me.MetroTile4.TabIndex = 25
+        Me.MetroTile4.Text = "Executables"
+        Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile4.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile4, "Executables")
+        Me.MetroTile4.UseSelectable = True
         '
-        'MaterialFlatButton1
+        'MetroTile5
         '
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(20, Byte), Integer))
-        Me.MaterialFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(3, 627)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(128, 36)
-        Me.MaterialFlatButton1.TabIndex = 19
-        Me.MaterialFlatButton1.Text = "Settings"
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = False
+        Me.MetroTile5.ActiveControl = Nothing
+        Me.MetroTile5.Location = New System.Drawing.Point(273, 298)
+        Me.MetroTile5.Name = "MetroTile5"
+        Me.MetroTile5.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile5.Style = MetroFramework.MetroColorStyle.Green
+        Me.MetroTile5.TabIndex = 26
+        Me.MetroTile5.Text = "Scripts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Script Market"
+        Me.MetroTile5.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile5.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts and Script Market")
+        Me.MetroTile5.UseSelectable = True
         '
-        'MaterialRaisedButton6
+        'MetroTile6
         '
-        Me.MaterialRaisedButton6.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton6.Depth = 0
-        Me.MaterialRaisedButton6.Location = New System.Drawing.Point(264, 212)
-        Me.MaterialRaisedButton6.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton6.Name = "MaterialRaisedButton6"
-        Me.MaterialRaisedButton6.Primary = True
-        Me.MaterialRaisedButton6.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton6.TabIndex = 20
-        Me.MaterialRaisedButton6.Text = "Files"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton6, "Scripts")
-        Me.MaterialRaisedButton6.UseVisualStyleBackColor = True
+        Me.MetroTile6.ActiveControl = Nothing
+        Me.MetroTile6.Location = New System.Drawing.Point(535, 298)
+        Me.MetroTile6.Name = "MetroTile6"
+        Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Pink
+        Me.MetroTile6.TabIndex = 27
+        Me.MetroTile6.Text = "Files"
+        Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
+        Me.MetroTile6.UseSelectable = True
         '
-        'MaterialRaisedButton7
+        'MetroButton1
         '
-        Me.MaterialRaisedButton7.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.MaterialRaisedButton7.Depth = 0
-        Me.MaterialRaisedButton7.Location = New System.Drawing.Point(264, 302)
-        Me.MaterialRaisedButton7.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton7.Name = "MaterialRaisedButton7"
-        Me.MaterialRaisedButton7.Primary = True
-        Me.MaterialRaisedButton7.Size = New System.Drawing.Size(157, 38)
-        Me.MaterialRaisedButton7.TabIndex = 21
-        Me.MaterialRaisedButton7.Text = "Printing"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton7, "Scripts")
-        Me.MaterialRaisedButton7.UseVisualStyleBackColor = True
-        Me.MaterialRaisedButton7.Visible = False
+        Me.MetroButton1.Location = New System.Drawing.Point(7, 629)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(211, 36)
+        Me.MetroButton1.TabIndex = 28
+        Me.MetroButton1.Text = "Settings"
+        Me.MetroButton1.UseSelectable = True
+        '
+        'MetroTile7
+        '
+        Me.MetroTile7.ActiveControl = Nothing
+        Me.MetroTile7.Location = New System.Drawing.Point(778, 75)
+        Me.MetroTile7.Name = "MetroTile7"
+        Me.MetroTile7.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile7.Style = MetroFramework.MetroColorStyle.Brown
+        Me.MetroTile7.TabIndex = 29
+        Me.MetroTile7.Text = "Coffee"
+        Me.MetroTile7.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile7.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Files")
+        Me.MetroTile7.UseSelectable = True
+        '
+        'MetroTile8
+        '
+        Me.MetroTile8.ActiveControl = Nothing
+        Me.MetroTile8.Location = New System.Drawing.Point(778, 298)
+        Me.MetroTile8.Name = "MetroTile8"
+        Me.MetroTile8.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile8.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroTile8.TabIndex = 30
+        Me.MetroTile8.Text = "Printing"
+        Me.MetroTile8.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile8.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Files")
+        Me.MetroTile8.UseSelectable = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(909, 665)
-        Me.Controls.Add(Me.MaterialRaisedButton7)
-        Me.Controls.Add(Me.MaterialRaisedButton6)
-        Me.Controls.Add(Me.MaterialFlatButton1)
-        Me.Controls.Add(Me.MaterialRaisedButton3)
-        Me.Controls.Add(Me.MaterialRaisedButton2)
-        Me.Controls.Add(Me.MaterialRaisedButton5)
-        Me.Controls.Add(Me.MaterialRaisedButton4)
-        Me.Controls.Add(Me.MaterialRaisedButton1)
+        Me.ClientSize = New System.Drawing.Size(1059, 665)
+        Me.Controls.Add(Me.MetroTile8)
+        Me.Controls.Add(Me.MetroTile7)
+        Me.Controls.Add(Me.MetroButton1)
+        Me.Controls.Add(Me.MetroTile6)
+        Me.Controls.Add(Me.MetroTile5)
+        Me.Controls.Add(Me.MetroTile4)
+        Me.Controls.Add(Me.MetroTile3)
+        Me.Controls.Add(Me.MetroTile2)
+        Me.Controls.Add(Me.MetroTile1)
         Me.Controls.Add(Me.winver)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -238,16 +252,17 @@ Partial Class frmMain
     Friend WithEvents winver As Label
     Friend WithEvents TrayClick1 As ContextMenuStrip
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton4 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton5 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
-    Friend WithEvents MaterialRaisedButton6 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton7 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
+    Friend WithEvents MetroTile1 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile2 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile3 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents MetroTile7 As MetroFramework.Controls.MetroTile
+    Friend WithEvents MetroTile8 As MetroFramework.Controls.MetroTile
 End Class

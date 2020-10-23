@@ -27,6 +27,7 @@ Partial Class frmRegistry
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.SuspendLayout()
         '
         'MaterialFlatButton1
@@ -34,7 +35,7 @@ Partial Class frmRegistry
         Me.MaterialFlatButton1.AutoSize = True
         Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(504, 461)
+        Me.MaterialFlatButton1.Location = New System.Drawing.Point(504, 449)
         Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
@@ -42,6 +43,7 @@ Partial Class frmRegistry
         Me.MaterialFlatButton1.Size = New System.Drawing.Size(127, 36)
         Me.MaterialFlatButton1.TabIndex = 13
         Me.MaterialFlatButton1.Text = "Create Test Key"
+        Me.MetroToolTip1.SetToolTip(Me.MaterialFlatButton1, "Create Registry Key")
         Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
         'MaterialFlatButton2
@@ -57,6 +59,7 @@ Partial Class frmRegistry
         Me.MaterialFlatButton2.Size = New System.Drawing.Size(124, 36)
         Me.MaterialFlatButton2.TabIndex = 14
         Me.MaterialFlatButton2.Text = "Delete Test Key"
+        Me.MetroToolTip1.SetToolTip(Me.MaterialFlatButton2, "Delete Registry Key")
         Me.MaterialFlatButton2.UseVisualStyleBackColor = True
         '
         'MaterialRaisedButton1
@@ -95,6 +98,12 @@ Partial Class frmRegistry
         Me.MaterialRaisedButton3.Text = "Remove Bloatware"
         Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
         '
+        'MetroToolTip1
+        '
+        Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroToolTip1.StyleManager = Nothing
+        Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
+        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -118,4 +127,5 @@ Partial Class frmRegistry
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
 End Class

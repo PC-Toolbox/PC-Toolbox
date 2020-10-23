@@ -5,14 +5,14 @@ Public Class Settings
 
 
 
-    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
-        If ComboBox1.SelectedItem = "English" Then
+    Private Sub MetroComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs)
+        If MetroComboBox1.SelectedItem = "English" Then
             My.Settings.Language = "English"
 
             My.Settings.Save()
         End If
 
-        If ComboBox1.SelectedItem = "Spanish" Then
+        If MetroComboBox1.SelectedItem = "Spanish" Then
             My.Settings.Language = "Spanish"
 
             My.Settings.Save()
@@ -21,23 +21,8 @@ Public Class Settings
 
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
-        If ComboBox2.SelectedItem = "Dark" Then
-            My.Settings.Theme = "Dark"
-            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-            SkinManager.Theme = MaterialSkinManager.Themes.DARK
-            SkinManager.AddFormToManage(Me)
-            My.Settings.Save()
-        End If
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
 
-        If ComboBox2.SelectedItem = "Light" Then
-            My.Settings.Theme = "Light"
-            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-            SkinManager.AddFormToManage(Me)
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
-            My.Settings.Save()
-        End If
-        My.Settings.Save()
     End Sub
 
 
@@ -55,7 +40,7 @@ Public Class Settings
         If ComboBox3.SelectedItem = "Yes" Then
             My.Settings.RPCShow = "True"
             frmMain.StartClientMain()
-
+            frmScriptMarket.StartClientScript()
 
             My.Settings.Save()
         End If
@@ -67,6 +52,29 @@ Public Class Settings
 
             My.Settings.Save()
         End If
+    End Sub
+
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+
+    End Sub
+
+    Private Sub MetroComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox2.SelectedIndexChanged
+        If MetroComboBox2.SelectedItem = "Dark" Then
+            My.Settings.Theme = "Dark"
+            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+            SkinManager.Theme = MaterialSkinManager.Themes.DARK
+            SkinManager.AddFormToManage(Me)
+            My.Settings.Save()
+        End If
+
+        If MetroComboBox2.SelectedItem = "Light" Then
+            My.Settings.Theme = "Light"
+            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
+            SkinManager.AddFormToManage(Me)
+            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
+            My.Settings.Save()
+        End If
+        My.Settings.Save()
     End Sub
 
 

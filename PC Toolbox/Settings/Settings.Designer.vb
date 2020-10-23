@@ -23,8 +23,6 @@ Partial Class Settings
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
@@ -34,27 +32,9 @@ Partial Class Settings
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
         Me.SuspendLayout()
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"English"})
-        Me.ComboBox1.Location = New System.Drawing.Point(98, 79)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(178, 21)
-        Me.ComboBox1.TabIndex = 5
-        Me.ComboBox1.Text = "English"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Dark", "Light"})
-        Me.ComboBox2.Location = New System.Drawing.Point(98, 151)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(178, 21)
-        Me.ComboBox2.TabIndex = 7
-        Me.ComboBox2.Text = "Dark"
         '
         'MaterialLabel1
         '
@@ -75,7 +55,7 @@ Partial Class Settings
         Me.MaterialLabel2.Depth = 0
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 153)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 143)
         Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(59, 19)
@@ -124,7 +104,7 @@ Partial Class Settings
         Me.MaterialLabel4.Depth = 0
         Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel4.Location = New System.Drawing.Point(531, 81)
+        Me.MaterialLabel4.Location = New System.Drawing.Point(543, 79)
         Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel4.Name = "MaterialLabel4"
         Me.MaterialLabel4.Size = New System.Drawing.Size(63, 19)
@@ -149,7 +129,7 @@ Partial Class Settings
         Me.MaterialLabel5.Depth = 0
         Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.MaterialLabel5.Location = New System.Drawing.Point(8, 262)
+        Me.MaterialLabel5.Location = New System.Drawing.Point(12, 264)
         Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel5.Name = "MaterialLabel5"
         Me.MaterialLabel5.Size = New System.Drawing.Size(314, 19)
@@ -158,12 +138,36 @@ Partial Class Settings
         Me.ToolTip1.SetToolTip(Me.MaterialLabel5, "Well... no duh")
         Me.MaterialLabel5.Visible = False
         '
+        'MetroComboBox1
+        '
+        Me.MetroComboBox1.FormattingEnabled = True
+        Me.MetroComboBox1.ItemHeight = 23
+        Me.MetroComboBox1.Items.AddRange(New Object() {"English"})
+        Me.MetroComboBox1.Location = New System.Drawing.Point(89, 79)
+        Me.MetroComboBox1.Name = "MetroComboBox1"
+        Me.MetroComboBox1.Size = New System.Drawing.Size(175, 29)
+        Me.MetroComboBox1.TabIndex = 24
+        Me.MetroComboBox1.UseSelectable = True
+        '
+        'MetroComboBox2
+        '
+        Me.MetroComboBox2.FormattingEnabled = True
+        Me.MetroComboBox2.ItemHeight = 23
+        Me.MetroComboBox2.Items.AddRange(New Object() {"Dark", "Light"})
+        Me.MetroComboBox2.Location = New System.Drawing.Point(77, 143)
+        Me.MetroComboBox2.Name = "MetroComboBox2"
+        Me.MetroComboBox2.Size = New System.Drawing.Size(187, 29)
+        Me.MetroComboBox2.TabIndex = 25
+        Me.MetroComboBox2.UseSelectable = True
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(883, 659)
+        Me.Controls.Add(Me.MetroComboBox2)
+        Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MaterialLabel5)
         Me.Controls.Add(Me.MaterialLabel4)
         Me.Controls.Add(Me.ComboBox4)
@@ -172,16 +176,12 @@ Partial Class Settings
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
         Me.Controls.Add(Me.MaterialLabel1)
-        Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
@@ -191,4 +191,6 @@ Partial Class Settings
     Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
 End Class

@@ -86,32 +86,36 @@ Public Class frmMain
         Application.Exit()
     End Sub
 
-    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
-        frmShutdown.Show()
-    End Sub
 
-    Private Sub MaterialRaisedButton4_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton4.Click
-        frmRegistry.Show()
-    End Sub
-
-    Private Sub MaterialRaisedButton5_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton5.Click
-        frmConnectivity.Show()
-    End Sub
-
-    Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
-        frmExecutables.Show()
-    End Sub
-
-    Private Sub MaterialRaisedButton3_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton3.Click
-        frmScripts.Show()
-    End Sub
 
     Private Sub frmMain_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
         frmScriptMarket.RpcClient.Dispose()
         StartClientMain()
     End Sub
 
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
+
+
+    Private Sub MetroTile1_Click(sender As Object, e As EventArgs) Handles MetroTile1.Click
+        frmShutdown.Show()
+    End Sub
+
+    Private Sub MetroTile2_Click(sender As Object, e As EventArgs) Handles MetroTile2.Click
+        frmRegistry.Show()
+    End Sub
+
+    Private Sub MetroTile3_Click(sender As Object, e As EventArgs) Handles MetroTile3.Click
+        frmConnectivity.Show()
+    End Sub
+
+    Private Sub MetroTile4_Click(sender As Object, e As EventArgs) Handles MetroTile4.Click
+        frmExecutables.Show()
+    End Sub
+
+    Private Sub MetroTile5_Click(sender As Object, e As EventArgs) Handles MetroTile5.Click
+        frmScripts.Show()
+    End Sub
+
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
         Settings.Show()
     End Sub
 End Class

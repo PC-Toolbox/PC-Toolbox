@@ -55,7 +55,7 @@ Public Class frmRegistry
     Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton2.Click
         Try
             My.Computer.Registry.CurrentUser.DeleteSubKey(
-   "HKEY_CURRENT_USER\PC Toolbox\TestKey")
+   "PC Toolbox\TestKey")
         Catch ex As Exception
             MsgBox("Failed to delete key. Did you create the test key? Do you have permission?")
         End Try
@@ -67,7 +67,7 @@ Public Class frmRegistry
 
 
         Catch ex As Exception
-            MsgBox("Unable to open registry. Is there a permission error?")
+            MsgBox("Unable to open registry. Is there a permission error? Did you run as admin?")
 
         End Try
     End Sub
