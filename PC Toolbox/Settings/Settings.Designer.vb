@@ -22,18 +22,18 @@ Partial Class Settings
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
         Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.MaterialLabel5 = New MaterialSkin.Controls.MaterialLabel()
-        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
+        Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
+        Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
         Me.SuspendLayout()
         '
         'MaterialLabel1
@@ -65,14 +65,13 @@ Partial Class Settings
         'MaterialRaisedButton1
         '
         Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(-4, 621)
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(-1, 621)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
         Me.MaterialRaisedButton1.Size = New System.Drawing.Size(170, 40)
         Me.MaterialRaisedButton1.TabIndex = 18
         Me.MaterialRaisedButton1.Text = "Check For Updates"
-        Me.ToolTip1.SetToolTip(Me.MaterialRaisedButton1, "Check For Updates")
         Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
         '
         'MaterialLabel3
@@ -81,22 +80,12 @@ Partial Class Settings
         Me.MaterialLabel3.Depth = 0
         Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel3.Location = New System.Drawing.Point(8, 298)
+        Me.MaterialLabel3.Location = New System.Drawing.Point(12, 298)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
         Me.MaterialLabel3.Size = New System.Drawing.Size(145, 19)
         Me.MaterialLabel3.TabIndex = 20
-        Me.MaterialLabel3.Text = "Show Rich Presense"
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox3.Location = New System.Drawing.Point(182, 296)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(178, 21)
-        Me.ComboBox3.TabIndex = 19
-        Me.ComboBox3.Text = "Yes"
+        Me.MaterialLabel3.Text = "Show Rich Presence"
         '
         'MaterialLabel4
         '
@@ -129,13 +118,12 @@ Partial Class Settings
         Me.MaterialLabel5.Depth = 0
         Me.MaterialLabel5.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.MaterialLabel5.Location = New System.Drawing.Point(12, 264)
+        Me.MaterialLabel5.Location = New System.Drawing.Point(12, 266)
         Me.MaterialLabel5.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel5.Name = "MaterialLabel5"
         Me.MaterialLabel5.Size = New System.Drawing.Size(314, 19)
         Me.MaterialLabel5.TabIndex = 23
-        Me.MaterialLabel5.Text = "Discord is Required to use the Rich Presense."
-        Me.ToolTip1.SetToolTip(Me.MaterialLabel5, "Well... no duh")
+        Me.MaterialLabel5.Text = "Discord is Required to use the Rich Presence."
         Me.MaterialLabel5.Visible = False
         '
         'MetroComboBox1
@@ -147,6 +135,7 @@ Partial Class Settings
         Me.MetroComboBox1.Name = "MetroComboBox1"
         Me.MetroComboBox1.Size = New System.Drawing.Size(175, 29)
         Me.MetroComboBox1.TabIndex = 24
+        Me.MetroToolTip1.SetToolTip(Me.MetroComboBox1, "Select Language")
         Me.MetroComboBox1.UseSelectable = True
         '
         'MetroComboBox2
@@ -158,7 +147,35 @@ Partial Class Settings
         Me.MetroComboBox2.Name = "MetroComboBox2"
         Me.MetroComboBox2.Size = New System.Drawing.Size(187, 29)
         Me.MetroComboBox2.TabIndex = 25
+        Me.MetroToolTip1.SetToolTip(Me.MetroComboBox2, "Select Themes")
         Me.MetroComboBox2.UseSelectable = True
+        '
+        'MetroComboBox3
+        '
+        Me.MetroComboBox3.FormattingEnabled = True
+        Me.MetroComboBox3.ItemHeight = 23
+        Me.MetroComboBox3.Items.AddRange(New Object() {"Yes", "No"})
+        Me.MetroComboBox3.Location = New System.Drawing.Point(163, 298)
+        Me.MetroComboBox3.Name = "MetroComboBox3"
+        Me.MetroComboBox3.Size = New System.Drawing.Size(187, 29)
+        Me.MetroComboBox3.TabIndex = 26
+        Me.MetroToolTip1.SetToolTip(Me.MetroComboBox3, "Show Rich Presence")
+        Me.MetroComboBox3.UseSelectable = True
+        '
+        'MetroToolTip1
+        '
+        Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.Blue
+        Me.MetroToolTip1.StyleManager = Nothing
+        Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
+        '
+        'MetroLabel1
+        '
+        Me.MetroLabel1.AutoSize = True
+        Me.MetroLabel1.Location = New System.Drawing.Point(747, 604)
+        Me.MetroLabel1.Name = "MetroLabel1"
+        Me.MetroLabel1.Size = New System.Drawing.Size(136, 57)
+        Me.MetroLabel1.TabIndex = 28
+        Me.MetroLabel1.Text = "Running Version 0.11.4" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "v0.11.4-beta+15456"
         '
         'Settings
         '
@@ -166,13 +183,14 @@ Partial Class Settings
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(883, 659)
+        Me.Controls.Add(Me.MetroLabel1)
+        Me.Controls.Add(Me.MetroComboBox3)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
         Me.Controls.Add(Me.MaterialLabel5)
         Me.Controls.Add(Me.MaterialLabel4)
         Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.MaterialLabel3)
-        Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
         Me.Controls.Add(Me.MaterialLabel1)
@@ -186,11 +204,12 @@ Partial Class Settings
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents ComboBox3 As ComboBox
     Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents ComboBox4 As ComboBox
-    Friend WithEvents ToolTip1 As ToolTip
     Friend WithEvents MaterialLabel5 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroComboBox3 As MetroFramework.Controls.MetroComboBox
+    Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
+    Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
 End Class

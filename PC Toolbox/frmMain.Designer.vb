@@ -23,7 +23,6 @@ Partial Class frmMain
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
-        Me.winver = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -42,17 +41,6 @@ Partial Class frmMain
         Me.MetroTile8 = New MetroFramework.Controls.MetroTile()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'winver
-        '
-        Me.winver.AutoSize = True
-        Me.winver.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.winver.Location = New System.Drawing.Point(993, 650)
-        Me.winver.Name = "winver"
-        Me.winver.Size = New System.Drawing.Size(54, 13)
-        Me.winver.TabIndex = 11
-        Me.winver.Text = "%winver%"
-        Me.winver.Visible = False
         '
         'NotifyIcon1
         '
@@ -231,7 +219,7 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1059, 665)
+        Me.ClientSize = New System.Drawing.Size(1077, 665)
         Me.Controls.Add(Me.MetroTile8)
         Me.Controls.Add(Me.MetroTile7)
         Me.Controls.Add(Me.MetroButton1)
@@ -241,20 +229,17 @@ Partial Class frmMain
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.MetroTile2)
         Me.Controls.Add(Me.MetroTile1)
-        Me.Controls.Add(Me.winver)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents winver As Label
     Friend WithEvents TrayClick1 As ContextMenuStrip
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
     Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem

@@ -14,7 +14,7 @@ Public Class frmMain
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = "On The Menu",
-    .State = "Running Version 0.11.2",
+    .State = "Running Version 0.11.4",
     .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "PC Toolbox"}
     }
 
@@ -31,31 +31,30 @@ Public Class frmMain
 
 
 
+        ''We have removed the limitation for Version Support. Probably coming back later when the app gets more complex.
+
+        'Dim os As OperatingSystem = Environment.OSVersion
+        'winver.Text = os.Version.Major & os.Version.Minor
+
+        'If winver.Text = "62" Then
+        'Version Supported
+        'End If
 
 
-        Dim os As OperatingSystem = Environment.OSVersion
-        winver.Text = os.Version.Major & os.Version.Minor
-
-        If winver.Text = "62" Then
-            'Version Supported
-        End If
+        'If winver.Text = "61" Then
+        'Version Supported
+        'End If
 
 
-        If winver.Text = "61" Then
-            'Version Supported
-        End If
+        ' If winver.Text = "51" Then
+        ' MsgBox("Windows XP is no longer supported on Toolbox.")
+        'Me.Close()
+        'End If
 
-
-
-        If winver.Text = "51" Then
-            MsgBox("Windows XP is no longer supported on Toolbox.")
-            Me.Close()
-        End If
-
-        If winver.Text = "60" Then
-            MsgBox("Windows Vista is no longer supported on PC Toolbox.")
-            Me.Close()
-        End If
+        ' If winver.Text = "60" Then
+        'MsgBox("Windows Vista is no longer supported on PC Toolbox.")
+        'Me.Close()
+        ' End If
 
         StartClientMain()
 
@@ -117,5 +116,9 @@ Public Class frmMain
 
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
         Settings.Show()
+    End Sub
+
+    Private Sub MetroTile6_Click(sender As Object, e As EventArgs) Handles MetroTile6.Click
+        frmFiles.Show()
     End Sub
 End Class

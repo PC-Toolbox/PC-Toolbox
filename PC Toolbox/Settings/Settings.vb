@@ -36,27 +36,6 @@ Public Class Settings
         SkinManager.Theme = MaterialSkinManager.Themes.DARK
     End Sub
 
-    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
-        If ComboBox3.SelectedItem = "Yes" Then
-            My.Settings.RPCShow = "True"
-            frmMain.StartClientMain()
-            frmScriptMarket.StartClientScript()
-
-            My.Settings.Save()
-        End If
-
-        If ComboBox3.SelectedItem = "No" Then
-            My.Settings.RPCShow = "False"
-            frmMain.RpcClient.Dispose()
-            frmScriptMarket.RpcClient.Dispose()
-
-            My.Settings.Save()
-        End If
-    End Sub
-
-    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
-
-    End Sub
 
     Private Sub MetroComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox2.SelectedIndexChanged
         If MetroComboBox2.SelectedItem = "Dark" Then
@@ -75,6 +54,24 @@ Public Class Settings
             My.Settings.Save()
         End If
         My.Settings.Save()
+    End Sub
+
+    Private Sub MetroComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox3.SelectedIndexChanged
+        If MetroComboBox3.SelectedItem = "Yes" Then
+            My.Settings.RPCShow = "True"
+            frmMain.StartClientMain()
+            frmScriptMarket.StartClientScript()
+
+            My.Settings.Save()
+        End If
+
+        If MetroComboBox3.SelectedItem = "No" Then
+            My.Settings.RPCShow = "False"
+            frmMain.RpcClient.Dispose()
+            frmScriptMarket.RpcClient.Dispose()
+
+            My.Settings.Save()
+        End If
     End Sub
 
 
