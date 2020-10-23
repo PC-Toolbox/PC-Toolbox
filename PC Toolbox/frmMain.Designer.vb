@@ -108,11 +108,14 @@ Partial Class frmMain
         Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
         Me.MetroTile1.TabIndex = 22
-        Me.MetroTile1.Text = "Shutdown"
+        Me.MetroTile1.Text = "Shutdown Manager"
         Me.MetroTile1.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile1.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown")
+        Me.MetroTile1.TileCount = 1
+        Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown Manager")
         Me.MetroTile1.UseSelectable = True
+        Me.MetroTile1.UseTileImage = True
         '
         'MetroTile2
         '
@@ -124,7 +127,7 @@ Partial Class frmMain
         Me.MetroTile2.TabIndex = 23
         Me.MetroTile2.Text = "Registry"
         Me.MetroTile2.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile2.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile2.TileCount = 2
         Me.MetroToolTip1.SetToolTip(Me.MetroTile2, "Registry")
         Me.MetroTile2.UseSelectable = True
         '
@@ -138,7 +141,7 @@ Partial Class frmMain
         Me.MetroTile3.TabIndex = 24
         Me.MetroTile3.Text = "Connectivity"
         Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile3.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile3.TileCount = 3
         Me.MetroToolTip1.SetToolTip(Me.MetroTile3, "Connectivity")
         Me.MetroTile3.UseSelectable = True
         '
@@ -152,7 +155,7 @@ Partial Class frmMain
         Me.MetroTile4.TabIndex = 25
         Me.MetroTile4.Text = "Executables"
         Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile4.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile4.TileCount = 4
         Me.MetroToolTip1.SetToolTip(Me.MetroTile4, "Executables")
         Me.MetroTile4.UseSelectable = True
         '
@@ -166,7 +169,7 @@ Partial Class frmMain
         Me.MetroTile5.TabIndex = 26
         Me.MetroTile5.Text = "Scripts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Script Market"
         Me.MetroTile5.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile5.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile5.TileCount = 5
         Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts and Script Market")
         Me.MetroTile5.UseSelectable = True
         '
@@ -180,7 +183,7 @@ Partial Class frmMain
         Me.MetroTile6.TabIndex = 27
         Me.MetroTile6.Text = "Files"
         Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile6.TileCount = 6
         Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
         Me.MetroTile6.UseSelectable = True
         '
@@ -201,9 +204,9 @@ Partial Class frmMain
         Me.MetroTile7.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile7.Style = MetroFramework.MetroColorStyle.Brown
         Me.MetroTile7.TabIndex = 29
-        Me.MetroTile7.Text = "Coffee"
+        Me.MetroTile7.Text = "Coffee" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Computer Cleaner)"
         Me.MetroTile7.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile7.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile7.TileCount = 100
         Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Files")
         Me.MetroTile7.UseSelectable = True
         Me.MetroTile7.Visible = False
@@ -218,7 +221,7 @@ Partial Class frmMain
         Me.MetroTile8.TabIndex = 30
         Me.MetroTile8.Text = "Printing"
         Me.MetroTile8.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile8.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown
+        Me.MetroTile8.TileCount = 100
         Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Files")
         Me.MetroTile8.UseSelectable = True
         Me.MetroTile8.Visible = False
