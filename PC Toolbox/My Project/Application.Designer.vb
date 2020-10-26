@@ -32,7 +32,6 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            ' I am going to stab this with a knife until it screams for mercy, I still wont stop stabbing it until it dies.
             Me.MainForm = Global.PC_Toolbox.frmMain
         End Sub
     End Class
