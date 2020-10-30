@@ -157,11 +157,11 @@ Partial Class Settings
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(750, 623)
+        Me.MetroLabel1.Location = New System.Drawing.Point(745, 640)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(136, 38)
+        Me.MetroLabel1.Size = New System.Drawing.Size(136, 19)
         Me.MetroLabel1.TabIndex = 28
-        Me.MetroLabel1.Text = "Running Version 0.11.5" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "v0.11.5-beta+021440"
+        Me.MetroLabel1.Text = "Running Version 0.11.6"
         Me.MetroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark
         '
         'MaterialFlatButton1
@@ -169,7 +169,7 @@ Partial Class Settings
         Me.MaterialFlatButton1.AutoSize = True
         Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(176, 623)
+        Me.MaterialFlatButton1.Location = New System.Drawing.Point(176, 621)
         Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
         Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialFlatButton1.Name = "MaterialFlatButton1"

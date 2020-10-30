@@ -37,7 +37,6 @@ Partial Class frmMain
         Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
-        Me.MetroTile7 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile8 = New MetroFramework.Controls.MetroTile()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
@@ -189,25 +188,10 @@ Partial Class frmMain
         Me.MetroToolTip1.SetToolTip(Me.MetroButton1, "Settings")
         Me.MetroButton1.UseSelectable = True
         '
-        'MetroTile7
-        '
-        Me.MetroTile7.ActiveControl = Nothing
-        Me.MetroTile7.Location = New System.Drawing.Point(778, 75)
-        Me.MetroTile7.Name = "MetroTile7"
-        Me.MetroTile7.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile7.Style = MetroFramework.MetroColorStyle.Brown
-        Me.MetroTile7.TabIndex = 29
-        Me.MetroTile7.Text = "Coffee" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "(Computer Cleaner)"
-        Me.MetroTile7.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile7.TileCount = 4
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile7, "Coffee")
-        Me.MetroTile7.UseSelectable = True
-        Me.MetroTile7.Visible = False
-        '
         'MetroTile8
         '
         Me.MetroTile8.ActiveControl = Nothing
-        Me.MetroTile8.Location = New System.Drawing.Point(778, 298)
+        Me.MetroTile8.Location = New System.Drawing.Point(766, 176)
         Me.MetroTile8.Name = "MetroTile8"
         Me.MetroTile8.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile8.Style = MetroFramework.MetroColorStyle.Blue
@@ -226,7 +210,6 @@ Partial Class frmMain
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1077, 665)
         Me.Controls.Add(Me.MetroTile8)
-        Me.Controls.Add(Me.MetroTile7)
         Me.Controls.Add(Me.MetroButton1)
         Me.Controls.Add(Me.MetroTile6)
         Me.Controls.Add(Me.MetroTile5)
@@ -258,6 +241,5 @@ Partial Class frmMain
     Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroTile7 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile8 As MetroFramework.Controls.MetroTile
 End Class

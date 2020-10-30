@@ -34,7 +34,7 @@ Public Class frmMain
         ''We have removed the limitation for Version Support. Probably coming back later when the app gets more complex.
 
         Dim os As OperatingSystem = Environment.OSVersion
-        frmCoffee.winver.Text = os.Version.Major & os.Version.Minor
+
 
         'If winver.Text = "62" Then
         'Version Supported

@@ -24,5 +24,14 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmUpdate
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.Settings.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScriptMarket.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbproj.CopyComplete
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Microsoft.Win32.SystemEvents.dll
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Microsoft.Win32.SystemEvents.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmFiles.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.CheckForUpdates.resources
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\DiscordRPC.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\MaterialSkin.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\MetroFramework.Design.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\MetroFramework.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\DiscordRPC.pdb
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\DiscordRPC.xml
+C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Debug\Newtonsoft.Json.xml

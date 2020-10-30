@@ -69,7 +69,7 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -138,12 +138,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmCoffee.Designer.vb">
-      <DependentUpon>frmCoffee.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmCoffee.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmConnectivity.Designer.vb">
       <DependentUpon>frmConnectivity.vb</DependentUpon>
     </Compile>
@@ -229,9 +223,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmCoffee.resx">
-      <DependentUpon>frmCoffee.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmConnectivity.resx">
       <DependentUpon>frmConnectivity.vb</DependentUpon>
     </EmbeddedResource>

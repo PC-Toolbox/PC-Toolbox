@@ -24,6 +24,7 @@
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Try
+            MsgBox("Clicking this will instantly log you out. Please save your work.")
             Shell("shutdown /l /t 30s")
         Catch ex As Exception
             MsgBox("Log out attempt failed.")
