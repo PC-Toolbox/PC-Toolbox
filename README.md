@@ -1,5 +1,5 @@
 # PC Toolbox
-An application made to modify your computer to your liking all inside one application. Created in vb.net.
+Features that can enhance computer experience. Make your computer run faster and make it easier to use.
 
 ## Features
 - Able to manage and cancel shutdowns
@@ -14,19 +14,17 @@ An application made to modify your computer to your liking all inside one applic
 Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and download the latest version. 
 
 
+## Dependencies
+- Listen, IDK what these are so if you want to help me out just fork it.
+
 ## Supported Versions
 If you would like a detailed description of what versions and Operating Systems are supported, check [Security](https://github.com/byronbytes/PC-Toolbox/blob/master/SECURITY.md).
 
-## Scripts
-There are scripts that users can add and run within the app. These scripts can be downloaded by anyone via the Script Market. All scripts are moderated by our staff team, any malicious scripts will be removed and the user will be terminated from making new ones.
-
-
-## Screenshots 
 
 
 
 ## Wanting to Contribute?
-The few sections below are for users who want to help and contribute to the PC Toolbox Project.
+The sections below are for users who want to help and contribute to the PC Toolbox Project.
 
 
 ### Prerequisites
