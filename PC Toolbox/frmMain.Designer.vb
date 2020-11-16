@@ -169,6 +169,7 @@ Partial Class frmMain
         '
         'Button2
         '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(-2, 535)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(211, 35)
