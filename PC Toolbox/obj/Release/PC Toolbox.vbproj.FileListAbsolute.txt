@@ -17,7 +17,6 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmExec
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmScripts.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmUpdates.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Settings.resources
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmScriptMarket.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.manifest
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.application
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.TrustInfo.xml
@@ -35,4 +34,3 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Des
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Fonts.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.CheckForUpdates.resources
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmCoffee.resources

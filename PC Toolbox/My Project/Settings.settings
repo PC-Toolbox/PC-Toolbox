@@ -14,5 +14,14 @@
     <Setting Name="RPCShow" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="isScriptPremium" Type="System.String" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="MaliciousLevel0" Type="System.String" Scope="User">
+      <Value Profile="(Default)">placeholder</Value>
+    </Setting>
+    <Setting Name="MaliciousLevel1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">placeholder</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
