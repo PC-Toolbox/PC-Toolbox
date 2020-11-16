@@ -190,6 +190,7 @@ Partial Class frmMain
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.MetroTile2)
         Me.Controls.Add(Me.MetroTile1)
+        Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Menu"

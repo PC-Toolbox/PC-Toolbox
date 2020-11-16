@@ -114,24 +114,24 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="379904">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="380928">
       <assemblyIdentity name="PC Toolbox" version="0.12.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>uZlRJbsM22crVt7xbXomHvDOml7PFjg8glPoYy++yhw=</dsig:DigestValue>
+        <dsig:DigestValue>dDBhihFgWmwqqRHdxgY64AgVuNEzCA4cYE9R2LNPReo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PC Toolbox.exe.config" size="1626">
+  <file name="PC Toolbox.exe.config" size="2025">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>3jagLFKUyB0hNMbyN/3q09qAtKCBmmpqxJVl5u4c71s=</dsig:DigestValue>
+      <dsig:DigestValue>bWL6as+KYwTND2mx8Pvjz9sJRgrlu8KsyV5gXau/pWg=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

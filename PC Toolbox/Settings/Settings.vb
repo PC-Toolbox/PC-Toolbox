@@ -65,4 +65,8 @@ Public Class Settings
             My.Settings.Save()
         End If
     End Sub
+
+    Private Sub MaterialRaisedButton2_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton2.Click
+
+    End Sub
 End Class

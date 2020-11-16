@@ -55,7 +55,7 @@ Partial Class frmRegistry
         'MaterialRaisedButton3
         '
         Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(12, 317)
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(-3, 425)
         Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
         Me.MaterialRaisedButton3.Primary = True
@@ -75,7 +75,7 @@ Partial Class frmRegistry
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(463, 372)
+        Me.ClientSize = New System.Drawing.Size(526, 468)
         Me.Controls.Add(Me.MaterialRaisedButton3)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.MaterialRaisedButton1)

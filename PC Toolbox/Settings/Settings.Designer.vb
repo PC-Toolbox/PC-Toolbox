@@ -33,6 +33,8 @@ Partial Class Settings
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.MaterialContextMenuStrip1 = New MaterialSkin.Controls.MaterialContextMenuStrip()
         Me.CompactModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.MaterialContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -121,11 +123,11 @@ Partial Class Settings
         '
         Me.MetroLabel1.AutoSize = True
         Me.MetroLabel1.ContextMenuStrip = Me.MaterialContextMenuStrip1
-        Me.MetroLabel1.Location = New System.Drawing.Point(390, 26)
+        Me.MetroLabel1.Location = New System.Drawing.Point(532, 25)
         Me.MetroLabel1.Name = "MetroLabel1"
         Me.MetroLabel1.Size = New System.Drawing.Size(128, 19)
         Me.MetroLabel1.TabIndex = 28
-        Me.MetroLabel1.Text = "Running Version 0.12"
+        Me.MetroLabel1.Text = "Running Version 0.13"
         Me.MetroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark
         '
         'ComboBox1
@@ -152,12 +154,35 @@ Partial Class Settings
         Me.CompactModeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
         Me.CompactModeToolStripMenuItem.Text = "Compact Mode?"
         '
+        'MaterialRaisedButton2
+        '
+        Me.MaterialRaisedButton2.Depth = 0
+        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(178, 475)
+        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
+        Me.MaterialRaisedButton2.Primary = True
+        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(138, 40)
+        Me.MaterialRaisedButton2.TabIndex = 31
+        Me.MaterialRaisedButton2.Text = "Found an Issue?"
+        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(418, 502)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(242, 13)
+        Me.Label1.TabIndex = 32
+        Me.Label1.Text = "Find a list of Supported Operating Systems HERE."
+        '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(522, 516)
+        Me.ClientSize = New System.Drawing.Size(662, 516)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.MetroComboBox2)
@@ -166,6 +191,7 @@ Partial Class Settings
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
         Me.Controls.Add(Me.MaterialLabel1)
+        Me.MaximizeBox = False
         Me.Name = "Settings"
         Me.Text = "Settings"
         Me.MaterialContextMenuStrip1.ResumeLayout(False)
@@ -184,4 +210,6 @@ Partial Class Settings
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents MaterialContextMenuStrip1 As MaterialSkin.Controls.MaterialContextMenuStrip
     Friend WithEvents CompactModeToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
+    Friend WithEvents Label1 As Label
 End Class
