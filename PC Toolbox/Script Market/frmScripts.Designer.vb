@@ -22,24 +22,11 @@ Partial Class frmScripts
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialLabel1 = New MaterialSkin.Controls.MaterialLabel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
-        '
-        'MaterialFlatButton1
-        '
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(796, 639)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(153, 36)
-        Me.MaterialFlatButton1.TabIndex = 2
-        Me.MaterialFlatButton1.Text = "Visit Script Market"
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = True
         '
         'MaterialLabel1
         '
@@ -47,12 +34,30 @@ Partial Class frmScripts
         Me.MaterialLabel1.Depth = 0
         Me.MaterialLabel1.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel1.Location = New System.Drawing.Point(211, 71)
+        Me.MaterialLabel1.Location = New System.Drawing.Point(378, 66)
         Me.MaterialLabel1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel1.Name = "MaterialLabel1"
-        Me.MaterialLabel1.Size = New System.Drawing.Size(534, 19)
+        Me.MaterialLabel1.Size = New System.Drawing.Size(277, 19)
         Me.MaterialLabel1.TabIndex = 3
-        Me.MaterialLabel1.Text = "Scripts and Script Market are currently in the working. Please check back later."
+        Me.MaterialLabel1.Text = "Scripts are always going under changes."
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(192, 206)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(87, 29)
+        Me.Button2.TabIndex = 4
+        Me.Button2.Text = "Upload"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Panel1
+        '
+        Me.Panel1.AllowDrop = True
+        Me.Panel1.Controls.Add(Me.Button2)
+        Me.Panel1.Location = New System.Drawing.Point(-7, 454)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(282, 238)
+        Me.Panel1.TabIndex = 5
         '
         'frmScripts
         '
@@ -60,15 +65,17 @@ Partial Class frmScripts
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(962, 690)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.MaterialLabel1)
-        Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Name = "frmScripts"
         Me.Text = "Scripts"
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
     Friend WithEvents Button1 As Button
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialLabel1 As MaterialSkin.Controls.MaterialLabel
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Panel1 As Panel
 End Class

@@ -36,8 +36,7 @@ Partial Class frmMain
         Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
-        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
-        Me.MetroTile8 = New MetroFramework.Controls.MetroTile()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -90,14 +89,13 @@ Partial Class frmMain
         'MetroTile1
         '
         Me.MetroTile1.ActiveControl = Nothing
-        Me.MetroTile1.Location = New System.Drawing.Point(33, 75)
+        Me.MetroTile1.Location = New System.Drawing.Point(24, 76)
         Me.MetroTile1.Name = "MetroTile1"
         Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
         Me.MetroTile1.TabIndex = 22
         Me.MetroTile1.Text = "Shutdown Manager"
         Me.MetroTile1.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile1.TileCount = 1
         Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MetroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown Manager")
@@ -107,110 +105,84 @@ Partial Class frmMain
         'MetroTile2
         '
         Me.MetroTile2.ActiveControl = Nothing
-        Me.MetroTile2.Location = New System.Drawing.Point(273, 75)
+        Me.MetroTile2.Location = New System.Drawing.Point(264, 76)
         Me.MetroTile2.Name = "MetroTile2"
         Me.MetroTile2.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile2.Style = MetroFramework.MetroColorStyle.Silver
         Me.MetroTile2.TabIndex = 23
         Me.MetroTile2.Text = "Registry"
         Me.MetroTile2.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile2.TileCount = 2
         Me.MetroToolTip1.SetToolTip(Me.MetroTile2, "Registry")
         Me.MetroTile2.UseSelectable = True
         '
         'MetroTile3
         '
         Me.MetroTile3.ActiveControl = Nothing
-        Me.MetroTile3.Location = New System.Drawing.Point(535, 75)
+        Me.MetroTile3.Location = New System.Drawing.Point(510, 76)
         Me.MetroTile3.Name = "MetroTile3"
         Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
         Me.MetroTile3.TabIndex = 24
         Me.MetroTile3.Text = "Connectivity"
         Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile3.TileCount = 3
         Me.MetroToolTip1.SetToolTip(Me.MetroTile3, "Connectivity")
         Me.MetroTile3.UseSelectable = True
         '
         'MetroTile4
         '
         Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.Location = New System.Drawing.Point(33, 298)
+        Me.MetroTile4.Location = New System.Drawing.Point(24, 299)
         Me.MetroTile4.Name = "MetroTile4"
         Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
         Me.MetroTile4.TabIndex = 25
         Me.MetroTile4.Text = "Executables"
         Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile4.TileCount = 4
         Me.MetroToolTip1.SetToolTip(Me.MetroTile4, "Executables")
         Me.MetroTile4.UseSelectable = True
         '
         'MetroTile5
         '
         Me.MetroTile5.ActiveControl = Nothing
-        Me.MetroTile5.Location = New System.Drawing.Point(273, 298)
+        Me.MetroTile5.Location = New System.Drawing.Point(264, 299)
         Me.MetroTile5.Name = "MetroTile5"
         Me.MetroTile5.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile5.Style = MetroFramework.MetroColorStyle.Green
         Me.MetroTile5.TabIndex = 26
-        Me.MetroTile5.Text = "Scripts" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Script Market"
+        Me.MetroTile5.Text = "Scripts"
         Me.MetroTile5.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile5.TileCount = 5
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts and Script Market")
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts")
         Me.MetroTile5.UseSelectable = True
         '
         'MetroTile6
         '
         Me.MetroTile6.ActiveControl = Nothing
-        Me.MetroTile6.Location = New System.Drawing.Point(535, 298)
+        Me.MetroTile6.Location = New System.Drawing.Point(510, 299)
         Me.MetroTile6.Name = "MetroTile6"
         Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Pink
         Me.MetroTile6.TabIndex = 27
         Me.MetroTile6.Text = "Files"
         Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile6.TileCount = 6
         Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
         Me.MetroTile6.UseSelectable = True
         '
-        'MetroButton1
+        'Button2
         '
-        Me.MetroButton1.FontSize = MetroFramework.MetroButtonSize.Medium
-        Me.MetroButton1.FontWeight = MetroFramework.MetroButtonWeight.Light
-        Me.MetroButton1.Highlight = True
-        Me.MetroButton1.Location = New System.Drawing.Point(-2, 633)
-        Me.MetroButton1.Name = "MetroButton1"
-        Me.MetroButton1.Size = New System.Drawing.Size(211, 36)
-        Me.MetroButton1.TabIndex = 28
-        Me.MetroButton1.Text = "Settings"
-        Me.MetroButton1.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroToolTip1.SetToolTip(Me.MetroButton1, "Settings")
-        Me.MetroButton1.UseSelectable = True
-        '
-        'MetroTile8
-        '
-        Me.MetroTile8.ActiveControl = Nothing
-        Me.MetroTile8.Location = New System.Drawing.Point(766, 176)
-        Me.MetroTile8.Name = "MetroTile8"
-        Me.MetroTile8.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile8.Style = MetroFramework.MetroColorStyle.Blue
-        Me.MetroTile8.TabIndex = 30
-        Me.MetroTile8.Text = "Printing"
-        Me.MetroTile8.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile8.TileCount = 8
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile8, "Printing Services")
-        Me.MetroTile8.UseSelectable = True
-        Me.MetroTile8.Visible = False
+        Me.Button2.Location = New System.Drawing.Point(-2, 535)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(211, 35)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Settings"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1077, 665)
-        Me.Controls.Add(Me.MetroTile8)
-        Me.Controls.Add(Me.MetroButton1)
+        Me.ClientSize = New System.Drawing.Size(725, 567)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MetroTile6)
         Me.Controls.Add(Me.MetroTile5)
         Me.Controls.Add(Me.MetroTile4)
@@ -240,6 +212,5 @@ Partial Class frmMain
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
-    Friend WithEvents MetroTile8 As MetroFramework.Controls.MetroTile
+    Friend WithEvents Button2 As Button
 End Class

@@ -43,23 +43,6 @@ Public Class frmRegistry
         SkinManager.Theme = MaterialSkinManager.Themes.DARK
     End Sub
 
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
-        Try
-            My.Computer.Registry.SetValue("HKEY_CURRENT_USER\PC Toolbox",
-  "TestKey", "This key was automatically created.")
-        Catch ex As Exception
-            MsgBox("Failed to create key. Do you have permissions?")
-        End Try
-    End Sub
-
-    Private Sub MaterialFlatButton2_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton2.Click
-        Try
-            My.Computer.Registry.CurrentUser.DeleteSubKey(
-   "PC Toolbox\TestKey")
-        Catch ex As Exception
-            MsgBox("Failed to delete key. Did you create the test key? Do you have permission?")
-        End Try
-    End Sub
 
     Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
         Try

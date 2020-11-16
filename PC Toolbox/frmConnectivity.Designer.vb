@@ -25,18 +25,20 @@ Partial Class frmConnectivity
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.MaterialContextMenuStrip1 = New MaterialSkin.Controls.MaterialContextMenuStrip()
+        Me.OpenSpeedTestWithinApplicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MaterialContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(12, 84)
+        Me.Button1.Location = New System.Drawing.Point(16, 84)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(168, 36)
         Me.Button1.TabIndex = 0
@@ -65,17 +67,6 @@ Partial Class frmConnectivity
         Me.TextBox1.TabIndex = 2
         Me.TextBox1.Text = "Unknown Connection"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei Light", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label2.Location = New System.Drawing.Point(12, 274)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(223, 20)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "Change the IP that gets pinged."
-        '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -102,7 +93,7 @@ Partial Class frmConnectivity
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Label4.Location = New System.Drawing.Point(19, 331)
+        Me.Label4.Location = New System.Drawing.Point(12, 278)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(170, 19)
         Me.Label4.TabIndex = 9
@@ -111,9 +102,9 @@ Partial Class frmConnectivity
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(12, 466)
+        Me.Button2.Location = New System.Drawing.Point(16, 417)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(223, 36)
+        Me.Button2.Size = New System.Drawing.Size(172, 36)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Online Speed Test"
         Me.Button2.UseVisualStyleBackColor = True
@@ -128,23 +119,38 @@ Partial Class frmConnectivity
         Me.Button4.Text = "Reset"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'MaterialContextMenuStrip1
+        '
+        Me.MaterialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialContextMenuStrip1.Depth = 0
+        Me.MaterialContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenSpeedTestWithinApplicationToolStripMenuItem})
+        Me.MaterialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialContextMenuStrip1.Name = "MaterialContextMenuStrip1"
+        Me.MaterialContextMenuStrip1.Size = New System.Drawing.Size(225, 26)
+        '
+        'OpenSpeedTestWithinApplicationToolStripMenuItem
+        '
+        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Name = "OpenSpeedTestWithinApplicationToolStripMenuItem"
+        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
+        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Text = "Open Speed Test Within App"
+        '
         'frmConnectivity
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(662, 514)
+        Me.ClientSize = New System.Drawing.Size(615, 462)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "frmConnectivity"
         Me.Text = "Connectivity"
+        Me.MaterialContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -153,10 +159,11 @@ Partial Class frmConnectivity
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents MaterialContextMenuStrip1 As MaterialSkin.Controls.MaterialContextMenuStrip
+    Friend WithEvents OpenSpeedTestWithinApplicationToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -52,25 +52,17 @@ Public Class Settings
         End If
         My.Settings.Save()
     End Sub
-
-    Private Sub MetroComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles MetroComboBox3.SelectedIndexChanged
-        If MetroComboBox3.SelectedItem = "Yes" Then
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        If ComboBox1.SelectedItem = "Yes" Then
             My.Settings.RPCShow = "True"
             frmMain.StartClientMain()
-            frmScriptMarket.StartClientScript()
-
             My.Settings.Save()
         End If
 
-        If MetroComboBox3.SelectedItem = "No" Then
+        If ComboBox1.SelectedItem = "No" Then
             My.Settings.RPCShow = "False"
             frmMain.RpcClient.Dispose()
-            frmScriptMarket.RpcClient.Dispose()
-
             My.Settings.Save()
         End If
     End Sub
-
-
-    ' RIP Hide to Tray
 End Class

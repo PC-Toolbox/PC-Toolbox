@@ -9,7 +9,7 @@
         Try
             Shell("shutdown.exe  /s /t 30s")
         Catch ex As Exception
-            MsgBox("Failed to create shutdown, do you have permissions?")
+            MsgBox("Failed to shutdown, do you have permissions?")
         End Try
 
     End Sub
@@ -18,16 +18,15 @@
         Try
             Shell("shutdown.exe  /r /t 30s")
         Catch ex As Exception
-            MsgBox("Failed to create shutdown, do you have permissions?")
+            MsgBox("Failed to reboot, do you have permissions?")
         End Try
     End Sub
 
     Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
         Try
-            MsgBox("Clicking this will instantly log you out. Please save your work.")
             Shell("shutdown /l /t 30s")
         Catch ex As Exception
-            MsgBox("Log out attempt failed.")
+            MsgBox("Failed to log the user out. Do you have permissions?")
         End Try
     End Sub
 End Class

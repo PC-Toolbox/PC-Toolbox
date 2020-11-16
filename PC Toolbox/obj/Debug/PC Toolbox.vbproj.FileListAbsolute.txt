@@ -22,7 +22,6 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmExecut
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScripts.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmUpdates.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.Settings.resources
-C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmScriptMarket.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC Toolbox.vbproj.CopyComplete
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.frmFiles.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Debug\PC_Toolbox.CheckForUpdates.resources

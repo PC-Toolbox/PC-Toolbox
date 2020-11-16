@@ -39,17 +39,16 @@ Partial Class frmExecutables
         Me.ExplorerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WordpadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SnippingToolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Favorites.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -91,13 +90,13 @@ Partial Class frmExecutables
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(16, 104)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(128, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(248, 29)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
         'BasicToolStripMenuItem
         '
-        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.WordpadToolStripMenuItem, Me.NotepadToolStripMenuItem})
+        Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.WordpadToolStripMenuItem, Me.NotepadToolStripMenuItem, Me.ToolStripSeparator5, Me.SnippingToolToolStripMenuItem})
         Me.BasicToolStripMenuItem.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
         Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(120, 25)
@@ -106,60 +105,66 @@ Partial Class frmExecutables
         'CommandPromptToolStripMenuItem
         '
         Me.CommandPromptToolStripMenuItem.Name = "CommandPromptToolStripMenuItem"
-        Me.CommandPromptToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CommandPromptToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.CommandPromptToolStripMenuItem.Text = "Command Prompt"
         Me.CommandPromptToolStripMenuItem.ToolTipText = "cmd"
         '
         'TaskManagerToolStripMenuItem
         '
         Me.TaskManagerToolStripMenuItem.Name = "TaskManagerToolStripMenuItem"
-        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.TaskManagerToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.TaskManagerToolStripMenuItem.Text = "Task Manager"
         Me.TaskManagerToolStripMenuItem.ToolTipText = "taskmgr"
         '
         'ControlPanelToolStripMenuItem
         '
         Me.ControlPanelToolStripMenuItem.Name = "ControlPanelToolStripMenuItem"
-        Me.ControlPanelToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ControlPanelToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ControlPanelToolStripMenuItem.Text = "Control Panel"
         Me.ControlPanelToolStripMenuItem.ToolTipText = "control"
         '
         'RegeditToolStripMenuItem
         '
         Me.RegeditToolStripMenuItem.Name = "RegeditToolStripMenuItem"
-        Me.RegeditToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.RegeditToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.RegeditToolStripMenuItem.Text = "Registry Editor"
         Me.RegeditToolStripMenuItem.ToolTipText = "regedit"
         '
         'PowershellToolStripMenuItem
         '
         Me.PowershellToolStripMenuItem.Name = "PowershellToolStripMenuItem"
-        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PowershellToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.PowershellToolStripMenuItem.Text = "Powershell"
         Me.PowershellToolStripMenuItem.ToolTipText = "powershell"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(221, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(213, 6)
         '
         'ExplorerToolStripMenuItem
         '
         Me.ExplorerToolStripMenuItem.Name = "ExplorerToolStripMenuItem"
-        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExplorerToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.ExplorerToolStripMenuItem.Text = "Explorer"
         '
         'WinverToolStripMenuItem
         '
         Me.WinverToolStripMenuItem.Name = "WinverToolStripMenuItem"
-        Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.WinverToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.WinverToolStripMenuItem.Text = "Winver"
         '
         'WordpadToolStripMenuItem
         '
         Me.WordpadToolStripMenuItem.Name = "WordpadToolStripMenuItem"
-        Me.WordpadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.WordpadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.WordpadToolStripMenuItem.Text = "Wordpad"
+        '
+        'NotepadToolStripMenuItem
+        '
+        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
+        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.NotepadToolStripMenuItem.Text = "Notepad"
         '
         'MenuStrip2
         '
@@ -168,13 +173,13 @@ Partial Class frmExecutables
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
         Me.MenuStrip2.Location = New System.Drawing.Point(199, 104)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(334, 29)
+        Me.MenuStrip2.Size = New System.Drawing.Size(214, 29)
         Me.MenuStrip2.TabIndex = 6
         Me.MenuStrip2.Text = "MenuStrip2"
         '
         'ToolStripMenuItem1
         '
-        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem7, Me.ToolStripSeparator2, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripMenuItem9, Me.ToolStripMenuItem10, Me.ToolStripSeparator4, Me.ToolStripMenuItem8})
+        Me.ToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem7, Me.ToolStripSeparator2, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.ToolStripSeparator4})
         Me.ToolStripMenuItem1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(206, 25)
@@ -183,63 +188,50 @@ Partial Class frmExecutables
         'ToolStripMenuItem7
         '
         Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(242, 26)
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(187, 26)
         Me.ToolStripMenuItem7.Text = "Open Explorer"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(239, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(184, 6)
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(242, 26)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(187, 26)
         Me.ToolStripMenuItem2.Text = "C:\"
         Me.ToolStripMenuItem2.ToolTipText = "cmd"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(242, 26)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(187, 26)
         Me.ToolStripMenuItem3.Text = "D:\"
         Me.ToolStripMenuItem3.ToolTipText = "taskmgr"
-        '
-        'ToolStripMenuItem9
-        '
-        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(242, 26)
-        Me.ToolStripMenuItem9.Text = "E:\"
-        '
-        'ToolStripMenuItem10
-        '
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(242, 26)
-        Me.ToolStripMenuItem10.Text = "E:\"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(239, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(184, 6)
         '
-        'ToolStripMenuItem8
+        'ToolStripSeparator5
         '
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(242, 26)
-        Me.ToolStripMenuItem8.Text = "C:\Windows\system32"
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(213, 6)
         '
-        'NotepadToolStripMenuItem
+        'SnippingToolToolStripMenuItem
         '
-        Me.NotepadToolStripMenuItem.Name = "NotepadToolStripMenuItem"
-        Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.NotepadToolStripMenuItem.Text = "Notepad"
+        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
+        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
         '
         'frmExecutables
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(765, 550)
+        Me.ClientSize = New System.Drawing.Size(539, 476)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
@@ -277,9 +269,8 @@ Partial Class frmExecutables
     Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator4 As ToolStripSeparator
-    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
     Friend WithEvents NotepadToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator5 As ToolStripSeparator
+    Friend WithEvents SnippingToolToolStripMenuItem As ToolStripMenuItem
 End Class

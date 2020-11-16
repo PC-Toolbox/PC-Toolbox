@@ -87,10 +87,7 @@ Public Class frmMain
 
 
 
-    Private Sub frmMain_Enter(sender As Object, e As EventArgs) Handles MyBase.Enter
-        frmScriptMarket.RpcClient.Dispose()
-        StartClientMain()
-    End Sub
+
 
 
 
@@ -114,11 +111,15 @@ Public Class frmMain
         frmScripts.Show()
     End Sub
 
-    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
         Settings.Show()
     End Sub
 
     Private Sub MetroTile6_Click(sender As Object, e As EventArgs) Handles MetroTile6.Click
         frmFiles.Show()
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Settings.Show()
     End Sub
 End Class

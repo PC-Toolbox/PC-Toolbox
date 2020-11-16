@@ -13,7 +13,7 @@ Public Class frmScripts
 
     End Sub
 
-    Private Sub MaterialFlatButton1_Click(sender As Object, e As EventArgs) Handles MaterialFlatButton1.Click
-        frmScriptMarket.Show()
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        ' Upload for Drag Drop
     End Sub
 End Class

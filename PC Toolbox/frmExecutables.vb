@@ -78,15 +78,15 @@ Public Class frmExecutables
 
     End Sub
 
-    Private Sub ScriptMarketToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        frmScriptMarket.Show()
-    End Sub
-
     Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
         Process.Start("explorer.exe")
     End Sub
 
     Private Sub NotepadToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NotepadToolStripMenuItem.Click
         Process.Start("notepad.exe")
+    End Sub
+
+    Private Sub SnippingToolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SnippingToolToolStripMenuItem.Click
+        Process.Start("snippingtool")
     End Sub
 End Class

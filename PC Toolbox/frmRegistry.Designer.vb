@@ -22,50 +22,16 @@ Partial Class frmRegistry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
-        Me.MaterialFlatButton2 = New MaterialSkin.Controls.MaterialFlatButton()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.SuspendLayout()
         '
-        'MaterialFlatButton1
-        '
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(504, 449)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(127, 36)
-        Me.MaterialFlatButton1.TabIndex = 13
-        Me.MaterialFlatButton1.Text = "Create Test Key"
-        Me.MetroToolTip1.SetToolTip(Me.MaterialFlatButton1, "Create Registry Key")
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = True
-        '
-        'MaterialFlatButton2
-        '
-        Me.MaterialFlatButton2.AutoSize = True
-        Me.MaterialFlatButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton2.Depth = 0
-        Me.MaterialFlatButton2.Location = New System.Drawing.Point(504, 509)
-        Me.MaterialFlatButton2.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton2.Name = "MaterialFlatButton2"
-        Me.MaterialFlatButton2.Primary = False
-        Me.MaterialFlatButton2.Size = New System.Drawing.Size(124, 36)
-        Me.MaterialFlatButton2.TabIndex = 14
-        Me.MaterialFlatButton2.Text = "Delete Test Key"
-        Me.MetroToolTip1.SetToolTip(Me.MaterialFlatButton2, "Delete Registry Key")
-        Me.MaterialFlatButton2.UseVisualStyleBackColor = True
-        '
         'MaterialRaisedButton1
         '
         Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(229, 86)
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(235, 86)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
@@ -89,7 +55,7 @@ Partial Class frmRegistry
         'MaterialRaisedButton3
         '
         Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(12, 172)
+        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(12, 317)
         Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
         Me.MaterialRaisedButton3.Primary = True
@@ -109,21 +75,16 @@ Partial Class frmRegistry
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(636, 549)
+        Me.ClientSize = New System.Drawing.Size(463, 372)
         Me.Controls.Add(Me.MaterialRaisedButton3)
         Me.Controls.Add(Me.MaterialRaisedButton2)
         Me.Controls.Add(Me.MaterialRaisedButton1)
-        Me.Controls.Add(Me.MaterialFlatButton2)
-        Me.Controls.Add(Me.MaterialFlatButton1)
         Me.Name = "frmRegistry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Registry"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
-    Friend WithEvents MaterialFlatButton2 As MaterialSkin.Controls.MaterialFlatButton
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton

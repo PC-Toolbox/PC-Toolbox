@@ -26,14 +26,14 @@ Partial Class Settings
         Me.MaterialLabel2 = New MaterialSkin.Controls.MaterialLabel()
         Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MaterialLabel3 = New MaterialSkin.Controls.MaterialLabel()
-        Me.MaterialLabel4 = New MaterialSkin.Controls.MaterialLabel()
-        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
         Me.MetroComboBox1 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroComboBox2 = New MetroFramework.Controls.MetroComboBox()
-        Me.MetroComboBox3 = New MetroFramework.Controls.MetroComboBox()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.MetroLabel1 = New MetroFramework.Controls.MetroLabel()
-        Me.MaterialFlatButton1 = New MaterialSkin.Controls.MaterialFlatButton()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.MaterialContextMenuStrip1 = New MaterialSkin.Controls.MaterialContextMenuStrip()
+        Me.CompactModeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MaterialContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MaterialLabel1
@@ -65,7 +65,7 @@ Partial Class Settings
         'MaterialRaisedButton1
         '
         Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(-1, 621)
+        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(2, 475)
         Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
         Me.MaterialRaisedButton1.Primary = True
@@ -83,34 +83,9 @@ Partial Class Settings
         Me.MaterialLabel3.Location = New System.Drawing.Point(12, 298)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
-        Me.MaterialLabel3.Size = New System.Drawing.Size(321, 19)
+        Me.MaterialLabel3.Size = New System.Drawing.Size(259, 19)
         Me.MaterialLabel3.TabIndex = 20
-        Me.MaterialLabel3.Text = "Show PC Toolbox as playing game on Discord:"
-        '
-        'MaterialLabel4
-        '
-        Me.MaterialLabel4.AutoSize = True
-        Me.MaterialLabel4.Depth = 0
-        Me.MaterialLabel4.Font = New System.Drawing.Font("Roboto", 11.0!)
-        Me.MaterialLabel4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel4.Location = New System.Drawing.Point(543, 79)
-        Me.MaterialLabel4.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialLabel4.Name = "MaterialLabel4"
-        Me.MaterialLabel4.Size = New System.Drawing.Size(63, 19)
-        Me.MaterialLabel4.TabIndex = 22
-        Me.MaterialLabel4.Text = "Opacity:"
-        Me.MaterialLabel4.Visible = False
-        '
-        'ComboBox4
-        '
-        Me.ComboBox4.FormattingEnabled = True
-        Me.ComboBox4.Items.AddRange(New Object() {"100%", "80%", "75%", "50%"})
-        Me.ComboBox4.Location = New System.Drawing.Point(621, 79)
-        Me.ComboBox4.Name = "ComboBox4"
-        Me.ComboBox4.Size = New System.Drawing.Size(178, 21)
-        Me.ComboBox4.TabIndex = 21
-        Me.ComboBox4.Text = "100%"
-        Me.ComboBox4.Visible = False
+        Me.MaterialLabel3.Text = "Integrate with Discord Rich Presence:" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'MetroComboBox1
         '
@@ -136,18 +111,6 @@ Partial Class Settings
         Me.MetroToolTip1.SetToolTip(Me.MetroComboBox2, "Select Themes")
         Me.MetroComboBox2.UseSelectable = True
         '
-        'MetroComboBox3
-        '
-        Me.MetroComboBox3.FormattingEnabled = True
-        Me.MetroComboBox3.ItemHeight = 23
-        Me.MetroComboBox3.Items.AddRange(New Object() {"Yes", "No"})
-        Me.MetroComboBox3.Location = New System.Drawing.Point(339, 298)
-        Me.MetroComboBox3.Name = "MetroComboBox3"
-        Me.MetroComboBox3.Size = New System.Drawing.Size(187, 29)
-        Me.MetroComboBox3.TabIndex = 26
-        Me.MetroToolTip1.SetToolTip(Me.MetroComboBox3, "Select if you want Discord Rich Presence to appear")
-        Me.MetroComboBox3.UseSelectable = True
-        '
         'MetroToolTip1
         '
         Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.Blue
@@ -157,47 +120,55 @@ Partial Class Settings
         'MetroLabel1
         '
         Me.MetroLabel1.AutoSize = True
-        Me.MetroLabel1.Location = New System.Drawing.Point(745, 640)
+        Me.MetroLabel1.ContextMenuStrip = Me.MaterialContextMenuStrip1
+        Me.MetroLabel1.Location = New System.Drawing.Point(390, 26)
         Me.MetroLabel1.Name = "MetroLabel1"
-        Me.MetroLabel1.Size = New System.Drawing.Size(136, 19)
+        Me.MetroLabel1.Size = New System.Drawing.Size(128, 19)
         Me.MetroLabel1.TabIndex = 28
-        Me.MetroLabel1.Text = "Running Version 0.11.6"
+        Me.MetroLabel1.Text = "Running Version 0.12"
         Me.MetroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark
         '
-        'MaterialFlatButton1
+        'ComboBox1
         '
-        Me.MaterialFlatButton1.AutoSize = True
-        Me.MaterialFlatButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.MaterialFlatButton1.Depth = 0
-        Me.MaterialFlatButton1.Location = New System.Drawing.Point(176, 621)
-        Me.MaterialFlatButton1.Margin = New System.Windows.Forms.Padding(4, 6, 4, 6)
-        Me.MaterialFlatButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialFlatButton1.Name = "MaterialFlatButton1"
-        Me.MaterialFlatButton1.Primary = False
-        Me.MaterialFlatButton1.Size = New System.Drawing.Size(67, 36)
-        Me.MaterialFlatButton1.TabIndex = 29
-        Me.MaterialFlatButton1.Text = "Credits"
-        Me.MaterialFlatButton1.UseVisualStyleBackColor = True
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Yes", "No"})
+        Me.ComboBox1.Location = New System.Drawing.Point(277, 296)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(197, 21)
+        Me.ComboBox1.TabIndex = 29
+        '
+        'MaterialContextMenuStrip1
+        '
+        Me.MaterialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.MaterialContextMenuStrip1.Depth = 0
+        Me.MaterialContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CompactModeToolStripMenuItem})
+        Me.MaterialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER
+        Me.MaterialContextMenuStrip1.Name = "MaterialContextMenuStrip1"
+        Me.MaterialContextMenuStrip1.Size = New System.Drawing.Size(163, 26)
+        '
+        'CompactModeToolStripMenuItem
+        '
+        Me.CompactModeToolStripMenuItem.Name = "CompactModeToolStripMenuItem"
+        Me.CompactModeToolStripMenuItem.Size = New System.Drawing.Size(162, 22)
+        Me.CompactModeToolStripMenuItem.Text = "Compact Mode?"
         '
         'Settings
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(883, 659)
-        Me.Controls.Add(Me.MaterialFlatButton1)
+        Me.ClientSize = New System.Drawing.Size(522, 516)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.MetroLabel1)
-        Me.Controls.Add(Me.MetroComboBox3)
         Me.Controls.Add(Me.MetroComboBox2)
         Me.Controls.Add(Me.MetroComboBox1)
-        Me.Controls.Add(Me.MaterialLabel4)
-        Me.Controls.Add(Me.ComboBox4)
         Me.Controls.Add(Me.MaterialLabel3)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
         Me.Controls.Add(Me.MaterialLabel1)
         Me.Name = "Settings"
         Me.Text = "Settings"
+        Me.MaterialContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -206,12 +177,11 @@ Partial Class Settings
     Friend WithEvents MaterialLabel2 As MaterialSkin.Controls.MaterialLabel
     Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MaterialLabel3 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents MaterialLabel4 As MaterialSkin.Controls.MaterialLabel
-    Friend WithEvents ComboBox4 As ComboBox
     Friend WithEvents MetroComboBox1 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroComboBox2 As MetroFramework.Controls.MetroComboBox
-    Friend WithEvents MetroComboBox3 As MetroFramework.Controls.MetroComboBox
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
     Friend WithEvents MetroLabel1 As MetroFramework.Controls.MetroLabel
-    Friend WithEvents MaterialFlatButton1 As MaterialSkin.Controls.MaterialFlatButton
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents MaterialContextMenuStrip1 As MaterialSkin.Controls.MaterialContextMenuStrip
+    Friend WithEvents CompactModeToolStripMenuItem As ToolStripMenuItem
 End Class
