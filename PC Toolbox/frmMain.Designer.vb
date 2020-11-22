@@ -30,11 +30,11 @@ Partial Class frmMain
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
-        Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
+        Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
         Me.TrayClick1.SuspendLayout()
@@ -86,32 +86,34 @@ Partial Class frmMain
         Me.MetroToolTip1.StyleManager = Nothing
         Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
         '
-        'MetroTile3
+        'Button2
         '
-        Me.MetroTile3.ActiveControl = Nothing
-        Me.MetroTile3.Location = New System.Drawing.Point(498, 91)
-        Me.MetroTile3.Name = "MetroTile3"
-        Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
-        Me.MetroTile3.TabIndex = 24
-        Me.MetroTile3.Text = "Connectivity"
-        Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile3, "Connectivity")
-        Me.MetroTile3.UseSelectable = True
-        Me.MetroTile3.UseTileImage = True
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(2, 520)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(211, 35)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Settings"
+        Me.Button2.UseVisualStyleBackColor = True
         '
-        'MetroTile4
+        'MetroTile6
         '
-        Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.Location = New System.Drawing.Point(12, 314)
-        Me.MetroTile4.Name = "MetroTile4"
-        Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
-        Me.MetroTile4.TabIndex = 25
-        Me.MetroTile4.Text = "Executables"
-        Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile4, "Executables")
-        Me.MetroTile4.UseSelectable = True
+        Me.MetroTile6.ActiveControl = Nothing
+        Me.MetroTile6.Location = New System.Drawing.Point(498, 314)
+        Me.MetroTile6.Name = "MetroTile6"
+        Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Brown
+        Me.MetroTile6.TabIndex = 27
+        Me.MetroTile6.Text = "Files"
+        Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.files_logo
+        Me.MetroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile6.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile6.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
+        Me.MetroTile6.UseSelectable = True
+        Me.MetroTile6.UseStyleColors = True
+        Me.MetroTile6.UseTileImage = True
         '
         'MetroTile5
         '
@@ -123,31 +125,49 @@ Partial Class frmMain
         Me.MetroTile5.TabIndex = 26
         Me.MetroTile5.Text = "Scripts"
         Me.MetroTile5.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile5.TileImage = Global.PC_Toolbox.My.Resources.Resources.scripts_logo_new
+        Me.MetroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
         Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts")
         Me.MetroTile5.UseSelectable = True
+        Me.MetroTile5.UseTileImage = True
         '
-        'MetroTile6
+        'MetroTile4
         '
-        Me.MetroTile6.ActiveControl = Nothing
-        Me.MetroTile6.Location = New System.Drawing.Point(498, 314)
-        Me.MetroTile6.Name = "MetroTile6"
-        Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Pink
-        Me.MetroTile6.TabIndex = 27
-        Me.MetroTile6.Text = "Files"
-        Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
-        Me.MetroTile6.UseSelectable = True
+        Me.MetroTile4.ActiveControl = Nothing
+        Me.MetroTile4.Location = New System.Drawing.Point(12, 314)
+        Me.MetroTile4.Name = "MetroTile4"
+        Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
+        Me.MetroTile4.TabIndex = 25
+        Me.MetroTile4.Text = "Executables"
+        Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile4.TileImage = Global.PC_Toolbox.My.Resources.Resources.executables_logo
+        Me.MetroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile4.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile4.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile4, "Executables")
+        Me.MetroTile4.UseSelectable = True
+        Me.MetroTile4.UseTileImage = True
         '
-        'Button2
+        'MetroTile3
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(-2, 535)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(211, 35)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Settings"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.MetroTile3.ActiveControl = Nothing
+        Me.MetroTile3.Location = New System.Drawing.Point(498, 91)
+        Me.MetroTile3.Name = "MetroTile3"
+        Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
+        Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
+        Me.MetroTile3.TabIndex = 24
+        Me.MetroTile3.Text = "Connectivity"
+        Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroTile3.TileImage = Global.PC_Toolbox.My.Resources.Resources.wifi_logo
+        Me.MetroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.MetroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile3.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile3, "Connectivity")
+        Me.MetroTile3.UseSelectable = True
+        Me.MetroTile3.UseTileImage = True
         '
         'MetroTile2
         '
@@ -162,6 +182,7 @@ Partial Class frmMain
         Me.MetroTile2.TileImage = Global.PC_Toolbox.My.Resources.Resources.registry_logo
         Me.MetroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MetroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile2.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
         Me.MetroToolTip1.SetToolTip(Me.MetroTile2, "Registry")
         Me.MetroTile2.UseSelectable = True
         Me.MetroTile2.UseTileImage = True
@@ -179,6 +200,7 @@ Partial Class frmMain
         Me.MetroTile1.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown_medium
         Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MetroTile1.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
+        Me.MetroTile1.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
         Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown Manager")
         Me.MetroTile1.UseSelectable = True
         Me.MetroTile1.UseTileImage = True
@@ -188,7 +210,7 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(725, 567)
+        Me.ClientSize = New System.Drawing.Size(699, 556)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MetroTile6)
         Me.Controls.Add(Me.MetroTile5)
@@ -199,7 +221,7 @@ Partial Class frmMain
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Menu"
+        Me.Text = "PC Toolbox"
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
 

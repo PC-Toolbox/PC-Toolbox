@@ -22,7 +22,6 @@ Partial Class frmShutdown
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -30,28 +29,19 @@ Partial Class frmShutdown
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Button5
-        '
-        Me.Button5.Font = New System.Drawing.Font("Microsoft YaHei Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button5.Location = New System.Drawing.Point(12, 256)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(118, 32)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Sleep"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Button6
         '
         Me.Button6.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button6.ForeColor = System.Drawing.Color.Red
-        Me.Button6.Location = New System.Drawing.Point(616, 256)
+        Me.Button6.Location = New System.Drawing.Point(223, 256)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(134, 32)
+        Me.Button6.Size = New System.Drawing.Size(220, 32)
         Me.Button6.TabIndex = 5
         Me.Button6.Text = "Cancel Shutdown"
         Me.Button6.UseVisualStyleBackColor = True
@@ -61,7 +51,7 @@ Partial Class frmShutdown
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(56, 141)
+        Me.Label1.Location = New System.Drawing.Point(45, 139)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(99, 25)
         Me.Label1.TabIndex = 6
@@ -72,7 +62,7 @@ Partial Class frmShutdown
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(364, 141)
+        Me.Label2.Location = New System.Drawing.Point(287, 139)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(75, 25)
         Me.Label2.TabIndex = 7
@@ -83,7 +73,7 @@ Partial Class frmShutdown
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label3.Location = New System.Drawing.Point(631, 141)
+        Me.Label3.Location = New System.Drawing.Point(516, 139)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 25)
         Me.Label3.TabIndex = 8
@@ -93,8 +83,8 @@ Partial Class frmShutdown
         '
         Me.PictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox3.Cursor = System.Windows.Forms.Cursors.Default
-        Me.PictureBox3.Image = Global.PC_Toolbox.My.Resources.Resources.logout
-        Me.PictureBox3.Location = New System.Drawing.Point(606, 28)
+        Me.PictureBox3.Image = Global.PC_Toolbox.My.Resources.Resources.Logout_new
+        Me.PictureBox3.Location = New System.Drawing.Point(491, 26)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(122, 110)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -106,7 +96,7 @@ Partial Class frmShutdown
         Me.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox2.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureBox2.Image = Global.PC_Toolbox.My.Resources.Resources.reboot
-        Me.PictureBox2.Location = New System.Drawing.Point(334, 28)
+        Me.PictureBox2.Location = New System.Drawing.Point(257, 26)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(122, 110)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -118,19 +108,31 @@ Partial Class frmShutdown
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Cursor = System.Windows.Forms.Cursors.Default
         Me.PictureBox1.Image = Global.PC_Toolbox.My.Resources.Resources.shutdown
-        Me.PictureBox1.Location = New System.Drawing.Point(40, 28)
+        Me.PictureBox1.Location = New System.Drawing.Point(29, 26)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(122, 110)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 9
         Me.PictureBox1.TabStop = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.Yellow
+        Me.Label4.Location = New System.Drawing.Point(12, 275)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(114, 16)
+        Me.Label4.TabIndex = 12
+        Me.Label4.Text = "Click the pictures."
+        '
         'frmShutdown
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(756, 300)
+        Me.ClientSize = New System.Drawing.Size(660, 300)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
@@ -138,7 +140,6 @@ Partial Class frmShutdown
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button6)
-        Me.Controls.Add(Me.Button5)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -153,7 +154,6 @@ Partial Class frmShutdown
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
@@ -161,4 +161,5 @@ Partial Class frmShutdown
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents Label4 As Label
 End Class

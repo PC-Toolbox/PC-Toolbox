@@ -287,9 +287,6 @@
     <None Include="Resources\shutdown.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\SecurityAndMaintenance.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\ScriptMarket v1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -305,13 +302,25 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\shutdown_small.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\shutdown_medium.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\registry_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wifi_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\files_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\executables_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scripts_logo_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logout_new.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

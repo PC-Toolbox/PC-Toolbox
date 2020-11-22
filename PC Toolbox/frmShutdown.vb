@@ -29,4 +29,8 @@
             MsgBox("Failed to log the user out. Do you have permissions?")
         End Try
     End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs)
+
+    End Sub
 End Class

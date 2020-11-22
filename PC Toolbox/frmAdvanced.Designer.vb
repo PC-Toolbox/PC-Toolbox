@@ -28,9 +28,7 @@ Partial Class frmAdvanced
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label28 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label22 = New System.Windows.Forms.Label()
         Me.Label19 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -39,9 +37,7 @@ Partial Class frmAdvanced
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label29 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
-        Me.Label16 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -49,12 +45,11 @@ Partial Class frmAdvanced
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label21 = New System.Windows.Forms.Label()
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label27 = New System.Windows.Forms.Label()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.SuspendLayout()
@@ -86,21 +81,19 @@ Partial Class frmAdvanced
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label28)
         Me.Panel1.Controls.Add(Me.Label25)
-        Me.Panel1.Controls.Add(Me.Label22)
         Me.Panel1.Controls.Add(Me.Label19)
-        Me.Panel1.Controls.Add(Me.Label15)
         Me.Panel1.Controls.Add(Me.Label12)
         Me.Panel1.Controls.Add(Me.Label9)
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Location = New System.Drawing.Point(207, 107)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(200, 595)
+        Me.Panel1.Size = New System.Drawing.Size(200, 548)
         Me.Panel1.TabIndex = 2
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(0, 572)
+        Me.Button1.Location = New System.Drawing.Point(6, 525)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(194, 23)
         Me.Button1.TabIndex = 13
@@ -110,7 +103,7 @@ Partial Class frmAdvanced
         'Label28
         '
         Me.Label28.AutoSize = True
-        Me.Label28.Location = New System.Drawing.Point(46, 539)
+        Me.Label28.Location = New System.Drawing.Point(46, 462)
         Me.Label28.Name = "Label28"
         Me.Label28.Size = New System.Drawing.Size(76, 13)
         Me.Label28.TabIndex = 12
@@ -119,38 +112,20 @@ Partial Class frmAdvanced
         'Label25
         '
         Me.Label25.AutoSize = True
-        Me.Label25.Location = New System.Drawing.Point(52, 482)
+        Me.Label25.Location = New System.Drawing.Point(52, 362)
         Me.Label25.Name = "Label25"
         Me.Label25.Size = New System.Drawing.Size(54, 13)
         Me.Label25.TabIndex = 11
         Me.Label25.Text = "45 Scripts"
         '
-        'Label22
-        '
-        Me.Label22.AutoSize = True
-        Me.Label22.Location = New System.Drawing.Point(52, 421)
-        Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(28, 13)
-        Me.Label22.TabIndex = 10
-        Me.Label22.Text = "5GB"
-        '
         'Label19
         '
         Me.Label19.AutoSize = True
-        Me.Label19.Location = New System.Drawing.Point(52, 341)
+        Me.Label19.Location = New System.Drawing.Point(46, 277)
         Me.Label19.Name = "Label19"
         Me.Label19.Size = New System.Drawing.Size(76, 13)
         Me.Label19.TabIndex = 9
         Me.Label19.Text = "Not Supported"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(52, 258)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(76, 13)
-        Me.Label15.TabIndex = 8
-        Me.Label15.Text = "Not Supported"
         '
         'Label12
         '
@@ -194,21 +169,19 @@ Partial Class frmAdvanced
         Me.Panel2.Controls.Add(Me.Button2)
         Me.Panel2.Controls.Add(Me.Label29)
         Me.Panel2.Controls.Add(Me.Label26)
-        Me.Panel2.Controls.Add(Me.Label23)
         Me.Panel2.Controls.Add(Me.Label20)
-        Me.Panel2.Controls.Add(Me.Label16)
         Me.Panel2.Controls.Add(Me.Label13)
         Me.Panel2.Controls.Add(Me.Label10)
         Me.Panel2.Controls.Add(Me.Label7)
         Me.Panel2.Controls.Add(Me.Label4)
         Me.Panel2.Location = New System.Drawing.Point(517, 107)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(200, 595)
+        Me.Panel2.Size = New System.Drawing.Size(200, 548)
         Me.Panel2.TabIndex = 3
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(0, 572)
+        Me.Button2.Location = New System.Drawing.Point(0, 522)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(200, 23)
         Me.Button2.TabIndex = 14
@@ -218,7 +191,7 @@ Partial Class frmAdvanced
         'Label29
         '
         Me.Label29.AutoSize = True
-        Me.Label29.Location = New System.Drawing.Point(76, 539)
+        Me.Label29.Location = New System.Drawing.Point(72, 462)
         Me.Label29.Name = "Label29"
         Me.Label29.Size = New System.Drawing.Size(56, 13)
         Me.Label29.TabIndex = 13
@@ -227,38 +200,20 @@ Partial Class frmAdvanced
         'Label26
         '
         Me.Label26.AutoSize = True
-        Me.Label26.Location = New System.Drawing.Point(76, 482)
+        Me.Label26.Location = New System.Drawing.Point(72, 362)
         Me.Label26.Name = "Label26"
         Me.Label26.Size = New System.Drawing.Size(60, 13)
         Me.Label26.TabIndex = 12
         Me.Label26.Text = "100 Scripts"
         '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Location = New System.Drawing.Point(76, 421)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(34, 13)
-        Me.Label23.TabIndex = 11
-        Me.Label23.Text = "12GB"
-        '
         'Label20
         '
         Me.Label20.AutoSize = True
-        Me.Label20.Location = New System.Drawing.Point(76, 341)
+        Me.Label20.Location = New System.Drawing.Point(76, 277)
         Me.Label20.Name = "Label20"
         Me.Label20.Size = New System.Drawing.Size(56, 13)
         Me.Label20.TabIndex = 10
         Me.Label20.Text = "Supported" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(76, 258)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(56, 13)
-        Me.Label16.TabIndex = 9
-        Me.Label16.Text = "Supported"
         '
         'Label13
         '
@@ -324,15 +279,6 @@ Partial Class frmAdvanced
         Me.Label11.TabIndex = 6
         Me.Label11.Text = "Permanent Backwards Support"
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(60, 365)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(115, 13)
-        Me.Label14.TabIndex = 7
-        Me.Label14.Text = "Direct Help Within App"
-        '
         'Label17
         '
         Me.Label17.AutoSize = True
@@ -346,25 +292,16 @@ Partial Class frmAdvanced
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(47, 448)
+        Me.Label18.Location = New System.Drawing.Point(47, 384)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(128, 13)
         Me.Label18.TabIndex = 9
         Me.Label18.Text = "Customize Rich Presence"
         '
-        'Label21
-        '
-        Me.Label21.AutoSize = True
-        Me.Label21.Location = New System.Drawing.Point(80, 528)
-        Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(95, 13)
-        Me.Label21.TabIndex = 10
-        Me.Label21.Text = """Files"" Size Space"
-        '
         'Label24
         '
         Me.Label24.AutoSize = True
-        Me.Label24.Location = New System.Drawing.Point(94, 589)
+        Me.Label24.Location = New System.Drawing.Point(94, 469)
         Me.Label24.Name = "Label24"
         Me.Label24.Size = New System.Drawing.Size(81, 13)
         Me.Label24.TabIndex = 11
@@ -373,23 +310,35 @@ Partial Class frmAdvanced
         'Label27
         '
         Me.Label27.AutoSize = True
-        Me.Label27.Location = New System.Drawing.Point(74, 646)
+        Me.Label27.Location = New System.Drawing.Point(74, 569)
         Me.Label27.Name = "Label27"
         Me.Label27.Size = New System.Drawing.Size(127, 13)
         Me.Label27.TabIndex = 12
         Me.Label27.Text = "Selected Name In Credits"
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.BackColor = System.Drawing.SystemColors.Control
+        Me.Label14.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label14.Font = New System.Drawing.Font("Microsoft YaHei Light", 58.0!)
+        Me.Label14.ForeColor = System.Drawing.Color.CadetBlue
+        Me.Label14.Location = New System.Drawing.Point(618, 2)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(183, 101)
+        Me.Label14.TabIndex = 13
+        Me.Label14.Text = "WIP"
+        '
         'frmAdvanced
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(841, 714)
+        Me.ClientSize = New System.Drawing.Size(789, 665)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label27)
         Me.Controls.Add(Me.Label24)
-        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label17)
-        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label5)
@@ -399,7 +348,7 @@ Partial Class frmAdvanced
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmAdvanced"
-        Me.Text = "Buy Advanced"
+        Me.Text = "PC Toolbox Premium / Advanced"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
@@ -415,9 +364,7 @@ Partial Class frmAdvanced
     Friend WithEvents Button1 As Button
     Friend WithEvents Label28 As Label
     Friend WithEvents Label25 As Label
-    Friend WithEvents Label22 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents Label15 As Label
     Friend WithEvents Label12 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label6 As Label
@@ -426,9 +373,7 @@ Partial Class frmAdvanced
     Friend WithEvents Button2 As Button
     Friend WithEvents Label29 As Label
     Friend WithEvents Label26 As Label
-    Friend WithEvents Label23 As Label
     Friend WithEvents Label20 As Label
-    Friend WithEvents Label16 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label7 As Label
@@ -436,10 +381,9 @@ Partial Class frmAdvanced
     Friend WithEvents Label5 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label14 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
-    Friend WithEvents Label21 As Label
     Friend WithEvents Label24 As Label
     Friend WithEvents Label27 As Label
+    Friend WithEvents Label14 As Label
 End Class
