@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Settings
-    Inherits MaterialSkin.Controls.MaterialForm
+    Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -41,7 +41,7 @@ Partial Class Settings
         Me.MaterialLabel2.Depth = 0
         Me.MaterialLabel2.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel2.Location = New System.Drawing.Point(12, 128)
+        Me.MaterialLabel2.Location = New System.Drawing.Point(-2, 93)
         Me.MaterialLabel2.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel2.Name = "MaterialLabel2"
         Me.MaterialLabel2.Size = New System.Drawing.Size(59, 19)
@@ -66,7 +66,7 @@ Partial Class Settings
         Me.MaterialLabel3.Depth = 0
         Me.MaterialLabel3.Font = New System.Drawing.Font("Roboto", 11.0!)
         Me.MaterialLabel3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(222, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.MaterialLabel3.Location = New System.Drawing.Point(12, 205)
+        Me.MaterialLabel3.Location = New System.Drawing.Point(-2, 162)
         Me.MaterialLabel3.MouseState = MaterialSkin.MouseState.HOVER
         Me.MaterialLabel3.Name = "MaterialLabel3"
         Me.MaterialLabel3.Size = New System.Drawing.Size(259, 19)
@@ -83,7 +83,7 @@ Partial Class Settings
         '
         Me.MetroLabel1.AutoSize = True
         Me.MetroLabel1.ContextMenuStrip = Me.MaterialContextMenuStrip1
-        Me.MetroLabel1.Location = New System.Drawing.Point(525, 44)
+        Me.MetroLabel1.Location = New System.Drawing.Point(525, 9)
         Me.MetroLabel1.Name = "MetroLabel1"
         Me.MetroLabel1.Size = New System.Drawing.Size(136, 19)
         Me.MetroLabel1.TabIndex = 28
@@ -109,7 +109,7 @@ Partial Class Settings
         '
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Yes", "No"})
-        Me.ComboBox1.Location = New System.Drawing.Point(277, 203)
+        Me.ComboBox1.Location = New System.Drawing.Point(263, 160)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(197, 21)
         Me.ComboBox1.TabIndex = 29
@@ -128,7 +128,7 @@ Partial Class Settings
         '
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Items.AddRange(New Object() {"Dark", "Light"})
-        Me.ComboBox2.Location = New System.Drawing.Point(87, 126)
+        Me.ComboBox2.Location = New System.Drawing.Point(73, 91)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(184, 21)
         Me.ComboBox2.TabIndex = 33
@@ -147,6 +147,7 @@ Partial Class Settings
         Me.Controls.Add(Me.MaterialLabel3)
         Me.Controls.Add(Me.MaterialRaisedButton1)
         Me.Controls.Add(Me.MaterialLabel2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.Name = "Settings"
         Me.Text = "Settings"
