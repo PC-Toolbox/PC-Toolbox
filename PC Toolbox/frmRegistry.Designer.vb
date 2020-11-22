@@ -22,47 +22,11 @@ Partial Class frmRegistry
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.MaterialRaisedButton1 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton2 = New MaterialSkin.Controls.MaterialRaisedButton()
-        Me.MaterialRaisedButton3 = New MaterialSkin.Controls.MaterialRaisedButton()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'MaterialRaisedButton1
-        '
-        Me.MaterialRaisedButton1.Depth = 0
-        Me.MaterialRaisedButton1.Location = New System.Drawing.Point(235, 86)
-        Me.MaterialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton1.Name = "MaterialRaisedButton1"
-        Me.MaterialRaisedButton1.Primary = True
-        Me.MaterialRaisedButton1.Size = New System.Drawing.Size(186, 43)
-        Me.MaterialRaisedButton1.TabIndex = 17
-        Me.MaterialRaisedButton1.Text = "Open Registry"
-        Me.MaterialRaisedButton1.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton2
-        '
-        Me.MaterialRaisedButton2.Depth = 0
-        Me.MaterialRaisedButton2.Location = New System.Drawing.Point(12, 86)
-        Me.MaterialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton2.Name = "MaterialRaisedButton2"
-        Me.MaterialRaisedButton2.Primary = True
-        Me.MaterialRaisedButton2.Size = New System.Drawing.Size(186, 43)
-        Me.MaterialRaisedButton2.TabIndex = 18
-        Me.MaterialRaisedButton2.Text = "Save Registry State"
-        Me.MaterialRaisedButton2.UseVisualStyleBackColor = True
-        '
-        'MaterialRaisedButton3
-        '
-        Me.MaterialRaisedButton3.Depth = 0
-        Me.MaterialRaisedButton3.Location = New System.Drawing.Point(-3, 425)
-        Me.MaterialRaisedButton3.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialRaisedButton3.Name = "MaterialRaisedButton3"
-        Me.MaterialRaisedButton3.Primary = True
-        Me.MaterialRaisedButton3.Size = New System.Drawing.Size(186, 43)
-        Me.MaterialRaisedButton3.TabIndex = 19
-        Me.MaterialRaisedButton3.Text = "Remove Bloatware"
-        Me.MaterialRaisedButton3.UseVisualStyleBackColor = True
         '
         'MetroToolTip1
         '
@@ -70,23 +34,50 @@ Partial Class frmRegistry
         Me.MetroToolTip1.StyleManager = Nothing
         Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 92)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(192, 37)
+        Me.Button1.TabIndex = 20
+        Me.Button1.Text = "Save Registry State"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(248, 92)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(192, 37)
+        Me.Button2.TabIndex = 21
+        Me.Button2.Text = "Open Regedit"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(1, 431)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(192, 37)
+        Me.Button3.TabIndex = 22
+        Me.Button3.Text = "Remove Bloatware"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(526, 468)
-        Me.Controls.Add(Me.MaterialRaisedButton3)
-        Me.Controls.Add(Me.MaterialRaisedButton2)
-        Me.Controls.Add(Me.MaterialRaisedButton1)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Name = "frmRegistry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Registry"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents MaterialRaisedButton1 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton2 As MaterialSkin.Controls.MaterialRaisedButton
-    Friend WithEvents MaterialRaisedButton3 As MaterialSkin.Controls.MaterialRaisedButton
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class

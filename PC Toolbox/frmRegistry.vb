@@ -44,14 +44,29 @@ Public Class frmRegistry
     End Sub
 
 
-    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs) Handles MaterialRaisedButton1.Click
+    Private Sub MaterialRaisedButton1_Click(sender As Object, e As EventArgs)
         Try
             Process.Start("regedit.exe")
 
 
         Catch ex As Exception
-            MsgBox("Unable to open registry. Is there a permission error? Did you run as admin?")
+            MsgBox("Unable to open registry. Did you run as admin?")
 
         End Try
+    End Sub
+
+    Private Sub Button2_Click_1(sender As Object, e As EventArgs) Handles Button2.Click
+        Try
+            Process.Start("regedit.exe")
+
+
+        Catch ex As Exception
+            MsgBox("Unable to open registry. Did you run as admin?")
+
+        End Try
+    End Sub
+
+    Private Sub MaterialRaisedButton3_Click(sender As Object, e As EventArgs) 
+        MsgBox("coming soon. Please right click")
     End Sub
 End Class

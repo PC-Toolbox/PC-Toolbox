@@ -304,5 +304,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_medium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\registry_logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
