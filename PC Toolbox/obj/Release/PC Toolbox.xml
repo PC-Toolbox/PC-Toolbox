@@ -22,7 +22,22 @@ PC Toolbox
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:PC_Toolbox.My.Resources.Resources.executables_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PC_Toolbox.My.Resources.Resources.files_logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PC_Toolbox.My.Resources.Resources.logout">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PC_Toolbox.My.Resources.Resources.Logout_new">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -32,17 +47,32 @@ PC Toolbox
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:PC_Toolbox.My.Resources.Resources.ScriptMarket_v1">
+<member name="P:PC_Toolbox.My.Resources.Resources.registry_logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:PC_Toolbox.My.Resources.Resources.SecurityAndMaintenance">
+<member name="P:PC_Toolbox.My.Resources.Resources.Script_Market">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PC_Toolbox.My.Resources.Resources.scripts_logo_new">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:PC_Toolbox.My.Resources.Resources.shutdown">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PC_Toolbox.My.Resources.Resources.shutdown_medium">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:PC_Toolbox.My.Resources.Resources.wifi_logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
