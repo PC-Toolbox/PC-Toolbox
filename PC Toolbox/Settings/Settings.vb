@@ -25,13 +25,13 @@ Public Class Settings
             My.Settings.Theme = "Dark"
             Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
             SkinManager.Theme = MaterialSkinManager.Themes.DARK
-            SkinManager.AddFormToManage(Me)
+
             My.Settings.Save()
         End If
         If ComboBox2.SelectedItem = "Light" Then
             My.Settings.Theme = "Light"
             Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-            SkinManager.AddFormToManage(Me)
+
             SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
             My.Settings.Save()
         End If
