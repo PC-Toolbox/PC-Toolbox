@@ -30,13 +30,13 @@ Partial Class frmMain
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -85,16 +85,6 @@ Partial Class frmMain
         Me.MetroToolTip1.Style = MetroFramework.MetroColorStyle.Blue
         Me.MetroToolTip1.StyleManager = Nothing
         Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
-        '
-        'Button2
-        '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(2, 520)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(211, 35)
-        Me.Button2.TabIndex = 0
-        Me.Button2.Text = "Settings"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'MetroTile6
         '
@@ -195,7 +185,7 @@ Partial Class frmMain
         Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
         Me.MetroTile1.TabIndex = 22
-        Me.MetroTile1.Text = "Shutdown Manager"
+        Me.MetroTile1.Text = "Shutdown" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Manager"
         Me.MetroTile1.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.MetroTile1.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown_medium
         Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -204,6 +194,16 @@ Partial Class frmMain
         Me.MetroToolTip1.SetToolTip(Me.MetroTile1, "Shutdown Manager")
         Me.MetroTile1.UseSelectable = True
         Me.MetroTile1.UseTileImage = True
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.Location = New System.Drawing.Point(2, 520)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(211, 35)
+        Me.Button2.TabIndex = 0
+        Me.Button2.Text = "Settings"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'frmMain
         '
