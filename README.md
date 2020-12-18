@@ -3,7 +3,6 @@ Features that can enhance computer experience. Make your computer run faster and
 
 ## Features
 - Able to manage and cancel shutdowns
-- Built with MaterialSkin 
 - Able to check for a connection and how well the connection is
 - Quickly run shortcuts
 - Rich Presence Integration with Discord
