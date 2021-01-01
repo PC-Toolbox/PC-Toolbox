@@ -6,8 +6,8 @@ from colorama import init
 init()
 from colorama import Fore, Back, Style
 
-os.system("title PC Toolbox Troubleshooter Demo")
-print(Fore.LIGHTRED_EX + 'Full Functionality will release with the upcoming version 0.13! This is only a demo on what the app will do.')
+os.system("title PC Toolbox Troubleshooter")
+print(Fore.LIGHTRED_EX + 'The troubleshooter is still in a beta stage, this can get removed anytime.')
 print(' ')
 print(' ')
 print(Fore.WHITE + '')
