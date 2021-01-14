@@ -9,7 +9,7 @@
         Try
             Shell("shutdown.exe  /s /t 30s")
         Catch ex As Exception
-            MsgBox("Failed to shutdown, do you have permissions?")
+            MsgBox("Failed to shutdown.")
         End Try
 
     End Sub
@@ -18,7 +18,7 @@
         Try
             Shell("shutdown.exe  /r /t 30s")
         Catch ex As Exception
-            MsgBox("Failed to reboot, do you have permissions?")
+            MsgBox("Failed to reboot.")
         End Try
     End Sub
 
@@ -26,7 +26,7 @@
         Try
             Shell("shutdown /l /t 30s")
         Catch ex As Exception
-            MsgBox("Failed to log the user out. Do you have permissions?")
+            MsgBox("Failed to logout.")
         End Try
     End Sub
 

@@ -5,23 +5,14 @@
     <Setting Name="PingedIP" Type="System.String" Scope="User">
       <Value Profile="(Default)">8.8.8.8</Value>
     </Setting>
-    <Setting Name="Language" Type="System.String" Scope="User">
-      <Value Profile="(Default)">English</Value>
-    </Setting>
     <Setting Name="Theme" Type="System.String" Scope="User">
       <Value Profile="(Default)">Dark</Value>
     </Setting>
     <Setting Name="RPCShow" Type="System.String" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="isScriptPremium" Type="System.String" Scope="User">
-      <Value Profile="(Default)">false</Value>
-    </Setting>
-    <Setting Name="MaliciousLevel0" Type="System.String" Scope="User">
-      <Value Profile="(Default)">placeholder</Value>
-    </Setting>
-    <Setting Name="MaliciousLevel1" Type="System.String" Scope="User">
-      <Value Profile="(Default)">placeholder</Value>
+    <Setting Name="RPC" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Main Menu</Value>
     </Setting>
   </Settings>
 </SettingsFile>

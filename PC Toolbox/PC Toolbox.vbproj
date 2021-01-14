@@ -138,12 +138,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAdvanced.Designer.vb">
-      <DependentUpon>frmAdvanced.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmAdvanced.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmConnectivity.Designer.vb">
       <DependentUpon>frmConnectivity.vb</DependentUpon>
     </Compile>
@@ -173,12 +167,6 @@
       <DependentUpon>frmRegistry.vb</DependentUpon>
     </Compile>
     <Compile Include="frmRegistry.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Script Market\frmScripts.Designer.vb">
-      <DependentUpon>frmScripts.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Script Market\frmScripts.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmShutdown.Designer.vb">
@@ -223,9 +211,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmAdvanced.resx">
-      <DependentUpon>frmAdvanced.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmConnectivity.resx">
       <DependentUpon>frmConnectivity.vb</DependentUpon>
     </EmbeddedResource>
@@ -240,9 +225,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegistry.resx">
       <DependentUpon>frmRegistry.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Script Market\frmScripts.resx">
-      <DependentUpon>frmScripts.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmShutdown.resx">
       <DependentUpon>frmShutdown.vb</DependentUpon>
@@ -321,6 +303,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logout_new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\Notes\Discord Rich Presense Lists.txt" />
+    <None Include="Resources\Volume.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

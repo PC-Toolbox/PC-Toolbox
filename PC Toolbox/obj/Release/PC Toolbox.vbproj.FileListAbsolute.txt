@@ -35,3 +35,38 @@ C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Fonts.dll
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.CheckForUpdates.resources
 C:\Users\Super\source\repos\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmAdvanced.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbprojAssemblyReference.cache
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmConnectivity.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmExecutables.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmFiles.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmMain.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmRegistry.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmShutdown.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Resources.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.CheckForUpdates.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmUpdates.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Settings.resources
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.GenerateResource.cache
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CoreCompileInputs.cache
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.xml
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.pdb
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.config
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.manifest
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.application
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.pdb
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.xml
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\MaterialSkin.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Design.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Fonts.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.dll
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.pdb
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.xml
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.xml
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.TrustInfo.xml
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe.manifest
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.application
+C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CopyComplete

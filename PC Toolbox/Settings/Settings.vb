@@ -1,5 +1,4 @@
-﻿Imports MaterialSkin
-
+﻿
 Public Class Settings
     Private Sub Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -23,16 +22,10 @@ Public Class Settings
     Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
         If ComboBox2.SelectedItem = "Dark" Then
             My.Settings.Theme = "Dark"
-            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-            SkinManager.Theme = MaterialSkinManager.Themes.DARK
-
             My.Settings.Save()
         End If
         If ComboBox2.SelectedItem = "Light" Then
             My.Settings.Theme = "Light"
-            Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-
-            SkinManager.Theme = MaterialSkinManager.Themes.LIGHT
             My.Settings.Save()
         End If
         My.Settings.Save()
