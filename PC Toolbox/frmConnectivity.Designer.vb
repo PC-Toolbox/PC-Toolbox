@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmConnectivity
-    Inherits MaterialSkin.Controls.MaterialForm
+    Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,25 +20,25 @@ Partial Class frmConnectivity
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.MaterialContextMenuStrip1 = New MaterialSkin.Controls.MaterialContextMenuStrip()
-        Me.OpenSpeedTestWithinApplicationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MaterialContextMenuStrip1.SuspendLayout()
+        Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(16, 84)
+        Me.Button1.Location = New System.Drawing.Point(6, 33)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(168, 36)
         Me.Button1.TabIndex = 0
@@ -50,38 +50,27 @@ Partial Class frmConnectivity
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(8, 129)
+        Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(65, 21)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Output:"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox1.Location = New System.Drawing.Point(79, 126)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(252, 28)
-        Me.TextBox1.TabIndex = 2
-        Me.TextBox1.Text = "Unknown Connection"
-        '
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("Microsoft YaHei UI", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame
-        Me.TextBox2.Location = New System.Drawing.Point(16, 300)
+        Me.TextBox2.Location = New System.Drawing.Point(283, 31)
         Me.TextBox2.MaxLength = 256
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(252, 28)
+        Me.TextBox2.Size = New System.Drawing.Size(320, 28)
         Me.TextBox2.TabIndex = 5
         Me.TextBox2.Text = "8.8.8.8"
         '
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(274, 297)
+        Me.Button3.Location = New System.Drawing.Point(279, 65)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(159, 31)
         Me.Button3.TabIndex = 6
@@ -93,46 +82,55 @@ Partial Class frmConnectivity
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(134, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.ActiveBorder
-        Me.Label4.Location = New System.Drawing.Point(12, 278)
+        Me.Label4.Location = New System.Drawing.Point(283, 9)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(170, 19)
+        Me.Label4.Size = New System.Drawing.Size(107, 19)
         Me.Label4.TabIndex = 9
-        Me.Label4.Text = "IP: %my.settings.PingedIP%"
+        Me.Label4.Text = "IP Being Pinged:"
         '
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(16, 417)
+        Me.Button2.Location = New System.Drawing.Point(10, 414)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(172, 36)
+        Me.Button2.Size = New System.Drawing.Size(221, 36)
         Me.Button2.TabIndex = 10
         Me.Button2.Text = "Online Speed Test"
+        Me.ToolTip1.SetToolTip(Me.Button2, "via Ookla Speed Test")
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button4.Location = New System.Drawing.Point(439, 297)
+        Me.Button4.ForeColor = System.Drawing.Color.Maroon
+        Me.Button4.Location = New System.Drawing.Point(444, 65)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(159, 31)
         Me.Button4.TabIndex = 11
         Me.Button4.Text = "Reset"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'MaterialContextMenuStrip1
+        'Label2
         '
-        Me.MaterialContextMenuStrip1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.MaterialContextMenuStrip1.Depth = 0
-        Me.MaterialContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenSpeedTestWithinApplicationToolStripMenuItem})
-        Me.MaterialContextMenuStrip1.MouseState = MaterialSkin.MouseState.HOVER
-        Me.MaterialContextMenuStrip1.Name = "MaterialContextMenuStrip1"
-        Me.MaterialContextMenuStrip1.Size = New System.Drawing.Size(225, 26)
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(81, 9)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(95, 21)
+        Me.Label2.TabIndex = 12
+        Me.Label2.Text = "Not Tested."
         '
-        'OpenSpeedTestWithinApplicationToolStripMenuItem
+        'Label3
         '
-        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Name = "OpenSpeedTestWithinApplicationToolStripMenuItem"
-        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Size = New System.Drawing.Size(224, 22)
-        Me.OpenSpeedTestWithinApplicationToolStripMenuItem.Text = "Open Speed Test Within App"
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Linen
+        Me.Label3.Location = New System.Drawing.Point(7, 74)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(114, 17)
+        Me.Label3.TabIndex = 13
+        Me.Label3.Text = "Connection Speed:"
         '
         'frmConnectivity
         '
@@ -140,17 +138,18 @@ Partial Class frmConnectivity
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(615, 462)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "frmConnectivity"
         Me.Text = "Connectivity"
-        Me.MaterialContextMenuStrip1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -158,12 +157,12 @@ Partial Class frmConnectivity
 
     Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button4 As Button
-    Friend WithEvents MaterialContextMenuStrip1 As MaterialSkin.Controls.MaterialContextMenuStrip
-    Friend WithEvents OpenSpeedTestWithinApplicationToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolTip1 As ToolTip
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
 End Class

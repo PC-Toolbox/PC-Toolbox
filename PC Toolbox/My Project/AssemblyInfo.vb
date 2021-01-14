@@ -11,9 +11,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("PC Toolbox")>
 <Assembly: AssemblyDescription("Features that can enhance computer experience and speed.")>
-<Assembly: AssemblyCompany("Matty")>
+<Assembly: AssemblyCompany("PC Toolbox")>
 <Assembly: AssemblyProduct("PC Toolbox")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyCopyright("Copyright ©  2020-2021")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -32,6 +32,6 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("0.13.1.0")>
-<Assembly: AssemblyFileVersion("0.13.1.0")>
+<Assembly: AssemblyVersion("1.0.0.14")>
+<Assembly: AssemblyFileVersion("1.0.0.14")>
 <Assembly: NeutralResourcesLanguage("en-US")>

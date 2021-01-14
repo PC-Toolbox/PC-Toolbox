@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmMain
-    Inherits MaterialSkin.Controls.MaterialForm
+    Inherits System.Windows.Forms.Form
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
@@ -25,13 +25,11 @@ Partial Class frmMain
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmMain))
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.TrayClick1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CheckForUpdatesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
-        Me.MetroTile5 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
@@ -51,21 +49,15 @@ Partial Class frmMain
         'TrayClick1
         '
         Me.TrayClick1.BackColor = System.Drawing.Color.White
-        Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.OpenToolStripMenuItem, Me.CloseToolStripMenuItem, Me.ToolStripSeparator1, Me.CheckForUpdatesToolStripMenuItem})
+        Me.TrayClick1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CheckForUpdatesToolStripMenuItem, Me.ToolStripSeparator1, Me.CloseToolStripMenuItem})
         Me.TrayClick1.Name = "TrayClick1"
-        Me.TrayClick1.Size = New System.Drawing.Size(174, 76)
+        Me.TrayClick1.Size = New System.Drawing.Size(174, 54)
         '
-        'OpenToolStripMenuItem
+        'CheckForUpdatesToolStripMenuItem
         '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.OpenToolStripMenuItem.Text = "Open"
-        '
-        'CloseToolStripMenuItem
-        '
-        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.CloseToolStripMenuItem.Text = "Close"
+        Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
+        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.CheckForUpdatesToolStripMenuItem.Text = "Check For Updates"
         '
         'ToolStripSeparator1
         '
@@ -74,11 +66,11 @@ Partial Class frmMain
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(170, 6)
         '
-        'CheckForUpdatesToolStripMenuItem
+        'CloseToolStripMenuItem
         '
-        Me.CheckForUpdatesToolStripMenuItem.Name = "CheckForUpdatesToolStripMenuItem"
-        Me.CheckForUpdatesToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
-        Me.CheckForUpdatesToolStripMenuItem.Text = "Check For Updates"
+        Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(173, 22)
+        Me.CloseToolStripMenuItem.Text = "Close PC Toolbox"
         '
         'MetroToolTip1
         '
@@ -89,44 +81,25 @@ Partial Class frmMain
         'MetroTile6
         '
         Me.MetroTile6.ActiveControl = Nothing
-        Me.MetroTile6.Location = New System.Drawing.Point(498, 314)
+        Me.MetroTile6.Location = New System.Drawing.Point(12, 245)
         Me.MetroTile6.Name = "MetroTile6"
         Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Brown
+        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Yellow
         Me.MetroTile6.TabIndex = 27
-        Me.MetroTile6.Text = "Files"
+        Me.MetroTile6.Text = "Volume"
         Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.files_logo
+        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.Volume
         Me.MetroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.MetroTile6.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
         Me.MetroTile6.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Files")
+        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Volume")
         Me.MetroTile6.UseSelectable = True
-        Me.MetroTile6.UseStyleColors = True
         Me.MetroTile6.UseTileImage = True
-        '
-        'MetroTile5
-        '
-        Me.MetroTile5.ActiveControl = Nothing
-        Me.MetroTile5.Location = New System.Drawing.Point(252, 314)
-        Me.MetroTile5.Name = "MetroTile5"
-        Me.MetroTile5.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile5.Style = MetroFramework.MetroColorStyle.Green
-        Me.MetroTile5.TabIndex = 26
-        Me.MetroTile5.Text = "Scripts"
-        Me.MetroTile5.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile5.TileImage = Global.PC_Toolbox.My.Resources.Resources.scripts_logo_new
-        Me.MetroTile5.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.MetroTile5.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
-        Me.MetroTile5.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile5, "Scripts")
-        Me.MetroTile5.UseSelectable = True
-        Me.MetroTile5.UseTileImage = True
         '
         'MetroTile4
         '
         Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.Location = New System.Drawing.Point(12, 314)
+        Me.MetroTile4.Location = New System.Drawing.Point(252, 245)
         Me.MetroTile4.Name = "MetroTile4"
         Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
@@ -144,12 +117,12 @@ Partial Class frmMain
         'MetroTile3
         '
         Me.MetroTile3.ActiveControl = Nothing
-        Me.MetroTile3.Location = New System.Drawing.Point(498, 91)
+        Me.MetroTile3.Location = New System.Drawing.Point(498, 22)
         Me.MetroTile3.Name = "MetroTile3"
         Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
         Me.MetroTile3.TabIndex = 24
-        Me.MetroTile3.Text = "Connectivity"
+        Me.MetroTile3.Text = "Connection"
         Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.MetroTile3.TileImage = Global.PC_Toolbox.My.Resources.Resources.wifi_logo
         Me.MetroTile3.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -162,7 +135,7 @@ Partial Class frmMain
         'MetroTile2
         '
         Me.MetroTile2.ActiveControl = Nothing
-        Me.MetroTile2.Location = New System.Drawing.Point(252, 91)
+        Me.MetroTile2.Location = New System.Drawing.Point(252, 22)
         Me.MetroTile2.Name = "MetroTile2"
         Me.MetroTile2.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile2.Style = MetroFramework.MetroColorStyle.Silver
@@ -180,12 +153,12 @@ Partial Class frmMain
         'MetroTile1
         '
         Me.MetroTile1.ActiveControl = Nothing
-        Me.MetroTile1.Location = New System.Drawing.Point(12, 91)
+        Me.MetroTile1.Location = New System.Drawing.Point(12, 22)
         Me.MetroTile1.Name = "MetroTile1"
         Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
         Me.MetroTile1.TabIndex = 22
-        Me.MetroTile1.Text = "Shutdown" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & " Manager"
+        Me.MetroTile1.Text = "Shutdown" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Manager"
         Me.MetroTile1.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.MetroTile1.TileImage = Global.PC_Toolbox.My.Resources.Resources.shutdown_medium
         Me.MetroTile1.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -197,8 +170,8 @@ Partial Class frmMain
         '
         'Button2
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(2, 520)
+        Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 10.25!, System.Drawing.FontStyle.Italic)
+        Me.Button2.Location = New System.Drawing.Point(2, 511)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(211, 35)
         Me.Button2.TabIndex = 0
@@ -210,10 +183,9 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(699, 556)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(705, 548)
         Me.Controls.Add(Me.MetroTile6)
-        Me.Controls.Add(Me.MetroTile5)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MetroTile4)
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.MetroTile2)
@@ -221,7 +193,7 @@ Partial Class frmMain
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PC Toolbox"
+        Me.Text = "/"
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
@@ -232,7 +204,6 @@ Partial Class frmMain
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents TrayClick1 As ContextMenuStrip
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CheckForUpdatesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
@@ -240,7 +211,6 @@ Partial Class frmMain
     Friend WithEvents MetroTile2 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile3 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroTile5 As MetroFramework.Controls.MetroTile
-    Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
     Friend WithEvents Button2 As Button
+    Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
 End Class

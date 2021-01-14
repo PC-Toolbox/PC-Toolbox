@@ -1,0 +1,4 @@
+﻿main = main menu
+shutdown = shutdown manager
+scripts = scripts
+wifi = connectivity

@@ -3,7 +3,7 @@
   <asmv1:assemblyIdentity name="PC Toolbox.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="PC Toolbox" version="0.13.1.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="PC Toolbox" version="1.0.0.14" language="neutral" processorArchitecture="msil" />
     <commandLine file="PC Toolbox.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -114,24 +114,33 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="393216">
-      <assemblyIdentity name="PC Toolbox" version="0.13.1.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="379904">
+      <assemblyIdentity name="PC Toolbox" version="1.0.0.14" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0ET4VQwfXctO7kK51dAXkbzaHWPv45m5hpANfawbiD8=</dsig:DigestValue>
+        <dsig:DigestValue>+TTOnEBIt2yQ/4rQYqslU9wnRxJuN5DVI6ejg37rwgI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="PC Toolbox.exe.config" size="2025">
+  <file name="PC Toolbox.exe.config" size="1623">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>bWL6as+KYwTND2mx8Pvjz9sJRgrlu8KsyV5gXau/pWg=</dsig:DigestValue>
+      <dsig:DigestValue>czDEcGjckR6+GAwI2wVtyxp9627IfIwnPgvvmzKeh50=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Notes\Discord Rich Presense Lists.txt" size="88">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yYmpsXGAQN5eW4frnAatQ+FZjP53iR8eNocRRDBZn+o=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

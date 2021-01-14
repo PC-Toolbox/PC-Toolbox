@@ -68,18 +68,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("English")>  _
-        Public Property Language() As String
-            Get
-                Return CType(Me("Language"),String)
-            End Get
-            Set
-                Me("Language") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("Dark")>  _
         Public Property Theme() As String
             Get
@@ -104,37 +92,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("false")>  _
-        Public Property isScriptPremium() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("Main Menu")>  _
+        Public Property RPC() As String
             Get
-                Return CType(Me("isScriptPremium"),String)
+                Return CType(Me("RPC"),String)
             End Get
             Set
-                Me("isScriptPremium") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("placeholder")>  _
-        Public Property MaliciousLevel0() As String
-            Get
-                Return CType(Me("MaliciousLevel0"),String)
-            End Get
-            Set
-                Me("MaliciousLevel0") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("placeholder")>  _
-        Public Property MaliciousLevel1() As String
-            Get
-                Return CType(Me("MaliciousLevel1"),String)
-            End Get
-            Set
-                Me("MaliciousLevel1") = value
+                Me("RPC") = value
             End Set
         End Property
     End Class

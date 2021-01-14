@@ -72,6 +72,11 @@ PC Toolbox
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:PC_Toolbox.My.Resources.Resources.Volume">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:PC_Toolbox.My.Resources.Resources.wifi_logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
