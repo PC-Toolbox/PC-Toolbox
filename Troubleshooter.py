@@ -6,8 +6,8 @@ from colorama import init
 init()
 from colorama import Fore, Back, Style
 
-os.system("title PC Toolbox Troubleshooter Demo")
-print(Fore.LIGHTRED_EX + 'Full Functionality will release with the upcoming version 0.13! This is only a demo on what the app will do.')
+os.system("title PC Toolbox Troubleshooter")
+print(Fore.LIGHTRED_EX + 'The troubleshooter is still in a beta stage, this can get removed anytime.')
 print(' ')
 print(' ')
 print(Fore.WHITE + '')
@@ -38,32 +38,32 @@ if choice == 1 :
  print(' ')
  print('Currently running installer. . .')
  print(' ')
- print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
+ print(Fore.LIGHTYELLOW_EX + 'The troubleshooter will now close.')
  os.system('pause')
  sys.exit()
- #lol i just need an setup.exe and some advanced maths to do this
+ #This would run the setup.exe
  
 
 
 if choice == 2 :
  print(Fore.LIGHTRED_EX + ' ')
- print('This will uninstall all of PC Toolbox')
+ print('This will uninstall PC Toolbox.')
  print('If you decided that this was an accident, close the troubleshooter and it will not uninstall.')
  print('')
  os.system('pause')
  print(Fore.LIGHTWHITE_EX + 'Running uninstaller...')
  print('')
- print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
+ print(Fore.LIGHTYELLOW_EX + 'The troubleshooter will now close.')
  os.system('pause')
  sys.exit()
-#lol idk how to do this part
+#Removes it from system files.
 
 if choice == 3:
  print(Fore.LIGHTRED_EX + ' ')
  print ('Please fill out an issue form on our repository, if you do not have an account on GitHub,  please create one.')
  print('')
  webbrowser.open('https://github.com/PC-Toolbox/PC-Toolbox/issues/new', new=2)
- print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
+ print(Fore.LIGHTYELLOW_EX + 'The troubleshooter will now close.')
  os.system('pause')
  sys.exit()
     
@@ -73,21 +73,21 @@ if choice == 3:
 if choice == 4 :
  print(Fore.LIGHTRED_EX + ' ')
  print('The troubleshooter is being developed by:')
- print(Fore.LIGHTBLUE_EX + 'byronbytes (byron#0002) ')
+ print(Fore.LIGHTBLUE_EX + 'byronbytes (byron#1000) ')
  print('')
- print(Fore.RED + 'localtechnerd (Side#6776)')
+ print(Fore.RED + 'localtechnerd')
  print('')
  print('')
- print(Fore.LIGHTWHITE_EX + 'Current Version: v1.2.2')
+ print(Fore.LIGHTWHITE_EX + 'Current Version: v1.4.1')
  print(Fore.LIGHTYELLOW_EX + ' ')
- print(Fore.LIGHTYELLOW_EX + 'The application will now close.')
+ print(Fore.LIGHTYELLOW_EX + 'The troubleshooter will now close.')
  os.system('pause')
  sys.exit()
  
 
 
 if choice == 5 :
- print(Fore.LIGHTYELLOW_EX + 'The application will now close upon user request.')
+ print(Fore.LIGHTYELLOW_EX + 'The troubleshooter will now close upon user request.')
  print(Fore.LIGHTYELLOW_EX + ' ')
  os.system('pause')
  sys.exit()
@@ -95,8 +95,7 @@ if choice == 5 :
 
 
 
-
-# I see you in the code... I hope you like the shoutout tho!
+# code inspect 100
 if choice ==99:
  print(Fore.LIGHTRED_EX + ' ')
  print(' ')
