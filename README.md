@@ -1,23 +1,12 @@
 # PC Toolbox
 
-# PC Toolbox has ended support indefinitely and will no longer recieve updates.
-2020 - 2021
-
-
-
-
-
-
-
 Features that can enhance computer experience. Make your computer run faster and make it easier to use.
 
 ## Features
 - Able to manage and cancel shutdowns
-- Able to check for a connection and how well the connection is
+- Able to check for a connection
 - Quickly run shortcuts
 - Rich Presence Integration with Discord
-- Application updates automatically
-- Built in Windows 10 debloater (WIP)
 
 ## Installation
 Go to the [Releases Tab](https://github.com/byronbytes/PC-Toolbox/releases) and download the latest version. 
