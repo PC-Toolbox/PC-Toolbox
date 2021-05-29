@@ -91,7 +91,7 @@ Partial Class frmConnectivity
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(10, 414)
+        Me.Button2.Location = New System.Drawing.Point(10, 247)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(221, 36)
         Me.Button2.TabIndex = 10
@@ -137,7 +137,7 @@ Partial Class frmConnectivity
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(615, 462)
+        Me.ClientSize = New System.Drawing.Size(615, 296)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button4)

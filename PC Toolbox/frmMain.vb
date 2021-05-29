@@ -14,8 +14,8 @@ Public Class frmMain
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = My.Settings.RPC,
-    .State = "Placeholder",
-    .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "v1.0"}
+    .State = "",
+    .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "v1.0-release"}
     }
 
 
@@ -24,32 +24,21 @@ Public Class frmMain
 
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
-
-
-
-        ''We have removed the limitation for Version Support. Probably coming back later when the app gets more complex.
+        'We have removed the limitation for Version Support. No intentions of bringing this back for now. But keeping code.
 
         Dim os As OperatingSystem = Environment.OSVersion
-
-
         'If winver.Text = "62" Then
         'Version Supported
         'End If
-
-
         'If winver.Text = "61" Then
         'Version Supported
         'End If
-
-
         ' If winver.Text = "51" Then
-        ' MsgBox("Windows XP is no longer supported on Toolbox.")
+        ' MsgBox("Windows XP base devices are not supported on PC Toolbox.")
         'Me.Close()
         'End If
-
         ' If winver.Text = "60" Then
-        'MsgBox("Windows Vista is no longer supported on PC Toolbox.")
+        'MsgBox("Windows Vista base devices are not supported on PC Toolbox.")
         'Me.Close()
         ' End If
         StartClientMain()
@@ -84,7 +73,7 @@ Public Class frmMain
     End Sub
 
     Private Sub MetroTile4_Click(sender As Object, e As EventArgs) Handles MetroTile4.Click
-        frmExecutables.Show()
+        frmQuickRun.Show()
     End Sub
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
         Settings.Show()

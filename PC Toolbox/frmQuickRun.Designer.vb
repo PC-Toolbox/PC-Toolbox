@@ -1,6 +1,6 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class frmExecutables
-    Inherits MaterialSkin.Controls.MaterialForm
+Partial Class frmQuickRun
+    Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
     <System.Diagnostics.DebuggerNonUserCode()>
@@ -40,6 +40,8 @@ Partial Class frmExecutables
         Me.WinverToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.WordpadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NotepadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SnippingToolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip2 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
@@ -47,8 +49,6 @@ Partial Class frmExecutables
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ToolStripSeparator5 = New System.Windows.Forms.ToolStripSeparator()
-        Me.SnippingToolToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Favorites.SuspendLayout()
         Me.MenuStrip1.SuspendLayout()
         Me.MenuStrip2.SuspendLayout()
@@ -88,9 +88,9 @@ Partial Class frmExecutables
         Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.MenuStrip1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BasicToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(16, 104)
+        Me.MenuStrip1.Location = New System.Drawing.Point(19, 9)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(248, 29)
+        Me.MenuStrip1.Size = New System.Drawing.Size(239, 29)
         Me.MenuStrip1.TabIndex = 1
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -99,8 +99,8 @@ Partial Class frmExecutables
         Me.BasicToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CommandPromptToolStripMenuItem, Me.TaskManagerToolStripMenuItem, Me.ControlPanelToolStripMenuItem, Me.RegeditToolStripMenuItem, Me.PowershellToolStripMenuItem, Me.ToolStripSeparator1, Me.ExplorerToolStripMenuItem, Me.WinverToolStripMenuItem, Me.WordpadToolStripMenuItem, Me.NotepadToolStripMenuItem, Me.ToolStripSeparator5, Me.SnippingToolToolStripMenuItem})
         Me.BasicToolStripMenuItem.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BasicToolStripMenuItem.Name = "BasicToolStripMenuItem"
-        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(120, 25)
-        Me.BasicToolStripMenuItem.Text = "Recomended"
+        Me.BasicToolStripMenuItem.Size = New System.Drawing.Size(231, 25)
+        Me.BasicToolStripMenuItem.Text = "Administrator Tools + Extras"
         '
         'CommandPromptToolStripMenuItem
         '
@@ -166,12 +166,23 @@ Partial Class frmExecutables
         Me.NotepadToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
         Me.NotepadToolStripMenuItem.Text = "Notepad"
         '
+        'ToolStripSeparator5
+        '
+        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
+        Me.ToolStripSeparator5.Size = New System.Drawing.Size(213, 6)
+        '
+        'SnippingToolToolStripMenuItem
+        '
+        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
+        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
+        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
+        '
         'MenuStrip2
         '
         Me.MenuStrip2.Dock = System.Windows.Forms.DockStyle.None
         Me.MenuStrip2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1})
-        Me.MenuStrip2.Location = New System.Drawing.Point(199, 104)
+        Me.MenuStrip2.Location = New System.Drawing.Point(311, 9)
         Me.MenuStrip2.Name = "MenuStrip2"
         Me.MenuStrip2.Size = New System.Drawing.Size(214, 29)
         Me.MenuStrip2.TabIndex = 6
@@ -215,28 +226,18 @@ Partial Class frmExecutables
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
         Me.ToolStripSeparator4.Size = New System.Drawing.Size(184, 6)
         '
-        'ToolStripSeparator5
-        '
-        Me.ToolStripSeparator5.Name = "ToolStripSeparator5"
-        Me.ToolStripSeparator5.Size = New System.Drawing.Size(213, 6)
-        '
-        'SnippingToolToolStripMenuItem
-        '
-        Me.SnippingToolToolStripMenuItem.Name = "SnippingToolToolStripMenuItem"
-        Me.SnippingToolToolStripMenuItem.Size = New System.Drawing.Size(216, 26)
-        Me.SnippingToolToolStripMenuItem.Text = "Snipping Tool"
-        '
-        'frmExecutables
+        'frmQuickRun
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(539, 476)
+        Me.ClientSize = New System.Drawing.Size(654, 340)
         Me.Controls.Add(Me.MenuStrip2)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Name = "frmExecutables"
-        Me.Text = "Executables"
+        Me.Name = "frmQuickRun"
+        Me.Text = "Quick Run"
         Me.Favorites.ResumeLayout(False)
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()

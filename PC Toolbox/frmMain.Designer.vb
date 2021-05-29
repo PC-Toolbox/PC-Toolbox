@@ -104,7 +104,7 @@ Partial Class frmMain
         Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
         Me.MetroTile4.TabIndex = 25
-        Me.MetroTile4.Text = "Executables"
+        Me.MetroTile4.Text = "Quick Run"
         Me.MetroTile4.Theme = MetroFramework.MetroThemeStyle.Dark
         Me.MetroTile4.TileImage = Global.PC_Toolbox.My.Resources.Resources.executables_logo
         Me.MetroTile4.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -193,7 +193,7 @@ Partial Class frmMain
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "/"
+        Me.Text = "PC Toolbox"
         Me.TrayClick1.ResumeLayout(False)
         Me.ResumeLayout(False)
 

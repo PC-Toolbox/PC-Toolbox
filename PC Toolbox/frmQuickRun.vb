@@ -1,7 +1,9 @@
-﻿Imports MaterialSkin
+﻿
 
+Public Class frmQuickRun
+    'Moving this note from Registry to QuickRun
+    'Process.Start("powershell", "-File C:\")
 
-Public Class frmExecutables
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
@@ -10,7 +12,7 @@ Public Class frmExecutables
         Try
             Process.Start("cmd.exe")
         Catch ex As Exception
-            MsgBox("Failed to open Command Prompt. Do you have permissions?")
+            MsgBox("Failed to open Command Prompt.")
         End Try
 
 
@@ -21,7 +23,7 @@ Public Class frmExecutables
         Try
             Process.Start("taskmgr.exe")
         Catch ex As Exception
-            MsgBox("Failed to open Task Manager. Do you have permission?")
+            MsgBox("Failed to open Task Manager.")
         End Try
 
     End Sub
@@ -39,7 +41,7 @@ Public Class frmExecutables
         Try
             Process.Start("regedit.exe")
         Catch ex As Exception
-            MsgBox("Failed to open Registry Editor. Do you have permission or did you not run as admin?")
+            MsgBox("Failed to open Registry Editor.")
         End Try
 
     End Sub
@@ -63,17 +65,13 @@ Public Class frmExecutables
     End Sub
 
     Private Sub frmExecutables_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'MaterialSkin
-        Dim SkinManager As MaterialSkin.MaterialSkinManager = MaterialSkin.MaterialSkinManager.Instance
-        SkinManager.AddFormToManage(Me)
-        SkinManager.Theme = MaterialSkinManager.Themes.DARK
     End Sub
 
     Private Sub PowershellToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PowershellToolStripMenuItem.Click
         Try
             Process.Start("powershell.exe")
         Catch ex As Exception
-            MsgBox("Unable to run Powershell. Do you have permission?")
+            MsgBox("Unable to run Powershell.")
         End Try
 
     End Sub

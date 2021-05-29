@@ -70,3 +70,37 @@ C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.
 C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe.manifest
 C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.application
 C:\Users\Super\Desktop\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CopyComplete
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.config
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe.manifest
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.application
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.exe
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.pdb
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\PC Toolbox.xml
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\MaterialSkin.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Design.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\MetroFramework.Fonts.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.dll
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.pdb
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\DiscordRPC.xml
+D:\vs projects\PC Toolbox\PC Toolbox\bin\Release\Newtonsoft.Json.xml
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbprojAssemblyReference.cache
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmConnectivity.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmMain.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmRegistry.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmShutdown.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Resources.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.CheckForUpdates.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmUpdates.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.Settings.resources
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.GenerateResource.cache
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CoreCompileInputs.cache
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.TrustInfo.xml
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe.manifest
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.application
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CopyComplete
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.xml
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.pdb
+D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmQuickRun.resources
