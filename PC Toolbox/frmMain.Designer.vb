@@ -29,7 +29,6 @@ Partial Class frmMain
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
-        Me.MetroTile6 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile4 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile3 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
@@ -78,28 +77,10 @@ Partial Class frmMain
         Me.MetroToolTip1.StyleManager = Nothing
         Me.MetroToolTip1.Theme = MetroFramework.MetroThemeStyle.Light
         '
-        'MetroTile6
-        '
-        Me.MetroTile6.ActiveControl = Nothing
-        Me.MetroTile6.Location = New System.Drawing.Point(12, 245)
-        Me.MetroTile6.Name = "MetroTile6"
-        Me.MetroTile6.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile6.Style = MetroFramework.MetroColorStyle.Yellow
-        Me.MetroTile6.TabIndex = 27
-        Me.MetroTile6.Text = "Volume"
-        Me.MetroTile6.Theme = MetroFramework.MetroThemeStyle.Dark
-        Me.MetroTile6.TileImage = Global.PC_Toolbox.My.Resources.Resources.Volume
-        Me.MetroTile6.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter
-        Me.MetroTile6.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall
-        Me.MetroTile6.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Bold
-        Me.MetroToolTip1.SetToolTip(Me.MetroTile6, "Volume")
-        Me.MetroTile6.UseSelectable = True
-        Me.MetroTile6.UseTileImage = True
-        '
         'MetroTile4
         '
         Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.Location = New System.Drawing.Point(252, 245)
+        Me.MetroTile4.Location = New System.Drawing.Point(12, 242)
         Me.MetroTile4.Name = "MetroTile4"
         Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
@@ -171,7 +152,7 @@ Partial Class frmMain
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 10.25!, System.Drawing.FontStyle.Italic)
-        Me.Button2.Location = New System.Drawing.Point(2, 511)
+        Me.Button2.Location = New System.Drawing.Point(226, 424)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(211, 35)
         Me.Button2.TabIndex = 0
@@ -183,13 +164,13 @@ Partial Class frmMain
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(705, 548)
-        Me.Controls.Add(Me.MetroTile6)
+        Me.ClientSize = New System.Drawing.Size(705, 471)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MetroTile4)
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.MetroTile2)
         Me.Controls.Add(Me.MetroTile1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -212,5 +193,4 @@ Partial Class frmMain
     Friend WithEvents MetroTile3 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents Button2 As Button
-    Friend WithEvents MetroTile6 As MetroFramework.Controls.MetroTile
 End Class

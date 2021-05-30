@@ -144,18 +144,6 @@
     <Compile Include="frmConnectivity.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExecutables.Designer.vb">
-      <DependentUpon>frmExecutables.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmExecutables.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmFiles.Designer.vb">
-      <DependentUpon>frmFiles.vb</DependentUpon>
-    </Compile>
-    <Compile Include="frmFiles.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmMain.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -213,12 +201,6 @@
   <ItemGroup>
     <EmbeddedResource Include="frmConnectivity.resx">
       <DependentUpon>frmConnectivity.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmExecutables.resx">
-      <DependentUpon>frmExecutables.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmFiles.resx">
-      <DependentUpon>frmFiles.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>

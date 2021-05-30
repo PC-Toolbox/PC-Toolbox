@@ -73,7 +73,6 @@ Public Class frmMain
     End Sub
 
     Private Sub MetroTile4_Click(sender As Object, e As EventArgs) Handles MetroTile4.Click
-        frmQuickRun.Show()
     End Sub
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs)
         Settings.Show()
@@ -83,7 +82,7 @@ Public Class frmMain
         Settings.Show()
     End Sub
 
-    Private Sub MetroTile6_Click_1(sender As Object, e As EventArgs) Handles MetroTile6.Click
+    Private Sub MetroTile6_Click_1(sender As Object, e As EventArgs) 
 
     End Sub
 End Class

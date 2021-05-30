@@ -103,4 +103,3 @@ D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.vbproj.CopyComplete
 D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.exe
 D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.xml
 D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC Toolbox.pdb
-D:\vs projects\PC Toolbox\PC Toolbox\obj\Release\PC_Toolbox.frmQuickRun.resources
