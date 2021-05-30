@@ -1,15 +1,11 @@
 ﻿
 
 
+Imports System.Runtime.InteropServices
 Imports DiscordRPC
 Imports DiscordRPC.Logging
 
 Public Class frmMain
-
-
-
-
-
     Public RpcClient As DiscordRpcClient
     Public ReadOnly Logger As New ConsoleLogger(LogLevel.Trace, coloured:=True)
     Public ReadOnly Presence As RichPresence = New RichPresence With {
@@ -17,11 +13,6 @@ Public Class frmMain
     .State = "",
     .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "v1.0-release"}
     }
-
-
-
-
-
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         'We have removed the limitation for Version Support. No intentions of bringing this back for now. But keeping code.
@@ -84,5 +75,26 @@ Public Class frmMain
 
     Private Sub MetroTile6_Click_1(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub MetroPanel1_Paint(sender As Object, e As PaintEventArgs) Handles MetroPanel1.Paint
+
+    End Sub
+    Public Const WM_NCLBUTTONDOWN As Integer = &HA1
+    Public Const HT_CAPTION As Integer = &H2
+
+    <DllImportAttribute("user32.dll")>
+    Public Shared Function SendMessage(ByVal hWnd As IntPtr, ByVal Msg As Integer, ByVal wParam As Integer, ByVal lParam As Integer) As Integer
+    End Function
+
+    <DllImportAttribute("user32.dll")>
+    Public Shared Function ReleaseCapture() As Boolean
+    End Function
+
+    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseDown, MetroPanel1.MouseDown
+        If e.Button = Windows.Forms.MouseButtons.Left Then
+            ReleaseCapture()
+            SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0)
+        End If
     End Sub
 End Class

@@ -30,6 +30,9 @@ Partial Class frmUpdates
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.MetroPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -37,7 +40,7 @@ Partial Class frmUpdates
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(177, 24)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(290, 21)
         Me.Label1.TabIndex = 0
@@ -45,9 +48,9 @@ Partial Class frmUpdates
         '
         'updateBar
         '
-        Me.updateBar.Location = New System.Drawing.Point(29, 214)
+        Me.updateBar.Location = New System.Drawing.Point(12, 179)
         Me.updateBar.Name = "updateBar"
-        Me.updateBar.Size = New System.Drawing.Size(699, 23)
+        Me.updateBar.Size = New System.Drawing.Size(612, 23)
         Me.updateBar.TabIndex = 1
         Me.updateBar.Visible = False
         '
@@ -56,7 +59,7 @@ Partial Class frmUpdates
         Me.updateLabel.AutoSize = True
         Me.updateLabel.Font = New System.Drawing.Font("Microsoft YaHei UI Light", 11.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.updateLabel.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.updateLabel.Location = New System.Drawing.Point(25, 240)
+        Me.updateLabel.Location = New System.Drawing.Point(12, 205)
         Me.updateLabel.Name = "updateLabel"
         Me.updateLabel.Size = New System.Drawing.Size(134, 20)
         Me.updateLabel.TabIndex = 2
@@ -65,7 +68,7 @@ Partial Class frmUpdates
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(153, 33)
+        Me.Button1.Location = New System.Drawing.Point(133, 78)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(115, 28)
         Me.Button1.TabIndex = 4
@@ -74,7 +77,7 @@ Partial Class frmUpdates
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(446, 33)
+        Me.Button2.Location = New System.Drawing.Point(434, 78)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(115, 28)
         Me.Button2.TabIndex = 5
@@ -86,7 +89,7 @@ Partial Class frmUpdates
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft YaHei Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.Label2.Location = New System.Drawing.Point(308, 9)
+        Me.Label2.Location = New System.Drawing.Point(201, 45)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(256, 19)
         Me.Label2.TabIndex = 6
@@ -94,19 +97,50 @@ Partial Class frmUpdates
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(304, 33)
+        Me.Button3.Location = New System.Drawing.Point(284, 78)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(115, 28)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "Remind Later"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'MetroPanel1
+        '
+        Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.Controls.Add(Me.Label3)
+        Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.MetroPanel1.HorizontalScrollbarBarColor = True
+        Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.HorizontalScrollbarSize = 10
+        Me.MetroPanel1.Location = New System.Drawing.Point(-1, -2)
+        Me.MetroPanel1.Name = "MetroPanel1"
+        Me.MetroPanel1.Size = New System.Drawing.Size(658, 23)
+        Me.MetroPanel1.Style = MetroFramework.MetroColorStyle.Magenta
+        Me.MetroPanel1.TabIndex = 27
+        Me.MetroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroPanel1.UseCustomBackColor = True
+        Me.MetroPanel1.VerticalScrollbarBarColor = True
+        Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.VerticalScrollbarSize = 10
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Nirmala UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
+        Me.Label3.Location = New System.Drawing.Point(259, 2)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(131, 21)
+        Me.Label3.TabIndex = 28
+        Me.Label3.Text = "Update Available!"
+        '
         'frmUpdates
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(763, 342)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(650, 275)
+        Me.Controls.Add(Me.MetroPanel1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button2)
@@ -117,6 +151,8 @@ Partial Class frmUpdates
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmUpdates"
         Me.Text = "PC Toolbox (New Update)"
+        Me.MetroPanel1.ResumeLayout(False)
+        Me.MetroPanel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -130,4 +166,6 @@ Partial Class frmUpdates
     Friend WithEvents Button2 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
+    Friend WithEvents Label3 As Label
 End Class

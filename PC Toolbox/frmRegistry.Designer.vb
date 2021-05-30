@@ -24,6 +24,8 @@ Partial Class frmRegistry
     Private Sub InitializeComponent()
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
+        Me.MetroPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MetroToolTip1
@@ -37,27 +39,48 @@ Partial Class frmRegistry
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Nirmala UI Semilight", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonFace
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(162, 11)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(177, 21)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Will be worked on soon!"
         '
+        'MetroPanel1
+        '
+        Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.Controls.Add(Me.Label1)
+        Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.MetroPanel1.HorizontalScrollbarBarColor = True
+        Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.HorizontalScrollbarSize = 10
+        Me.MetroPanel1.Location = New System.Drawing.Point(-4, -2)
+        Me.MetroPanel1.Name = "MetroPanel1"
+        Me.MetroPanel1.Size = New System.Drawing.Size(561, 38)
+        Me.MetroPanel1.Style = MetroFramework.MetroColorStyle.Magenta
+        Me.MetroPanel1.TabIndex = 28
+        Me.MetroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroPanel1.UseCustomBackColor = True
+        Me.MetroPanel1.VerticalScrollbarBarColor = True
+        Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.VerticalScrollbarSize = 10
+        '
         'frmRegistry
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer), CType(CType(32, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(526, 468)
-        Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Controls.Add(Me.MetroPanel1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "frmRegistry"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Registry"
+        Me.MetroPanel1.ResumeLayout(False)
+        Me.MetroPanel1.PerformLayout()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
     Friend WithEvents Label1 As Label
+    Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
 End Class

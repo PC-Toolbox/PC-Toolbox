@@ -34,6 +34,7 @@ Partial Class frmMain
         Me.MetroTile2 = New MetroFramework.Controls.MetroTile()
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
         Me.TrayClick1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,7 +81,7 @@ Partial Class frmMain
         'MetroTile4
         '
         Me.MetroTile4.ActiveControl = Nothing
-        Me.MetroTile4.Location = New System.Drawing.Point(12, 242)
+        Me.MetroTile4.Location = New System.Drawing.Point(12, 271)
         Me.MetroTile4.Name = "MetroTile4"
         Me.MetroTile4.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile4.Style = MetroFramework.MetroColorStyle.Teal
@@ -97,10 +98,10 @@ Partial Class frmMain
         'MetroTile3
         '
         Me.MetroTile3.ActiveControl = Nothing
-        Me.MetroTile3.Location = New System.Drawing.Point(498, 22)
+        Me.MetroTile3.Location = New System.Drawing.Point(498, 51)
         Me.MetroTile3.Name = "MetroTile3"
         Me.MetroTile3.Size = New System.Drawing.Size(185, 175)
-        Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Orange
+        Me.MetroTile3.Style = MetroFramework.MetroColorStyle.Lime
         Me.MetroTile3.TabIndex = 24
         Me.MetroTile3.Text = "Connection"
         Me.MetroTile3.Theme = MetroFramework.MetroThemeStyle.Dark
@@ -114,7 +115,8 @@ Partial Class frmMain
         'MetroTile2
         '
         Me.MetroTile2.ActiveControl = Nothing
-        Me.MetroTile2.Location = New System.Drawing.Point(252, 22)
+        Me.MetroTile2.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.MetroTile2.Location = New System.Drawing.Point(252, 51)
         Me.MetroTile2.Name = "MetroTile2"
         Me.MetroTile2.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile2.Style = MetroFramework.MetroColorStyle.Silver
@@ -131,7 +133,7 @@ Partial Class frmMain
         'MetroTile1
         '
         Me.MetroTile1.ActiveControl = Nothing
-        Me.MetroTile1.Location = New System.Drawing.Point(12, 22)
+        Me.MetroTile1.Location = New System.Drawing.Point(12, 51)
         Me.MetroTile1.Name = "MetroTile1"
         Me.MetroTile1.Size = New System.Drawing.Size(185, 175)
         Me.MetroTile1.Style = MetroFramework.MetroColorStyle.Red
@@ -148,6 +150,7 @@ Partial Class frmMain
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Button2.Location = New System.Drawing.Point(226, 424)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(211, 35)
@@ -155,18 +158,37 @@ Partial Class frmMain
         Me.Button2.Text = "Settings"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'MetroPanel1
+        '
+        Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
+        Me.MetroPanel1.HorizontalScrollbarBarColor = True
+        Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.HorizontalScrollbarSize = 10
+        Me.MetroPanel1.Location = New System.Drawing.Point(-5, 0)
+        Me.MetroPanel1.Name = "MetroPanel1"
+        Me.MetroPanel1.Size = New System.Drawing.Size(719, 28)
+        Me.MetroPanel1.Style = MetroFramework.MetroColorStyle.Magenta
+        Me.MetroPanel1.TabIndex = 26
+        Me.MetroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark
+        Me.MetroPanel1.UseCustomBackColor = True
+        Me.MetroPanel1.VerticalScrollbarBarColor = True
+        Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
+        Me.MetroPanel1.VerticalScrollbarSize = 10
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(19, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(705, 471)
+        Me.Controls.Add(Me.MetroPanel1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.MetroTile4)
         Me.Controls.Add(Me.MetroTile3)
         Me.Controls.Add(Me.MetroTile2)
         Me.Controls.Add(Me.MetroTile1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -189,4 +211,5 @@ Partial Class frmMain
     Friend WithEvents MetroTile3 As MetroFramework.Controls.MetroTile
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents Button2 As Button
+    Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
 End Class
