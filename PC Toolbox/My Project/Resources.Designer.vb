@@ -123,16 +123,6 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
-        Friend ReadOnly Property Script_Market() As System.Drawing.Bitmap
-            Get
-                Dim obj As Object = ResourceManager.GetObject("Script Market", resourceCulture)
-                Return CType(obj,System.Drawing.Bitmap)
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Drawing.Bitmap.
-        '''</summary>
         Friend ReadOnly Property scripts_logo_new() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("scripts_logo_new", resourceCulture)

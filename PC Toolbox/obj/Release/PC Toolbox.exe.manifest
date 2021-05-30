@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="363008">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PC Toolbox.exe" size="362496">
       <assemblyIdentity name="PC Toolbox" version="1.0.0.14" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QzFh3ts1ngnogeD0Qag/+h28GTlQWWbxJVbB3LhAoLQ=</dsig:DigestValue>
+        <dsig:DigestValue>H7pEABYp6K0koT1iYcQKmrtmEeRonBajdGTm0eOyqGw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -134,13 +134,13 @@
       <dsig:DigestValue>czDEcGjckR6+GAwI2wVtyxp9627IfIwnPgvvmzKeh50=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Resources\Notes\Discord Rich Presense Lists.txt" size="88">
+  <file name="Resources\Notes\Discord Rich Presense Lists.txt" size="114">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>yYmpsXGAQN5eW4frnAatQ+FZjP53iR8eNocRRDBZn+o=</dsig:DigestValue>
+      <dsig:DigestValue>EHTnuFYaP379olmgd8OtFB9baIXMJcxj2mPv9A8JxEM=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

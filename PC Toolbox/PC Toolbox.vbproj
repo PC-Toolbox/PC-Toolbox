@@ -213,9 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Settings\CheckForUpdates.resx">
       <DependentUpon>CheckForUpdates.vb</DependentUpon>
@@ -249,9 +249,6 @@
     <None Include="Resources\logout.png" />
     <None Include="Resources\reboot.png" />
     <None Include="Resources\shutdown.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ScriptMarket v1.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

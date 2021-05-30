@@ -1,4 +1,5 @@
 ﻿main = main menu
 shutdown = shutdown manager
-scripts = scripts
+scripts = scriptmarket
 wifi = connectivity
+registry = registry
