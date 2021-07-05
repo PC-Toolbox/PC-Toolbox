@@ -17,15 +17,15 @@ Version 0.9 Full Release - Supported until 5/1/21
 
 Version 0.10 - Supported until 5/30/21
 
-Version 0.11 - Currently Supported
+Version 0.11 - Supported until 6/1/21
 
-Version 0.11.1 - Currently Supported
+Version 0.11.1 - Supported until 6/1/21
 
-Version 0.11.2 - Currently Supported
+Version 0.11.2 - Supported until 6/1/21
 
-Version 0.11.3 - Currently Supported
+Version 0.11.3 - Supported until 6/1/21
 
-Version 0.11.4 - Currently Supported
+Version 0.11.4 - Supported until 6/1/21
 
 Version 0.11.5 - Currently Supported
 
