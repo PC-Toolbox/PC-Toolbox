@@ -11,7 +11,7 @@ Public Class frmMain
     Public ReadOnly Presence As RichPresence = New RichPresence With {
     .Details = My.Settings.RPC,
     .State = "",
-    .Assets = New Assets With {.LargeImageKey = "placeholder_1", .LargeImageText = "v1.0-release"}
+    .Assets = New Assets With {.LargeImageKey = "pctoolbox", .LargeImageText = "v1.0-snapshot"}
     }
     Private Sub frmMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -25,11 +25,11 @@ Public Class frmMain
         'Version Supported
         'End If
         ' If winver.Text = "51" Then
-        ' MsgBox("Windows XP base devices are not supported on PC Toolbox.")
+        ' MsgBox("Windows XP devices are not supported on PC Toolbox.")
         'Me.Close()
         'End If
         ' If winver.Text = "60" Then
-        'MsgBox("Windows Vista base devices are not supported on PC Toolbox.")
+        'MsgBox("Windows Vista devices are not supported on PC Toolbox.")
         'Me.Close()
         ' End If
         StartClientMain()
@@ -38,7 +38,7 @@ Public Class frmMain
 
 
     Public Sub StartClientMain()
-        RpcClient = New DiscordRpcClient("763902765545947157", pipe:=-1, logger:=Logger, autoEvents:=True)
+        RpcClient = New DiscordRpcClient("738510019364126791", pipe:=-1, logger:=Logger, autoEvents:=True)
         Presence.Timestamps = New Timestamps(DateTime.UtcNow)
         RpcClient.SetPresence(Presence)
         RpcClient.Initialize()
@@ -96,5 +96,9 @@ Public Class frmMain
             ReleaseCapture()
             SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0)
         End If
+    End Sub
+
+    Private Sub MetroButton1_Click_1(sender As Object, e As EventArgs) Handles MetroButton1.Click
+        Me.Close()
     End Sub
 End Class

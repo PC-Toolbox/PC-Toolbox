@@ -61,4 +61,7 @@ Public Class frmShutdown
         End If
     End Sub
 
+    Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
+        Me.Hide()
+    End Sub
 End Class

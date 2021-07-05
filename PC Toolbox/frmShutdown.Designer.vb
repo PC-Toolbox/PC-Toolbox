@@ -31,6 +31,7 @@ Partial Class frmShutdown
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -121,14 +122,15 @@ Partial Class frmShutdown
         'MetroPanel1
         '
         Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.Controls.Add(Me.MetroButton1)
         Me.MetroPanel1.Controls.Add(Me.Label4)
         Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.MetroPanel1.HorizontalScrollbarBarColor = True
         Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
         Me.MetroPanel1.HorizontalScrollbarSize = 10
-        Me.MetroPanel1.Location = New System.Drawing.Point(-1, 1)
+        Me.MetroPanel1.Location = New System.Drawing.Point(-1, -2)
         Me.MetroPanel1.Name = "MetroPanel1"
-        Me.MetroPanel1.Size = New System.Drawing.Size(666, 28)
+        Me.MetroPanel1.Size = New System.Drawing.Size(675, 31)
         Me.MetroPanel1.Style = MetroFramework.MetroColorStyle.Magenta
         Me.MetroPanel1.TabIndex = 27
         Me.MetroPanel1.Theme = MetroFramework.MetroThemeStyle.Dark
@@ -147,6 +149,15 @@ Partial Class frmShutdown
         Me.Label4.Size = New System.Drawing.Size(144, 21)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Shutdown Manager"
+        '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(629, 0)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(32, 23)
+        Me.MetroButton1.TabIndex = 28
+        Me.MetroButton1.Text = "X"
+        Me.MetroButton1.UseSelectable = True
         '
         'frmShutdown
         '
@@ -187,4 +198,5 @@ Partial Class frmShutdown
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
     Friend WithEvents Label4 As Label
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class

@@ -25,6 +25,7 @@ Partial Class frmRegistry
         Me.MetroToolTip1 = New MetroFramework.Components.MetroToolTip()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.MetroPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -48,6 +49,7 @@ Partial Class frmRegistry
         'MetroPanel1
         '
         Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.Controls.Add(Me.MetroButton1)
         Me.MetroPanel1.Controls.Add(Me.Label1)
         Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.MetroPanel1.HorizontalScrollbarBarColor = True
@@ -63,6 +65,15 @@ Partial Class frmRegistry
         Me.MetroPanel1.VerticalScrollbarBarColor = True
         Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
         Me.MetroPanel1.VerticalScrollbarSize = 10
+        '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(497, 0)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(32, 23)
+        Me.MetroButton1.TabIndex = 3
+        Me.MetroButton1.Text = "X"
+        Me.MetroButton1.UseSelectable = True
         '
         'frmRegistry
         '
@@ -83,4 +94,5 @@ Partial Class frmRegistry
     Friend WithEvents MetroToolTip1 As MetroFramework.Components.MetroToolTip
     Friend WithEvents Label1 As Label
     Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class

@@ -30,7 +30,7 @@ Partial Class CheckForUpdates
         'ProgressBar1
         '
         Me.ProgressBar1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.ProgressBar1.Location = New System.Drawing.Point(12, 95)
+        Me.ProgressBar1.Location = New System.Drawing.Point(12, 120)
         Me.ProgressBar1.MarqueeAnimationSpeed = 40
         Me.ProgressBar1.Name = "ProgressBar1"
         Me.ProgressBar1.Size = New System.Drawing.Size(593, 23)
@@ -43,7 +43,7 @@ Partial Class CheckForUpdates
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label1.Location = New System.Drawing.Point(12, 71)
+        Me.Label1.Location = New System.Drawing.Point(12, 96)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(194, 21)
         Me.Label1.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class CheckForUpdates
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe UI Light", 15.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Label2.Location = New System.Drawing.Point(12, 9)
+        Me.Label2.Location = New System.Drawing.Point(11, 9)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(261, 30)
         Me.Label2.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class CheckForUpdates
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(617, 123)
+        Me.ClientSize = New System.Drawing.Size(635, 149)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.ProgressBar1)

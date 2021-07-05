@@ -35,7 +35,9 @@ Partial Class frmMain
         Me.MetroTile1 = New MetroFramework.Controls.MetroTile()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.MetroPanel1 = New MetroFramework.Controls.MetroPanel()
+        Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
         Me.TrayClick1.SuspendLayout()
+        Me.MetroPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'NotifyIcon1
@@ -161,6 +163,7 @@ Partial Class frmMain
         'MetroPanel1
         '
         Me.MetroPanel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(72, Byte), Integer), CType(CType(72, Byte), Integer), CType(CType(92, Byte), Integer))
+        Me.MetroPanel1.Controls.Add(Me.MetroButton1)
         Me.MetroPanel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(14, Byte), Integer), CType(CType(14, Byte), Integer), CType(CType(18, Byte), Integer))
         Me.MetroPanel1.HorizontalScrollbarBarColor = True
         Me.MetroPanel1.HorizontalScrollbarHighlightOnWheel = False
@@ -176,6 +179,15 @@ Partial Class frmMain
         Me.MetroPanel1.VerticalScrollbarHighlightOnWheel = False
         Me.MetroPanel1.VerticalScrollbarSize = 10
         '
+        'MetroButton1
+        '
+        Me.MetroButton1.Location = New System.Drawing.Point(675, 0)
+        Me.MetroButton1.Name = "MetroButton1"
+        Me.MetroButton1.Size = New System.Drawing.Size(32, 23)
+        Me.MetroButton1.TabIndex = 2
+        Me.MetroButton1.Text = "X"
+        Me.MetroButton1.UseSelectable = True
+        '
         'frmMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -189,11 +201,13 @@ Partial Class frmMain
         Me.Controls.Add(Me.MetroTile2)
         Me.Controls.Add(Me.MetroTile1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PC Toolbox"
         Me.TrayClick1.ResumeLayout(False)
+        Me.MetroPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -212,4 +226,5 @@ Partial Class frmMain
     Friend WithEvents MetroTile4 As MetroFramework.Controls.MetroTile
     Friend WithEvents Button2 As Button
     Friend WithEvents MetroPanel1 As MetroFramework.Controls.MetroPanel
+    Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
 End Class

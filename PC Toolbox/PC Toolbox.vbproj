@@ -92,6 +92,9 @@
   <PropertyGroup>
     <AssemblyOriginatorKeyFile>PC Toolbox_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PCToolbox 256x256.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="DiscordRPC, Version=1.0.150.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\DiscordRichPresence.1.0.150\lib\net35\DiscordRPC.dll</HintPath>
@@ -284,6 +287,7 @@
     <None Include="Resources\Logout_new.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="PCToolbox 256x256.ico" />
     <Content Include="Resources\Notes\Discord Rich Presense Lists.txt" />
     <None Include="Resources\Volume.png" />
   </ItemGroup>
